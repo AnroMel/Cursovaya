@@ -23,6 +23,7 @@ namespace DiscreteMathCursovaya
         public MainWindow()
         {
             InitializeComponent();
+            //test
         }
     }
 }
