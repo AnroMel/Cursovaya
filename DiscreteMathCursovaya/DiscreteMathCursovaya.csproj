@@ -26,12 +26,18 @@
     <None Remove="images\M1Y4.jpg" />
     <None Remove="images\M2Y1.jpg" />
     <None Remove="images\M2Y2.jpg" />
+    <None Remove="images\M3Y1.jpg" />
+    <None Remove="images\M3Y2.jpg" />
+    <None Remove="images\M3Y3.jpg" />
     <None Remove="M1Y1.jpg" />
     <None Remove="M1Y2.jpg" />
     <None Remove="M1Y3.jpg" />
     <None Remove="M1Y4.jpg" />
     <None Remove="M2Y1.jpg" />
     <None Remove="M2Y2.jpg" />
+    <None Remove="M3Y1.jpg" />
+    <None Remove="M3Y2.jpg" />
+    <None Remove="M3Y3.jpg" />
   </ItemGroup>
 
   <ItemGroup>
@@ -92,12 +98,24 @@
     <Resource Include="images\M2Y2.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="images\M3Y1.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\M3Y2.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\M3Y3.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="M1Y1.jpg" />
     <Resource Include="M1Y2.jpg" />
     <Resource Include="M1Y3.jpg" />
     <Resource Include="M1Y4.jpg" />
     <Resource Include="M2Y1.jpg" />
     <Resource Include="M2Y2.jpg" />
+    <Resource Include="M3Y1.jpg" />
+    <Resource Include="M3Y2.jpg" />
+    <Resource Include="M3Y3.jpg" />
   </ItemGroup>
 
 </Project>

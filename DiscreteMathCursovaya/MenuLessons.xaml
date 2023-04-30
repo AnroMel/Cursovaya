@@ -208,6 +208,9 @@
             <Label Content="Модуль 3"  x:Name="Modyl3" Margin="503,1889,506,0" VerticalAlignment="Top" Height="102" FontSize="65" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="pack://application:,,,/fonts/#Jost Medium"/>
             <TextBlock Margin="85,1996,85,0" TextWrapping="Wrap" x:Name="Modyl3_Text" Text="TextBlock" FontSize="30" Height="135" VerticalAlignment="Top" FontFamily="pack://application:,,,/fonts/#Jost Regular"/>
             <Button x:Name="Yrok3_1" HorizontalAlignment="Left" Margin="85,2201,0,0" VerticalAlignment="Top" Height="350" Width="350">
+                <Button.Background>
+                    <ImageBrush ImageSource="/M3Y1.jpg"/>
+                </Button.Background>
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
                         <Setter Property="Template">
@@ -236,6 +239,9 @@
                 </Button.Style>
             </Button>
             <Button x:Name="Yrok3_2" HorizontalAlignment="Center" Width="350" Height="350" VerticalAlignment="Top" Margin="0,2201,0,0">
+                <Button.Background>
+                    <ImageBrush ImageSource="/M3Y2.jpg"/>
+                </Button.Background>
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
                         <Setter Property="Template">
@@ -264,6 +270,9 @@
                 </Button.Style>
             </Button>
             <Button x:Name="Yrok3_3" HorizontalAlignment="Left" Margin="1148,2201,0,0" VerticalAlignment="Top" Height="350" Width="350">
+                <Button.Background>
+                    <ImageBrush ImageSource="/M3Y3.jpg"/>
+                </Button.Background>
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
                         <Setter Property="Template">
@@ -291,34 +300,7 @@
                     </Style>
                 </Button.Style>
             </Button>
-            <Button x:Name="Yrok3_4" HorizontalAlignment="Left" Margin="85,2682,0,0" Width="350" Height="350" VerticalAlignment="Top">
-                <Button.Style>
-                    <Style TargetType="{x:Type Button}">
-                        <Setter Property="Template">
-                            <Setter.Value>
-                                <ControlTemplate TargetType="{x:Type Button}">
-                                    <Border CornerRadius="12"
-                                Background="{TemplateBinding Background}">
-
-                                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-                                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
-                                    </Border>
-                                </ControlTemplate>
-                            </Setter.Value>
-                        </Setter>
-                        <Style.Triggers>
-                            <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="RenderTransformOrigin" Value="0.5, 0.5"/>
-                                <Setter Property="RenderTransform">
-                                    <Setter.Value>
-                                        <ScaleTransform ScaleX="1.1" ScaleY="1.1"/>
-                                    </Setter.Value>
-                                </Setter>
-                            </Trigger>
-                        </Style.Triggers>
-                    </Style>
-                </Button.Style>
-            </Button>
+            
 
             <Label Content="Модуль 4"  x:Name="Modyl4" Margin="503,3124,506,0" VerticalAlignment="Top" Height="102" FontSize="65" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="pack://application:,,,/fonts/#Jost Medium"/>
             <TextBlock Margin="85,3231,85,0" TextWrapping="Wrap" Text="TextBlock"  x:Name="Modyl4_Text" FontSize="30" Height="135" VerticalAlignment="Top" FontFamily="pack://application:,,,/fonts/#Jost Regular"/>
