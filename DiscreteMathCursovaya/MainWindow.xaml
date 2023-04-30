@@ -5,8 +5,140 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DiscreteMathCursovaya"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        WindowState="Maximized"
+        Icon="/images/icon2.png"
+        Title="Authorization" Width="1600" Height="900" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize"  FontFamily="pack://application:,,,/fonts/#Jost Regular">
 
+    <Grid Background="#FFF0F0F0">
+        <Label x:Name="Text_h1" Content="Дискретная " HorizontalAlignment="Left" Margin="129,53,0,0" VerticalAlignment="Top" FontFamily="pack://application:,,,/fonts/#Jost Medium" FontSize="70" Width="491" Height="157"/>
+        <Label x:Name="Text_h11" Content="математика" HorizontalAlignment="Left" Margin="129,110,0,0" VerticalAlignment="Top" FontFamily="pack://application:,,,/fonts/#Jost Medium" FontSize="70" Width="491" Height="158" Foreground="#FFFF6666"/>
+        <TextBlock  x:Name="Text_h2" Text="Этот курс позволит вам овладеть базовыми понятиями и принципами дискретной математики и некоторых ее смежных глав. Вы познакомитесь с базовыми математическими объектами, без которых знание математики тяжело себе представить. Так получилось, что эти объекты разбросаны по разным разделам, однако в целом все эти разделы можно объединить под названием дискретная математика." HorizontalAlignment="Left" Margin="129,249,0,0" TextWrapping="Wrap"  FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="23"  VerticalAlignment="Top" Width="671"/>
+        <Label x:Name="Text_h3" Content="Курс содержит следующие модули:" HorizontalAlignment="Left" Margin="129,518,0,0" VerticalAlignment="Top" FontFamily="pack://application:,,,/fonts/#Jost Medium" FontSize="23" Width="417" Height="52"/>
+
+        <Label x:Name="Text_h31" Content="Основые комбинаторные объекты" HorizontalAlignment="Left" Margin="166,562,0,0" VerticalAlignment="Top" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="23" Width="417" Height="52"/>
+        <Label x:Name="Text_h32" Content="Полиномиальные и биномиальные коэффициенты" HorizontalAlignment="Left" Margin="166,598,0,0" VerticalAlignment="Top" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="23" Width="545" Height="52"/>
+        <Label x:Name="Text_h33" Content="Теория графов и основы линейной алгебры" HorizontalAlignment="Left" Margin="166,632,0,0" VerticalAlignment="Top" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="23" Width="491" Height="52"/>
+        <Label x:Name="Text_h34" Content="Двудольные графы" HorizontalAlignment="Left" Margin="166,665,0,0" VerticalAlignment="Top" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="23" Width="491" Height="52"/>
+        <Rectangle HorizontalAlignment="Left" Height="18" Width="20" Margin="129,575,0,0" VerticalAlignment="Top">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="/circle.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="18" Width="20" Margin="129,612,0,0" VerticalAlignment="Top">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="/circle.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="18" Width="20" Margin="129,647,0,0" VerticalAlignment="Top">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="/circle.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="18" Width="20" Margin="129,681,0,0" VerticalAlignment="Top">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="/circle.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+
+
+        <Rectangle HorizontalAlignment="Left" Height="578" Margin="938,87,0,0" Stroke="white" VerticalAlignment="Top" Width="493" Visibility="Visible" RadiusX="6" RadiusY="6" Fill="White" />
+        <Label x:Name="Authorization" Content="Авторизация" HorizontalAlignment="Left" Margin="1062,142,0,0" VerticalAlignment="Top" FontFamily="pack://application:,,,/fonts/#Jost Medium" FontSize="40"/>
+        <Label x:Name="LabelLoginAuthorization" Content="Логин:" HorizontalAlignment="Left" Margin="1018,249,0,0" VerticalAlignment="Top" Width="114" FontFamily="pack://application:,,,/fonts/#Jost Medium" FontSize="25" RenderTransformOrigin="0.488,1.961"/>
+        <TextBox x:Name="TextBoxLoginAuthorization" MaxLength="30" HorizontalAlignment="Left" Margin="1018,300,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="350" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39"  VerticalContentAlignment="Center" Padding="4,4,4,4" Cursor="IBeam">
+            <TextBox.Template >
+                <ControlTemplate >
+                    <Border Background="#FFF0F0F0" CornerRadius="6" Padding="2" BorderThickness="1" BorderBrush="#9f9f99">
+                        <Viewbox Stretch="Uniform" HorizontalAlignment="Left">
+                            <ScrollViewer  Margin="0" x:Name="PART_ContentHost"/>
+                        </Viewbox>
+                    </Border>
+                </ControlTemplate>
+            </TextBox.Template>
+        </TextBox>
+        <Label x:Name="LabelPasswordAuthorization" Content="Пароль:" HorizontalAlignment="Left" Margin="1018,353,0,0" VerticalAlignment="Top" Width="114" FontFamily="pack://application:,,,/fonts/#Jost Medium" FontSize="25"/>
+        <PasswordBox x:Name="PasswordBoxAuthorization" MaxLength="25" HorizontalAlignment="Left" Margin="1018,403,0,0" VerticalAlignment="Top" Width="350" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39" VerticalContentAlignment="Center" Padding="4,0,0,0" Cursor="IBeam">
+            <PasswordBox.Template>
+                <ControlTemplate >
+                    <Border Background="#FFF0F0F0" CornerRadius="6" Padding="2" BorderThickness="1" BorderBrush="#9f9f99">
+                        <ScrollViewer Margin="0" x:Name="PART_ContentHost"/>
+                    </Border>
+                </ControlTemplate>
+            </PasswordBox.Template>
+        </PasswordBox>
+        <TextBox x:Name="TextBoxShowPasswordA" HorizontalAlignment="Left"  Margin="1020,404,0,0" VerticalAlignment="Top" Width="348" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="37" VerticalContentAlignment="Center" Padding="4,4,4,4"  TextWrapping="Wrap" Text="" IsReadOnly="True" Visibility="Hidden">
+            <TextBox.Template>
+                <ControlTemplate >
+                    <Border Background="#FFF0F0F0" CornerRadius="6" Padding="2" BorderThickness="1" BorderBrush="#FFF0F0F0" Margin="0,0,48,0">
+                        <Viewbox Stretch="Uniform" HorizontalAlignment="Left">
+                            <ScrollViewer  Margin="0" x:Name="PART_ContentHost"/>
+                        </Viewbox>
+                    </Border>
+                </ControlTemplate>
+            </TextBox.Template>
+        </TextBox>
+        <Image x:Name="ShowPasswordA" HorizontalAlignment="Left" Height="28" Source="/eyeclose2.png" Margin="1325,408,0,0" VerticalAlignment="Top" Width="28"   Cursor="Hand" MouseDown="ShowPasswordA_MouseDown" >
+
+        </Image>
+        <Image x:Name="HidePasswordA" HorizontalAlignment="Left" Height="28" Source="/eye2.png" Margin="1325,408,0,0" VerticalAlignment="Top" Width="28"   Visibility="Hidden" Cursor="Hand" MouseUp="HidePasswordA_MouseUp" MouseLeave="HidePasswordA_MouseLeave">
+        </Image>
+        <Button x:Name="ButtonComeInAuthorization" Content="Войти" HorizontalAlignment="Left" Margin="1096,503,0,0" VerticalAlignment="Top"  FontSize="20" FontFamily="pack://application:,,,/fonts/#Jost Medium" Width="178" Height="45" Cursor="Hand" Background="#ff6666" Foreground="White" BorderBrush="#ff6666" Click="ButtonComeInAuthorization_Click">
+            <Button.Effect>
+                <DropShadowEffect Color="#FFE0E0E0"/>
+            </Button.Effect>
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border CornerRadius="6"
+                                Background="{TemplateBinding Background}">
+
+                                    <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="RenderTransformOrigin" Value="0.5, 0.5"/>
+                            <Setter Property="RenderTransform">
+                                <Setter.Value>
+                                    <ScaleTransform ScaleX="1.1" ScaleY="1.1"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+        </Button>
+        <Button x:Name="ButtonLinkToRegistrationAuthorization" Content="Ещё нет аккаунта?" FontSize="18" HorizontalAlignment="Left" Height="33" Margin="1096,553,0,0" VerticalAlignment="Top" Width="176" FontFamily="pack://application:,,,/fonts/#Jost Regular" Background="{x:Null}" BorderBrush="{x:Null}" Cursor="Hand" Click="ButtonLinkToRegistrationAuthorization_Click">
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border CornerRadius="12"
+                                Background="{TemplateBinding Background}">
+
+                                    <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="RenderTransformOrigin" Value="0.5, 0.5"/>
+                            <Setter Property="RenderTransform">
+                                <Setter.Value>
+                                    <ScaleTransform ScaleX="1.05" ScaleY="1.05"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+        </Button>
     </Grid>
 </Window>
