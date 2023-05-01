@@ -29,11 +29,28 @@ namespace LibraryConnectingDB
             }
         }
 
-        public void AddLessonToDB(Lesson lesson)
+        //public void AddLessonToDB(Lesson lesson)
+        //{
+        //    using (var db = new ConnectDB())
+        //    {
+        //        db.Lessons.Add(lesson);
+        //        try
+        //        {
+        //            while (true)
+        //            {
+        //                db.SaveChanges();
+        //                break;
+        //            }
+        //        }
+        //        catch (Exception) { }
+        //    }
+        //}
+        public void AddWriteToDB(StudentWrite WriteTest)
         {
             using (var db = new ConnectDB())
             {
-                db.Lessons.Add(lesson);
+                db.Write.Add(WriteTest);
+
                 try
                 {
                     while (true)
@@ -45,6 +62,24 @@ namespace LibraryConnectingDB
                 catch (Exception) { }
             }
         }
+        public void AddTaskToDB(StudentTask Task)
+        {
+            using (var db = new ConnectDB())
+            {
+                db.Task.Add(Task);
+
+                try
+                {
+                    while (true)
+                    {
+                        db.SaveChanges();
+                        break;
+                    }
+                }
+                catch (Exception) { }
+            }
+        }
+
     }
     
 

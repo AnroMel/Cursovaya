@@ -31,29 +31,7 @@ namespace DiscreteMathCursovaya
 
         private void ButtonComeInAuthorization_Click(object sender, RoutedEventArgs e)
         {
-            var exampleUser = new User()
-            {
-                FirstName="test1",
-                LastName="test2",
-                Login="testLogin",
-                Password="qweqweqwe",
-                Group="IB-31BO",
-            };
-            try
-            {
-                using (DBContext dBContext = new DBContext())
-                {
-                    dBContext.Users.Add(exampleUser);
-                    dBContext.SaveChanges();
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            
 
-            return;
             if (TextBoxLoginAuthorization.Text == "")
             {
                 MessageBox.Show("Введите логин", "Ошибка ввода");

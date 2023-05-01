@@ -12,5 +12,7 @@ namespace LibraryConnectingDB
     public interface IConnectDB
     {
         void AddUserToDB(User user);
+        void AddWriteToDB(StudentWrite WriteTest);
+        void AddTaskToDB(StudentTask Task);
     }
 }

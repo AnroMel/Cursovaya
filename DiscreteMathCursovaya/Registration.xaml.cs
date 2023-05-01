@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Text.RegularExpressions;
 using LibraryConnectingDB;
+using LibraryConnectingDB.Models;
 namespace DiscreteMathCursovaya
 {
     /// <summary>
