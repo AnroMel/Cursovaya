@@ -23,11 +23,18 @@ namespace DiscreteMathCursovaya
     {
         private IConnectDB dbconnect;
         private string? Login;
+        private string? Group;
+        private Rectangle[] rectangles;
         public Registration()
         {
             InitializeComponent();
             Login = TextBoxLoginRegestration.Text;
-            
+            rectangles = new Rectangle[]
+            {
+                imgG1,
+                imgG2,
+                imgG3,
+            };
         }
 
         private void ButtonComeInRegestration_Click(object sender, RoutedEventArgs e)
@@ -69,8 +76,8 @@ namespace DiscreteMathCursovaya
                     FirstName = TextBoxNameRegestration.Text,
                     LastName = TextBoxSurNameRegestration.Text,
                     Login = TextBoxLoginRegestration.Text,
-                    Password = PasswordBoxRegestration.Password,
-                    Group = "Ib"
+                    Password = Crypt.GetHashPassword(PasswordBoxRegestration.Password),
+                    Group = Group
                 }
                 ) ;
             MenuLessons window = new MenuLessons(Login);
@@ -104,26 +111,15 @@ namespace DiscreteMathCursovaya
         bool? userGroup = null;
         private void Group1_Click(object sender, RoutedEventArgs e)
         {
+            var currentButton = (sender as Button);
+            Group = currentButton.Content.ToString();
+            int num = int.Parse(currentButton.Name.Last().ToString())-1;
             userGroup = true;
-            imgG2.Visibility = Visibility.Hidden;
-            imgG3.Visibility = Visibility.Hidden;
-            imgG1.Visibility = Visibility;
-        }
-
-        private void Group2_Click(object sender, RoutedEventArgs e)
-        {
-            userGroup = true;
-            imgG1.Visibility = Visibility.Hidden;
-            imgG3.Visibility = Visibility.Hidden;
-            imgG2.Visibility = Visibility;
-        }
-
-        private void Group3_Click(object sender, RoutedEventArgs e)
-        {
-            userGroup = true;
-            imgG2.Visibility = Visibility.Hidden;
-            imgG1.Visibility = Visibility.Hidden;
-            imgG3.Visibility = Visibility;
+            foreach (var rectangle in rectangles)
+            {
+                rectangle.Visibility = Visibility.Hidden;
+            }
+            rectangles[num].Visibility = Visibility;
         }
         #endregion
 

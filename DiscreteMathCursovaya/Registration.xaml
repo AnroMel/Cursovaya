@@ -190,7 +190,7 @@
                 </Style>
             </Button.Style>
         </Button>
-        <Button x:Name="Group2" Content="ПМИ-2" FontSize="18" HorizontalAlignment="Left" Height="42" Margin="1204,402,0,0" VerticalAlignment="Top" Width="62" FontFamily="pack://application:,,,/fonts/#Jost Regular" Background="{x:Null}" BorderBrush="{x:Null}" Cursor="Hand" Click="Group2_Click">
+        <Button x:Name="Group2" Content="ПМИ-2" FontSize="18" HorizontalAlignment="Left" Height="42" Margin="1204,402,0,0" VerticalAlignment="Top" Width="62" FontFamily="pack://application:,,,/fonts/#Jost Regular" Background="{x:Null}" BorderBrush="{x:Null}" Cursor="Hand" Click="Group1_Click">
             <Button.Style>
                 <Style TargetType="{x:Type Button}">
                     <Setter Property="Template">
@@ -218,7 +218,7 @@
                 </Style>
             </Button.Style>
         </Button>
-        <Button x:Name="Group3" Content="МКН-2" FontSize="18" HorizontalAlignment="Left" Height="42" Margin="1291,402,0,0" VerticalAlignment="Top" Width="62" FontFamily="pack://application:,,,/fonts/#Jost Regular" Background="{x:Null}" BorderBrush="{x:Null}" Cursor="Hand" Click="Group3_Click">
+        <Button x:Name="Group3" Content="МКН-2" FontSize="18" HorizontalAlignment="Left" Height="42" Margin="1291,402,0,0" VerticalAlignment="Top" Width="62" FontFamily="pack://application:,,,/fonts/#Jost Regular" Background="{x:Null}" BorderBrush="{x:Null}" Cursor="Hand" Click="Group1_Click">
             <Button.Style>
                 <Style TargetType="{x:Type Button}">
                     <Setter Property="Template">
