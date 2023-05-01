@@ -8,8 +8,8 @@
              WindowState="Maximized"
         Icon="/images/icon2.png"
         Title="Урок 1" Height="2172" Width="1600" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize"  FontFamily="pack://application:,,,/fonts/#Jost Regular">
-
-    <Grid>
+    <ScrollViewer>
+        <Grid>
         <TextBlock x:Name="TextTaskM1Y1" HorizontalAlignment="Left" Margin="63,58,0,0" TextWrapping="Wrap" Text="text1" VerticalAlignment="Top" Height="73" Width="623" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="16"/>
         <TextBox x:Name="Task1M1Y1" MaxLength="10" HorizontalAlignment="Left" Margin="63,136,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="265" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39"  VerticalContentAlignment="Center" Padding="4,4,4,4" Cursor="IBeam">
             <TextBox.Template >
@@ -174,4 +174,6 @@
             </Button.Style>
         </Button>
     </Grid>
+    </ScrollViewer>
+
 </Window>
