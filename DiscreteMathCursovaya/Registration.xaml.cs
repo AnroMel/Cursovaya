@@ -49,6 +49,11 @@ namespace DiscreteMathCursovaya
                 MessageBox.Show("Фамилия должна соответствовать следующим требованиям:\n 1.Длина не менее 3 символов и не более 30 \n 2.Cодержит только буквы русского алфавита", "Ошибка ввода");
                 return;
             }
+            if (!userGroup.HasValue)
+            {
+                MessageBox.Show("Выберите группу", "Ошибка ввода");
+                return;
+            }
             if (!Verification(TextBoxLoginRegestration))
             {
                 MessageBox.Show("Логин должен соответствовать следующим требованиям:\n 1.Длина не менее 3 символов и не более 30 \n 2.Cодержит только латинские буквы и цифры", "Ошибка ввода");
@@ -56,11 +61,7 @@ namespace DiscreteMathCursovaya
             }
             if (IsUserExists())
                 return;
-            if (!userGroup.HasValue)
-            {
-                MessageBox.Show("Выберите группу", "Ошибка ввода");
-                return;
-            }
+           
             if (!PasswordVerification(PasswordBoxRegestration))
             {
                 MessageBox.Show("Пароль должен соответствовать следующим требованиям:\n 1.Длина не менее 7 символов \n 2.Cодержит только латинские буквы и цифры \n 3.Cодержит хотя бы 1 букву верхнего регистра \n 4.Cодержит хотя бы 1 букву нижнего регистра \n 5.Cодержит хотя бы 1 цифру", "Ошибка ввода");
@@ -68,21 +69,25 @@ namespace DiscreteMathCursovaya
             }
 
             //КЛАДЕМ ЗНАЧЕНИЯ В БД
-            dbconnect = new ConnectingDB();
-            dbconnect.AddUserToDB(
-                new User()
-                {
-                    
-                    FirstName = TextBoxNameRegestration.Text,
-                    LastName = TextBoxSurNameRegestration.Text,
-                    Login = TextBoxLoginRegestration.Text,
-                    Password = Crypt.GetHashPassword(PasswordBoxRegestration.Password),
-                    Group = Group
-                }
-                ) ;
-            MenuLessons window = new MenuLessons(Login);
-            window.Show();
-            Close();
+            using (OverrideCursor cursor = new OverrideCursor(Cursors.Wait))
+            {
+                dbconnect = new ConnectingDB();
+                dbconnect.AddUserToDB(
+                    new User()
+                    {
+
+                        FirstName = TextBoxNameRegestration.Text,
+                        LastName = TextBoxSurNameRegestration.Text,
+                        Login = TextBoxLoginRegestration.Text,
+                        Password = Crypt.GetHashPassword(PasswordBoxRegestration.Password),
+                        Group = Group
+                    }
+                    );
+            
+                MenuLessons window = new MenuLessons(Login);
+                window.Show();
+                Close();
+            }
         }
         public static bool NameVerification(TextBox temp)
         {
@@ -102,8 +107,13 @@ namespace DiscreteMathCursovaya
         public Boolean IsUserExists()
         {
             //ПРОВЕРКА НА СУЩЕСТВУЮЩИЙ ЛОГИН В БД
-            
-                //MessageBox.Show("Пользователь с таким логином уже существует ");
+            dbconnect = new ConnectingDB();
+            var user = dbconnect.FirstOrDefault(TextBoxLoginRegestration.Text);
+            if (user != null)
+            {
+                MessageBox.Show("Пользователь с таким логином уже существует ");
+                return true;
+            }    
                 return false;
         }
 

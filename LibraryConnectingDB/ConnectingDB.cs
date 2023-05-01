@@ -80,6 +80,24 @@ namespace LibraryConnectingDB
             }
         }
 
+        public User FirstOrDefault(string login)
+        {
+            using (var db = new ConnectDB())
+            {
+                User user = db.Users.FirstOrDefault(i => i.Login == login);
+                return user;
+            }
+        }
+
+        public User FirstOrDefaultLoginAndPassword(string Login, string password)
+        {
+            using (var db = new ConnectDB()) 
+            { 
+                 User user = db.Users.FirstOrDefault(i => i.Login == Login && i.Password == password);
+                 return user;
+            }
+        }
+
     }
 
 }
