@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
 using LibraryConnectingDB.Models;
+using System.Reflection;
 
 namespace LibraryConnectingDB
 {
@@ -62,6 +63,7 @@ namespace LibraryConnectingDB
                 catch (Exception) { }
             }
         }
+
         public void AddTaskToDB(StudentTask Task)
         {
             using (var db = new ConnectDB())
@@ -90,13 +92,32 @@ namespace LibraryConnectingDB
 
             }
         }
+        public Lesson FirstOrDefaultCodLesson(int moduleID, int Numb)
+        {
+            using (var db = new ConnectDB())
+            {
+
+                Lesson lesson = db.Lessons.FirstOrDefault(i => i.ModuleId == moduleID && i.Numb == Numb);
+                return lesson;
+
+            }
+        }
+
 
         public User FirstOrDefaultLoginAndPassword(string Login, string password)
         {
             using (var db = new ConnectDB())
             {
-                User user = db.Users.FirstOrDefault(i => i.Login == Login && i.Password == password);
-                return user;
+                User user;
+                while (true)
+                {
+                    try
+                    {
+                        user = db.Users.FirstOrDefault(i => i.Login == Login && i.Password == password);
+                        return user;
+                    }
+                    catch (Exception) { }
+                }
             }
         }
 
@@ -125,37 +146,42 @@ namespace LibraryConnectingDB
 
                 User user = db.Users.FirstOrDefault(i => i.Login == login);  
                 Lesson lesson = db.Lessons.FirstOrDefault(i => i.ModuleId == moduleId && i.Numb == NumbLesson);
-
-                StudentWrite write = db.Write.FirstOrDefault(i => i.StudentId == user.Id && i.LessonsId == lesson.Code);
+                StudentWrite write = db.Write.FirstOrDefault(i => i.StudentId == user.Id && i.LessonId == lesson.Code);
                 return write;
             }
 
         }
 
-        //public StudentWrite UpdateWriteCount( StudentWrite write)
-        //{
-        //    using (var db = new ConnectDB())
-        //    {
-        //        write.CountAttempt++;
-        //        return write;
-
-        //    }
-        //}
-
-        public void DecreaseWriteMark(StudentWrite write)
+        public void UpdateWriteMarkAndCount(StudentWrite write, decimal mark)
         {
             using (var db = new ConnectDB())
-            {//Попытка может и ноль потом решим
+            {
+                if (write.CountAttempt == 0)
+                {
+                    write.Mark = decimal.Multiply(mark, 0.8m);
+                }
                 if (write.CountAttempt == 1)
                 {
-                    write.Mark = decimal.Multiply(write.Mark,0.8m);
+                    write.Mark = decimal.Multiply(mark, 0.6m);
                 }
-                if(write.CountAttempt == 2)
-                {
-                    write.Mark = decimal.Multiply(write.Mark, 0.6m);
-                }
-
+                write.CountAttempt = write.CountAttempt + 1;
+                db.SaveChanges();
             }
         }
+        //public void DecreaseWriteMark(StudentWrite write)
+        //{
+        //    using (var db = new ConnectDB())
+        //    {//Попытка может и ноль потом решим
+        //        if (write.CountAttempt == 1)
+        //        {
+        //            write.Mark = decimal.Multiply(write.Mark,0.8m);
+        //        }
+        //        if(write.CountAttempt == 2)
+        //        {
+        //            write.Mark = decimal.Multiply(write.Mark, 0.6m);
+        //        }
+        //        db.SaveChanges();
+        //    }
+        //}
     }
 }

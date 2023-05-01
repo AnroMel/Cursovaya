@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using LibraryConnectingDB;
+using LibraryConnectingDB.Models;
 
 namespace DiscreteMathCursovaya
 {
@@ -20,6 +22,7 @@ namespace DiscreteMathCursovaya
     public partial class MenuLessons : Window
     {
         private string Login;
+        private IConnectDB dbconnect;
         public MenuLessons(string login)
         {
             Login = login;
@@ -28,9 +31,22 @@ namespace DiscreteMathCursovaya
 
         private void Yrok1_1_Click(object sender, RoutedEventArgs e)
         {
-            M1Y1 window = new M1Y1();
-            window.Show();
-            Close();
+            using (OverrideCursor cursor = new OverrideCursor(Cursors.Wait))
+            {
+                dbconnect = new ConnectingDB();
+                var write = dbconnect.FirstOrDefaultWrite(Login,1,1);
+                if (write == null || write.CountAttempt == 0 || write.CountAttempt == 1)
+                {
+                    M1Y1 window = new M1Y1(Login);
+                    window.Show();
+                    Close();
+                    
+                }
+                else
+                {
+                    MessageBox.Show("Превышено количество попыток");
+                }
+            }
         }
     }
 }

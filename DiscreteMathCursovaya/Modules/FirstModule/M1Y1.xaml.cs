@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LibraryConnectingDB;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,6 +12,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using LibraryConnectingDB.Models;
+using System.Reflection;
 
 namespace DiscreteMathCursovaya
 {
@@ -19,6 +22,7 @@ namespace DiscreteMathCursovaya
     /// </summary>
     public partial class M1Y1 : Window
     {
+        //TODO Изменить 
         static Random random = new Random();
         static string RandomTemp1;
         static string RandomTemp21;
@@ -31,12 +35,15 @@ namespace DiscreteMathCursovaya
         static string RandomTemp7;
         static string RandomTemp8;
         static string RandomTemp9;
-        public M1Y1()
+        private IConnectDB dbconnect;
+        private string Login;
+        public M1Y1(string login)
         {
             InitializeComponent();
+            Login = login;
             RandomTemp1 = random.Next(5, 10).ToString();
-            RandomTemp21 = random.Next(10, 15).ToString();
-            RandomTemp22 = random.Next(5, 8).ToString();
+            RandomTemp21 = random.Next(5, 10).ToString();
+            RandomTemp22 = random.Next(5, 6).ToString();
             RandomTemp31 = random.Next(5, 9).ToString();
             RandomTemp32 = random.Next(2, 4).ToString();
             RandomTemp4 = random.Next(5, 11).ToString();
@@ -96,25 +103,54 @@ namespace DiscreteMathCursovaya
                 return true;
             return false;
         }
-        
+
         private void ButtonFinishTask1_Click(object sender, RoutedEventArgs e)
         {
-            int resalt = 0;
+            decimal resalt = 0.0m;
             if (VerificationTask1(Task1M1Y1))
-                resalt += 1;
+                resalt += 1.0m;
             if (VerificationTask2(Task2M1Y1))
-                resalt += 1;
+                resalt += 1.0m;
             if (VerificationTask3(Task3M1Y1))
-                resalt += 1;
+                resalt += 1.0m;
             if (VerificationTask4(Task4M1Y1))
-                resalt += 1;
+                resalt += 1.0m;
             if (VerificationTask5(Task5M1Y1))
-                resalt += 1;
+                resalt += 1.0m;
             if (VerificationTask6(Task6M1Y1))
-                resalt += 1;
+                resalt += 1.0m;
             if (VerificationTask7(Task7M1Y1))
-                resalt += 1;
+                resalt += 1.0m;
+            resalt = resalt / 11.0m;
 
+            dbconnect = new ConnectingDB();
+            var write = dbconnect.FirstOrDefaultWrite(Login, 1, 1);
+            if (write == null)
+            {
+                var user = dbconnect.FirstOrDefault(Login);
+                var lesson = dbconnect.FirstOrDefaultCodLesson(1, 1);
+                if (user != null)
+                {
+                    dbconnect.AddWriteToDB(new StudentWrite()
+                    {
+                        CountAttempt = 0,
+                        Mark = resalt,
+                        StudentId = user.Id,
+                        LessonId = lesson.Code
+                    });
+                }
+                else
+                {
+                    MessageBox.Show("Произошла ошибка при входе в приложение", "Ошибка");
+                }
+            }
+            else 
+            {
+                dbconnect.UpdateWriteMarkAndCount(write, resalt);
+            }
+            MenuLessons window = new MenuLessons(Login);
+            window.Show();
+            Close();
         }
 
     }

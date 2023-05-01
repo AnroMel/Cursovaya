@@ -1,4 +1,4 @@
-﻿using DiscreteMathCursovaya.models;
+﻿
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,12 +23,10 @@ namespace DiscreteMathCursovaya
     /// </summary>
     public partial class MainWindow : Window
     {
-        private string? Login;
         private IConnectDB dbconnect;
         public MainWindow()
         {
             InitializeComponent();
-            Login = TextBoxLoginAuthorization.Text;
         }
 
         private void ButtonComeInAuthorization_Click(object sender, RoutedEventArgs e)
@@ -55,8 +53,8 @@ namespace DiscreteMathCursovaya
                 }
                 else
                 {
-
-                    MenuLessons window = new MenuLessons(Login);
+                    
+                    MenuLessons window = new MenuLessons(TextBoxLoginAuthorization.Text);
                     window.Show();
                     Close();
 
@@ -98,5 +96,7 @@ namespace DiscreteMathCursovaya
             PasswordBoxAuthorization.Focus();
         }
         #endregion
+
+        
     }
 }

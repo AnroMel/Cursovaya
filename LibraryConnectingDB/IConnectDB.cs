@@ -16,6 +16,11 @@ namespace LibraryConnectingDB
         void AddTaskToDB(StudentTask Task);
 
         User FirstOrDefault(string login);
+        Lesson FirstOrDefaultCodLesson(int moduleID, int Numb);
         User FirstOrDefaultLoginAndPassword(string Login, string password);
+        StudentWrite FirstOrDefaultWrite(string login, int moduleId, int NumbLesson);
+        void UpdateWriteMarkAndCount(StudentWrite write, decimal mark);
+        //void DecreaseWriteMark(StudentWrite write);
+
     }
 }
