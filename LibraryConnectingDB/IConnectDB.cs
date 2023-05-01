@@ -14,5 +14,8 @@ namespace LibraryConnectingDB
         void AddUserToDB(User user);
         void AddWriteToDB(StudentWrite WriteTest);
         void AddTaskToDB(StudentTask Task);
+
+        User FirstOrDefault(string login);
+        User FirstOrDefaultLoginAndPassword(string Login, string password);
     }
 }

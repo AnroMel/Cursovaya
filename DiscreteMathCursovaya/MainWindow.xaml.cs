@@ -13,7 +13,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-
+using LibraryConnectingDB;
+using LibraryConnectingDB.Models;
 
 namespace DiscreteMathCursovaya
 {
@@ -23,6 +24,7 @@ namespace DiscreteMathCursovaya
     public partial class MainWindow : Window
     {
         private string? Login;
+        private IConnectDB dbconnect;
         public MainWindow()
         {
             InitializeComponent();
@@ -43,9 +45,23 @@ namespace DiscreteMathCursovaya
                 return;
             }
             //ПОИСК ПОЛЬЗОВАТЕЛЯ В БД
-            MenuLessons window = new MenuLessons(Login);
-            window.Show();
-            Close();
+            using (OverrideCursor cursor = new OverrideCursor(Cursors.Wait))
+            {
+                dbconnect = new ConnectingDB();
+                var user = dbconnect.FirstOrDefaultLoginAndPassword(TextBoxLoginAuthorization.Text, Crypt.GetHashPassword(PasswordBoxAuthorization.Password));
+                if (user == null)
+                {
+                    MessageBox.Show("Неправильно введен логин или пароль ", "Ошибка ввода");
+                }
+                else
+                {
+
+                    MenuLessons window = new MenuLessons(Login);
+                    window.Show();
+                    Close();
+
+                }
+            }
         }
 
         private void ButtonLinkToRegistrationAuthorization_Click(object sender, RoutedEventArgs e)
