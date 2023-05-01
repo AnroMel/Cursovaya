@@ -99,14 +99,21 @@ namespace DiscreteMathCursovaya
         
         private void ButtonFinishTask1_Click(object sender, RoutedEventArgs e)
         {
+            int resalt = 0;
             if (VerificationTask1(Task1M1Y1))
-            {
-                
-            }
+                resalt += 1;
             if (VerificationTask2(Task2M1Y1))
-            {
-                
-            }
+                resalt += 1;
+            if (VerificationTask3(Task3M1Y1))
+                resalt += 1;
+            if (VerificationTask4(Task4M1Y1))
+                resalt += 1;
+            if (VerificationTask5(Task5M1Y1))
+                resalt += 1;
+            if (VerificationTask6(Task6M1Y1))
+                resalt += 1;
+            if (VerificationTask7(Task7M1Y1))
+                resalt += 1;
 
         }
 
