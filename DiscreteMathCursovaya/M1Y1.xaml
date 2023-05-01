@@ -1,0 +1,177 @@
+﻿<Window x:Class="DiscreteMathCursovaya.M1Y1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DiscreteMathCursovaya"
+        mc:Ignorable="d"
+             WindowState="Maximized"
+        Icon="/images/icon2.png"
+        Title="Урок 1" Height="2172" Width="1600" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize"  FontFamily="pack://application:,,,/fonts/#Jost Regular">
+
+    <Grid>
+        <TextBlock x:Name="TextTaskM1Y1" HorizontalAlignment="Left" Margin="63,58,0,0" TextWrapping="Wrap" Text="text1" VerticalAlignment="Top" Height="73" Width="623" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="16"/>
+        <TextBox x:Name="Task1M1Y1" MaxLength="10" HorizontalAlignment="Left" Margin="63,136,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="265" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39"  VerticalContentAlignment="Center" Padding="4,4,4,4" Cursor="IBeam">
+            <TextBox.Template >
+                <ControlTemplate >
+                    <Border Background="#FFF0F0F0" CornerRadius="6" Padding="2" BorderThickness="1" BorderBrush="#9f9f99">
+                        <Viewbox Stretch="Uniform" HorizontalAlignment="Left">
+                            <ScrollViewer  Margin="0" x:Name="PART_ContentHost"/>
+                        </Viewbox>
+                    </Border>
+                </ControlTemplate>
+            </TextBox.Template>
+        </TextBox>
+        <TextBlock x:Name="TextTask2M1Y1" HorizontalAlignment="Left" Margin="63,234,0,0" TextWrapping="Wrap" Text="text2" VerticalAlignment="Top" Height="73" Width="623" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="16"/>
+        <TextBox x:Name="Task2M1Y1" MaxLength="10" HorizontalAlignment="Left" Margin="63,312,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="265" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39"  VerticalContentAlignment="Center" Padding="4,4,4,4" Cursor="IBeam">
+            <TextBox.Template >
+                <ControlTemplate >
+                    <Border Background="#FFF0F0F0" CornerRadius="6" Padding="2" BorderThickness="1" BorderBrush="#9f9f99">
+                        <Viewbox Stretch="Uniform" HorizontalAlignment="Left">
+                            <ScrollViewer  Margin="0" x:Name="PART_ContentHost"/>
+                        </Viewbox>
+                    </Border>
+                </ControlTemplate>
+            </TextBox.Template>
+        </TextBox>
+        <TextBlock x:Name="TextTask3M1Y1" HorizontalAlignment="Left" Margin="63,410,0,0" TextWrapping="Wrap" Text="text3" VerticalAlignment="Top" Height="73" Width="623" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="16"/>
+        <TextBox x:Name="Task3M1Y1" MaxLength="10" HorizontalAlignment="Left" Margin="63,488,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="265" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39"  VerticalContentAlignment="Center" Padding="4,4,4,4" Cursor="IBeam" >
+            <TextBox.Template >
+                <ControlTemplate >
+                    <Border Background="#FFF0F0F0" CornerRadius="6" Padding="2" BorderThickness="1" BorderBrush="#9f9f99">
+                        <Viewbox Stretch="Uniform" HorizontalAlignment="Left">
+                            <ScrollViewer  Margin="0" x:Name="PART_ContentHost"/>
+                        </Viewbox>
+                    </Border>
+                </ControlTemplate>
+            </TextBox.Template>
+        </TextBox>
+        <TextBlock x:Name="TextTask4M1Y1" HorizontalAlignment="Left" Margin="63,586,0,0" TextWrapping="Wrap" Text="text4" VerticalAlignment="Top" Height="73" Width="623" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="16"/>
+        <TextBox x:Name="Task4M1Y1" MaxLength="10" HorizontalAlignment="Left" Margin="63,664,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="265" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39"  VerticalContentAlignment="Center" Padding="4,4,4,4" Cursor="IBeam" >
+            <TextBox.Template >
+                <ControlTemplate >
+                    <Border Background="#FFF0F0F0" CornerRadius="6" Padding="2" BorderThickness="1" BorderBrush="#9f9f99">
+                        <Viewbox Stretch="Uniform" HorizontalAlignment="Left">
+                            <ScrollViewer  Margin="0" x:Name="PART_ContentHost"/>
+                        </Viewbox>
+                    </Border>
+                </ControlTemplate>
+            </TextBox.Template>
+        </TextBox>
+        <TextBlock x:Name="TextTask5M1Y1" HorizontalAlignment="Left" Margin="63,762,0,0" TextWrapping="Wrap" Text="text5" VerticalAlignment="Top" Height="73" Width="623" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="16"/>
+        <TextBox x:Name="Task5M1Y1" MaxLength="10" HorizontalAlignment="Left" Margin="63,840,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="265" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39"  VerticalContentAlignment="Center" Padding="4,4,4,4" Cursor="IBeam" >
+            <TextBox.Template >
+                <ControlTemplate >
+                    <Border Background="#FFF0F0F0" CornerRadius="6" Padding="2" BorderThickness="1" BorderBrush="#9f9f99">
+                        <Viewbox Stretch="Uniform" HorizontalAlignment="Left">
+                            <ScrollViewer  Margin="0" x:Name="PART_ContentHost"/>
+                        </Viewbox>
+                    </Border>
+                </ControlTemplate>
+            </TextBox.Template>
+        </TextBox>
+        <TextBlock x:Name="TextTask6M1Y1" HorizontalAlignment="Left" Margin="63,938,0,0" TextWrapping="Wrap" Text="text6" VerticalAlignment="Top" Height="73" Width="623" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="16"/>
+        <TextBox x:Name="Task6M1Y1" MaxLength="10" HorizontalAlignment="Left" Margin="63,1016,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="265" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39"  VerticalContentAlignment="Center" Padding="4,4,4,4" Cursor="IBeam" >
+            <TextBox.Template >
+                <ControlTemplate >
+                    <Border Background="#FFF0F0F0" CornerRadius="6" Padding="2" BorderThickness="1" BorderBrush="#9f9f99">
+                        <Viewbox Stretch="Uniform" HorizontalAlignment="Left">
+                            <ScrollViewer  Margin="0" x:Name="PART_ContentHost"/>
+                        </Viewbox>
+                    </Border>
+                </ControlTemplate>
+            </TextBox.Template>
+        </TextBox>
+        <TextBlock x:Name="TextTask7M1Y1" HorizontalAlignment="Left" Margin="63,1114,0,0" TextWrapping="Wrap" Text="text7" VerticalAlignment="Top" Height="73" Width="623" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="16"/>
+        <TextBox x:Name="Task7M1Y1" MaxLength="10" HorizontalAlignment="Left" Margin="63,1192,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="265" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39"  VerticalContentAlignment="Center" Padding="4,4,4,4" Cursor="IBeam" >
+            <TextBox.Template >
+                <ControlTemplate >
+                    <Border Background="#FFF0F0F0" CornerRadius="6" Padding="2" BorderThickness="1" BorderBrush="#9f9f99">
+                        <Viewbox Stretch="Uniform" HorizontalAlignment="Left">
+                            <ScrollViewer  Margin="0" x:Name="PART_ContentHost"/>
+                        </Viewbox>
+                    </Border>
+                </ControlTemplate>
+            </TextBox.Template>
+        </TextBox>
+        <TextBlock x:Name="TextTask8M1Y1" HorizontalAlignment="Left" Margin="63,1290,0,0" TextWrapping="Wrap" Text="text8" VerticalAlignment="Top" Height="73" Width="623" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="16"/>
+        <TextBox x:Name="Task8M1Y1" MaxLength="10" HorizontalAlignment="Left" Margin="63,1368,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="265" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39"  VerticalContentAlignment="Center" Padding="4,4,4,4" Cursor="IBeam" >
+            <TextBox.Template >
+                <ControlTemplate >
+                    <Border Background="#FFF0F0F0" CornerRadius="6" Padding="2" BorderThickness="1" BorderBrush="#9f9f99">
+                        <Viewbox Stretch="Uniform" HorizontalAlignment="Left">
+                            <ScrollViewer  Margin="0" x:Name="PART_ContentHost"/>
+                        </Viewbox>
+                    </Border>
+                </ControlTemplate>
+            </TextBox.Template>
+        </TextBox>
+        <TextBlock x:Name="TextTask9M1Y1" HorizontalAlignment="Left" Margin="63,1466,0,0" TextWrapping="Wrap" Text="text9" VerticalAlignment="Top" Height="73" Width="623" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="16"/>
+        <TextBox x:Name="Task9M1Y1" MaxLength="10" HorizontalAlignment="Left" Margin="63,1544,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="265" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39"  VerticalContentAlignment="Center" Padding="4,4,4,4" Cursor="IBeam" >
+            <TextBox.Template >
+                <ControlTemplate >
+                    <Border Background="#FFF0F0F0" CornerRadius="6" Padding="2" BorderThickness="1" BorderBrush="#9f9f99">
+                        <Viewbox Stretch="Uniform" HorizontalAlignment="Left">
+                            <ScrollViewer  Margin="0" x:Name="PART_ContentHost"/>
+                        </Viewbox>
+                    </Border>
+                </ControlTemplate>
+            </TextBox.Template>
+        </TextBox>
+        <TextBlock x:Name="TextTask10M1Y1" HorizontalAlignment="Left" Margin="63,1642,0,0" TextWrapping="Wrap" Text="text10" VerticalAlignment="Top" Height="73" Width="623" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="16"/>
+        <TextBox x:Name="Task10M1Y1" MaxLength="10" HorizontalAlignment="Left" Margin="63,1720,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="265" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39"  VerticalContentAlignment="Center" Padding="4,4,4,4" Cursor="IBeam" >
+            <TextBox.Template >
+                <ControlTemplate >
+                    <Border Background="#FFF0F0F0" CornerRadius="6" Padding="2" BorderThickness="1" BorderBrush="#9f9f99">
+                        <Viewbox Stretch="Uniform" HorizontalAlignment="Left">
+                            <ScrollViewer  Margin="0" x:Name="PART_ContentHost"/>
+                        </Viewbox>
+                    </Border>
+                </ControlTemplate>
+            </TextBox.Template>
+        </TextBox>
+        <TextBlock x:Name="TextTask11M1Y1" HorizontalAlignment="Left" Margin="63,1818,0,0" TextWrapping="Wrap" Text="text11" VerticalAlignment="Top" Height="73" Width="623" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="16"/>
+        <TextBox x:Name="Task11M1Y1" MaxLength="10" HorizontalAlignment="Left" Margin="63,1896,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="265" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39"  VerticalContentAlignment="Center" Padding="4,4,4,4" Cursor="IBeam" >
+            <TextBox.Template >
+                <ControlTemplate >
+                    <Border Background="#FFF0F0F0" CornerRadius="6" Padding="2" BorderThickness="1" BorderBrush="#9f9f99">
+                        <Viewbox Stretch="Uniform" HorizontalAlignment="Left">
+                            <ScrollViewer  Margin="0" x:Name="PART_ContentHost"/>
+                        </Viewbox>
+                    </Border>
+                </ControlTemplate>
+            </TextBox.Template>
+        </TextBox>
+        <Button x:Name="ButtonFinishTask1" Content="Завершить" HorizontalAlignment="Left" Margin="800,1894,0,0" VerticalAlignment="Top"  FontSize="20" FontFamily="pack://application:,,,/fonts/#Jost Medium" Width="272" Height="44" Cursor="Hand" Background="#ff6666" Foreground="White" BorderBrush="#ff6666" Click="ButtonFinishTask1_Click"  >
+            <Button.Effect>
+                <DropShadowEffect Color="#FFE0E0E0"/>
+            </Button.Effect>
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border CornerRadius="6"
+                                Background="{TemplateBinding Background}">
+
+                                    <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="RenderTransformOrigin" Value="0.5, 0.5"/>
+                            <Setter Property="RenderTransform">
+                                <Setter.Value>
+                                    <ScaleTransform ScaleX="1.1" ScaleY="1.1"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+        </Button>
+    </Grid>
+</Window>

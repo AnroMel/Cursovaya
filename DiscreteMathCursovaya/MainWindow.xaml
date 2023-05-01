@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:DiscreteMathCursovaya"
         mc:Ignorable="d"
         WindowState="Maximized"
-        Icon="/images/icon2.png"
+        Icon="./images/icon2.png"
         Title="Authorization" Width="1600" Height="900" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize"  FontFamily="pack://application:,,,/fonts/#Jost Regular">
 
     <Grid Background="#FFF0F0F0">
@@ -21,22 +21,22 @@
         <Label x:Name="Text_h34" Content="Двудольные графы" HorizontalAlignment="Left" Margin="166,665,0,0" VerticalAlignment="Top" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="23" Width="491" Height="52"/>
         <Rectangle HorizontalAlignment="Left" Height="18" Width="20" Margin="129,575,0,0" VerticalAlignment="Top">
             <Rectangle.Fill>
-                <ImageBrush ImageSource="/circle.png"/>
+                <ImageBrush ImageSource="/images/circle.png"/>
             </Rectangle.Fill>
         </Rectangle>
         <Rectangle HorizontalAlignment="Left" Height="18" Width="20" Margin="129,612,0,0" VerticalAlignment="Top">
             <Rectangle.Fill>
-                <ImageBrush ImageSource="/circle.png"/>
+                <ImageBrush ImageSource="/images/circle.png"/>
             </Rectangle.Fill>
         </Rectangle>
         <Rectangle HorizontalAlignment="Left" Height="18" Width="20" Margin="129,647,0,0" VerticalAlignment="Top">
             <Rectangle.Fill>
-                <ImageBrush ImageSource="/circle.png"/>
+                <ImageBrush ImageSource="/images/circle.png"/>
             </Rectangle.Fill>
         </Rectangle>
         <Rectangle HorizontalAlignment="Left" Height="18" Width="20" Margin="129,681,0,0" VerticalAlignment="Top">
             <Rectangle.Fill>
-                <ImageBrush ImageSource="/circle.png"/>
+                <ImageBrush ImageSource="/images/circle.png"/>
             </Rectangle.Fill>
         </Rectangle>
 
@@ -76,10 +76,10 @@
                 </ControlTemplate>
             </TextBox.Template>
         </TextBox>
-        <Image x:Name="ShowPasswordA" HorizontalAlignment="Left" Height="28" Source="/eyeclose2.png" Margin="1325,408,0,0" VerticalAlignment="Top" Width="28"   Cursor="Hand" MouseDown="ShowPasswordA_MouseDown" >
+        <Image x:Name="ShowPasswordA" HorizontalAlignment="Left" Height="28" Source="/images/eyeclose2.png" Margin="1325,408,0,0" VerticalAlignment="Top" Width="28"   Cursor="Hand" MouseDown="ShowPasswordA_MouseDown" >
 
         </Image>
-        <Image x:Name="HidePasswordA" HorizontalAlignment="Left" Height="28" Source="/eye2.png" Margin="1325,408,0,0" VerticalAlignment="Top" Width="28"   Visibility="Hidden" Cursor="Hand" MouseUp="HidePasswordA_MouseUp" MouseLeave="HidePasswordA_MouseLeave">
+        <Image x:Name="HidePasswordA" HorizontalAlignment="Left" Height="28" Source="/images/eye2.png" Margin="1325,408,0,0" VerticalAlignment="Top" Width="28"   Visibility="Hidden" Cursor="Hand" MouseUp="HidePasswordA_MouseUp" MouseLeave="HidePasswordA_MouseLeave">
         </Image>
         <Button x:Name="ButtonComeInAuthorization" Content="Войти" HorizontalAlignment="Left" Margin="1096,503,0,0" VerticalAlignment="Top"  FontSize="20" FontFamily="pack://application:,,,/fonts/#Jost Medium" Width="178" Height="45" Cursor="Hand" Background="#ff6666" Foreground="White" BorderBrush="#ff6666" Click="ButtonComeInAuthorization_Click">
             <Button.Effect>

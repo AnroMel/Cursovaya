@@ -8,9 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="circle.png" />
-    <None Remove="eye2.png" />
-    <None Remove="eyeclose2.png" />
     <None Remove="fonts\Jost-ExtraLight.ttf" />
     <None Remove="fonts\Jost-Light.ttf" />
     <None Remove="fonts\Jost-Medium.ttf" />
@@ -29,15 +26,6 @@
     <None Remove="images\M3Y1.jpg" />
     <None Remove="images\M3Y2.jpg" />
     <None Remove="images\M3Y3.jpg" />
-    <None Remove="M1Y1.jpg" />
-    <None Remove="M1Y2.jpg" />
-    <None Remove="M1Y3.jpg" />
-    <None Remove="M1Y4.jpg" />
-    <None Remove="M2Y1.jpg" />
-    <None Remove="M2Y2.jpg" />
-    <None Remove="M3Y1.jpg" />
-    <None Remove="M3Y2.jpg" />
-    <None Remove="M3Y3.jpg" />
   </ItemGroup>
 
   <ItemGroup>
@@ -50,9 +38,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="circle.png" />
-    <Resource Include="eye2.png" />
-    <Resource Include="eyeclose2.png" />
     <Resource Include="fonts\Jost-ExtraLight.ttf">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
@@ -69,53 +54,44 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="images\circle.png">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="images\eye2.png">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="images\eyeclose2.png">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="images\icon2.png">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="images\M1Y1.jpg">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="images\M1Y2.jpg">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="images\M1Y3.jpg">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="images\M1Y4.jpg">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="images\M2Y1.jpg">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="images\M2Y2.jpg">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="images\M3Y1.jpg">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="images\M3Y2.jpg">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="images\M3Y3.jpg">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="M1Y1.jpg" />
-    <Resource Include="M1Y2.jpg" />
-    <Resource Include="M1Y3.jpg" />
-    <Resource Include="M1Y4.jpg" />
-    <Resource Include="M2Y1.jpg" />
-    <Resource Include="M2Y2.jpg" />
-    <Resource Include="M3Y1.jpg" />
-    <Resource Include="M3Y2.jpg" />
-    <Resource Include="M3Y3.jpg" />
   </ItemGroup>
 
 </Project>

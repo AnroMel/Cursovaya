@@ -20,22 +20,22 @@
         <Label x:Name="Text_h34" Content="Двудольные графы" HorizontalAlignment="Left" Margin="166,665,0,0" VerticalAlignment="Top" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="23" Width="491" Height="52"/>
         <Rectangle HorizontalAlignment="Left" Height="18" Width="20" Margin="129,575,0,0" VerticalAlignment="Top">
             <Rectangle.Fill>
-                <ImageBrush ImageSource="/circle.png"/>
+                <ImageBrush ImageSource="images/circle.png"/>
             </Rectangle.Fill>
         </Rectangle>
         <Rectangle HorizontalAlignment="Left" Height="18" Width="20" Margin="129,612,0,0" VerticalAlignment="Top">
             <Rectangle.Fill>
-                <ImageBrush ImageSource="/circle.png"/>
+                <ImageBrush ImageSource="images/circle.png"/>
             </Rectangle.Fill>
         </Rectangle>
         <Rectangle HorizontalAlignment="Left" Height="18" Width="20" Margin="129,647,0,0" VerticalAlignment="Top">
             <Rectangle.Fill>
-                <ImageBrush ImageSource="/circle.png"/>
+                <ImageBrush ImageSource="images/circle.png"/>
             </Rectangle.Fill>
         </Rectangle>
         <Rectangle HorizontalAlignment="Left" Height="18" Width="20" Margin="129,681,0,0" VerticalAlignment="Top">
             <Rectangle.Fill>
-                <ImageBrush ImageSource="/circle.png"/>
+                <ImageBrush ImageSource="images/circle.png"/>
             </Rectangle.Fill>
         </Rectangle>
 
@@ -99,8 +99,8 @@
                 </ControlTemplate>
             </TextBox.Template>
         </TextBox>
-        <Image x:Name="ShowPasswordA" HorizontalAlignment="Left" Height="28" Source="/eyeclose2.png" Margin="1325,593,0,0" VerticalAlignment="Top" Width="28"   Cursor="Hand" MouseDown="ShowPasswordA_MouseDown" ></Image>
-        <Image x:Name="HidePasswordA" HorizontalAlignment="Left" Height="28" Source="/eye2.png" Margin="1325,593,0,0" VerticalAlignment="Top" Width="28"   Visibility="Hidden" Cursor="Hand" MouseLeave="HidePasswordA_MouseLeave" MouseUp="HidePasswordA_MouseUp"></Image>
+        <Image x:Name="ShowPasswordA" HorizontalAlignment="Left" Height="28" Source="images/eyeclose2.png" Margin="1325,593,0,0" VerticalAlignment="Top" Width="28"   Cursor="Hand" MouseDown="ShowPasswordA_MouseDown" ></Image>
+        <Image x:Name="HidePasswordA" HorizontalAlignment="Left" Height="28" Source="images/eye2.png" Margin="1325,593,0,0" VerticalAlignment="Top" Width="28"   Visibility="Hidden" Cursor="Hand" MouseLeave="HidePasswordA_MouseLeave" MouseUp="HidePasswordA_MouseUp"></Image>
         <Button x:Name="ButtonComeInRegestration" Content="Зарегестрироваться" HorizontalAlignment="Left" Margin="1048,655,0,0" VerticalAlignment="Top"  FontSize="20" FontFamily="pack://application:,,,/fonts/#Jost Medium" Width="272" Height="45" Cursor="Hand" Background="#ff6666" Foreground="White" BorderBrush="#ff6666" Click="ButtonComeInRegestration_Click">
             <Button.Effect>
                 <DropShadowEffect Color="#FFE0E0E0"/>
@@ -248,17 +248,17 @@
         </Button>
         <Rectangle x:Name="imgG1" HorizontalAlignment="Left" Height="8" Width="9" Margin="1149,434,0,0" VerticalAlignment="Top" Visibility="Hidden">
             <Rectangle.Fill>
-                <ImageBrush ImageSource="/circle.png"/>
+                <ImageBrush ImageSource="images/circle.png"/>
             </Rectangle.Fill>
         </Rectangle>
         <Rectangle x:Name="imgG3" HorizontalAlignment="Left" Height="8" Width="9" Margin="1317,434,0,0" VerticalAlignment="Top" Visibility="Hidden">
             <Rectangle.Fill>
-                <ImageBrush ImageSource="/circle.png"/>
+                <ImageBrush ImageSource="images/circle.png"/>
             </Rectangle.Fill>
         </Rectangle>
         <Rectangle x:Name="imgG2" HorizontalAlignment="Left" Height="8" Width="9" Margin="1230,434,0,0" VerticalAlignment="Top" Visibility="Hidden">
             <Rectangle.Fill>
-                <ImageBrush ImageSource="/circle.png"/>
+                <ImageBrush ImageSource="images/circle.png"/>
             </Rectangle.Fill>
         </Rectangle>
     </Grid>

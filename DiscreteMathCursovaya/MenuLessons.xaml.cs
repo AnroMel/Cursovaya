@@ -25,5 +25,12 @@ namespace DiscreteMathCursovaya
             Login = login;
             InitializeComponent();
         }
+
+        private void Yrok1_1_Click(object sender, RoutedEventArgs e)
+        {
+            M1Y1 window = new M1Y1();
+            window.Show();
+            Close();
+        }
     }
 }
