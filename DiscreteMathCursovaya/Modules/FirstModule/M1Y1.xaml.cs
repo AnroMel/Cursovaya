@@ -121,7 +121,7 @@ namespace DiscreteMathCursovaya
                 resalt += 1.0m;
             if (VerificationTask7(Task7M1Y1))
                 resalt += 1.0m;
-            resalt = resalt / 11.0m;
+            resalt = Math.Round((resalt / 11.0m), 2);
 
             dbconnect = new ConnectingDB();
             var write = dbconnect.FirstOrDefaultWrite(Login, 1, 1);
@@ -129,15 +129,17 @@ namespace DiscreteMathCursovaya
             {
                 var user = dbconnect.FirstOrDefault(Login);
                 var lesson = dbconnect.FirstOrDefaultCodLesson(1, 1);
+
                 if (user != null)
                 {
-                    dbconnect.AddWriteToDB(new StudentWrite()
+                    var test = new StudentWrite()
                     {
                         CountAttempt = 0,
                         Mark = resalt,
                         StudentId = user.Id,
                         LessonId = lesson.Code
-                    });
+                    };
+                    dbconnect.AddWriteToDB(test);
                 }
                 else
                 {

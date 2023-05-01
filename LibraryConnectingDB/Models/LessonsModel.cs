@@ -12,7 +12,7 @@ namespace LibraryConnectingDB.Models
     public class Lesson
     {
         [Key]
-        public int? Code { get; set; }
+        public int Code { get; set; }
         public int ModuleId { get; set; }
         public int Numb { get; set; }
     }

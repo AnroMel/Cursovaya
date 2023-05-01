@@ -11,7 +11,7 @@ namespace LibraryConnectingDB.Models
     public class Module
     {
         [Key]
-        public int? id { get; set; }
+        public int id { get; set; }
         public partial class ConnectDB : DbContext
         {
             public DbSet<Module> Module { get; set; }
