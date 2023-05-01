@@ -14,7 +14,7 @@
             <TextBlock Margin="85,114,85,0" x:Name="Modyl1_Text" TextWrapping="Wrap" TextAlignment="Center" Text="Модуль посвящен элементарной комбинаторике.В нем вы узнаете о том, что такое дискретные структуры и когда их можно применять. Также вы познакомитесь с самыми распространенными дискретными структурами: сочетания и перестановки " FontSize="30" Height="135" VerticalAlignment="Top" FontFamily="pack://application:,,,/fonts/#Jost Regular"/>
             <Button x:Name="Yrok1_1" HorizontalAlignment="Left" Margin="85,316,0,0" VerticalAlignment="Top" Height="350" Width="350">
                 <Button.Background>
-                    <ImageBrush ImageSource="/M1Y1.jpg"/>
+                    <ImageBrush ImageSource="M1Y1.jpg"/>
                 </Button.Background>
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">

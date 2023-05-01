@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Text.RegularExpressions;
-
+using LibraryConnectingDB;
 namespace DiscreteMathCursovaya
 {
     /// <summary>
@@ -20,11 +20,13 @@ namespace DiscreteMathCursovaya
     /// </summary>
     public partial class Registration : Window
     {
+        private IConnectDB dbconnect;
         private string? Login;
         public Registration()
         {
             InitializeComponent();
             Login = TextBoxLoginRegestration.Text;
+            
         }
 
         private void ButtonComeInRegestration_Click(object sender, RoutedEventArgs e)
@@ -58,6 +60,18 @@ namespace DiscreteMathCursovaya
             }
 
             //КЛАДЕМ ЗНАЧЕНИЯ В БД
+            dbconnect = new ConnectingDB();
+            dbconnect.AddUserToDB(
+                new User()
+                {
+                    
+                    FirstName = TextBoxNameRegestration.Text,
+                    LastName = TextBoxSurNameRegestration.Text,
+                    Login = TextBoxLoginRegestration.Text,
+                    Password = PasswordBoxRegestration.Password,
+                    Group = "Ib"
+                }
+                ) ;
             MenuLessons window = new MenuLessons(Login);
             window.Show();
             Close();

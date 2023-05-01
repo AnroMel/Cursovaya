@@ -68,9 +68,9 @@
     <Resource Include="fonts\Jost-SemiBold.ttf">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="images\circle.png">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </Resource>
+    <EmbeddedResource Include="images\circle.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
     <Resource Include="images\eye2.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
@@ -80,9 +80,10 @@
     <Resource Include="images\icon2.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="images\M1Y1.jpg">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </Resource>
+    <EmbeddedResource Include="images\M1Y1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <ProjectReference Include="..\LibraryConnectingDB\LibraryConnectingDB.csproj" />
     <Resource Include="images\M1Y2.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
