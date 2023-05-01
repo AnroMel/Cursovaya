@@ -84,8 +84,10 @@ namespace LibraryConnectingDB
         {
             using (var db = new ConnectDB())
             {
+  
                 User user = db.Users.FirstOrDefault(i => i.Login == login);
                 return user;
+                
             }
         }
 
