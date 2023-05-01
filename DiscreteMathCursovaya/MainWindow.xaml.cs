@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DiscreteMathCursovaya.models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+
 
 namespace DiscreteMathCursovaya
 {
@@ -29,6 +31,29 @@ namespace DiscreteMathCursovaya
 
         private void ButtonComeInAuthorization_Click(object sender, RoutedEventArgs e)
         {
+            var exampleUser = new User()
+            {
+                FirstName="test1",
+                LastName="test2",
+                Login="testLogin",
+                Password="qweqweqwe",
+                Group="IB-31BO",
+            };
+            try
+            {
+                using (DBContext dBContext = new DBContext())
+                {
+                    dBContext.Users.Add(exampleUser);
+                    dBContext.SaveChanges();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            
+
+            return;
             if (TextBoxLoginAuthorization.Text == "")
             {
                 MessageBox.Show("Введите логин", "Ошибка ввода");
