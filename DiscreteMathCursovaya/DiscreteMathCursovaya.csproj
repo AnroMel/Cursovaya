@@ -38,6 +38,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\LibraryConnectingDB\LibraryConnectingDB.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Resource Include="fonts\Jost-ExtraLight.ttf">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
