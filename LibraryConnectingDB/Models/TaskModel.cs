@@ -12,7 +12,7 @@ namespace LibraryConnectingDB.Models
     public class StudentTask
     {
         [Key]
-        public int? Code { get; set; }
+        public int Code { get; set; }
         public int LessonId { get; set; }
         public string? Answer { get; set; }
         public string? Question { get; set; }

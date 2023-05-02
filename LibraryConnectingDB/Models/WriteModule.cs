@@ -13,8 +13,8 @@ namespace LibraryConnectingDB.Models
     {
             public int? LessonId { get; set; }
             public int? StudentId { get; set; }
-            public int CountAttempt { get; set; }
-            public decimal Mark;
+            public int? CountAttempt { get; set; }
+            public decimal? Mark { get; set; }
     }
     public partial class ConnectDB : DbContext
     {
