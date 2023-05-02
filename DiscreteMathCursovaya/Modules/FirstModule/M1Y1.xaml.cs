@@ -107,22 +107,22 @@ namespace DiscreteMathCursovaya
         private void ButtonFinishTask1_Click(object sender, RoutedEventArgs e)
         {
             decimal resalt = 0.0m;
-            //if (VerificationTask1(Task1M1Y1))
-            //    resalt += 1.0m;
-            //if (VerificationTask2(Task2M1Y1))
-            //    resalt += 1.0m;
-            //if (VerificationTask3(Task3M1Y1))
-            //    resalt += 1.0m;
-            //if (VerificationTask4(Task4M1Y1))
-            //    resalt += 1.0m;
-            //if (VerificationTask5(Task5M1Y1))
-            //    resalt += 1.0m;
-            //if (VerificationTask6(Task6M1Y1))
-            //    resalt += 1.0m;
-            //if (VerificationTask7(Task7M1Y1))
-            //    resalt += 1.0m;
-            //resalt = Math.Round((resalt / 11.0m), 2);
-            resalt = 1.0m; //
+            if (VerificationTask1(Task1M1Y1))
+                resalt += 1.0m;
+            if (VerificationTask2(Task2M1Y1))
+                resalt += 1.0m;
+            if (VerificationTask3(Task3M1Y1))
+                resalt += 1.0m;
+            if (VerificationTask4(Task4M1Y1))
+                resalt += 1.0m;
+            if (VerificationTask5(Task5M1Y1))
+                resalt += 1.0m;
+            if (VerificationTask6(Task6M1Y1))
+                resalt += 1.0m;
+            if (VerificationTask7(Task7M1Y1))
+                resalt += 1.0m;
+            resalt = Math.Round((resalt / 11.0m), 2);
+
 
             dbconnect = new ConnectingDB();
             var write = dbconnect.FirstOrDefaultWrite(Login, 1, 1);
