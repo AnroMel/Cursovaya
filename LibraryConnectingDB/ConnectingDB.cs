@@ -147,6 +147,7 @@ namespace LibraryConnectingDB
                 User user = db.Users.FirstOrDefault(i => i.Login == login);  
                 Lesson lesson = db.Lessons.FirstOrDefault(i => i.ModuleId == moduleId && i.Numb == NumbLesson);
                 StudentWrite write = db.Write.FirstOrDefault(i => i.StudentId == user.Id && i.LessonId == lesson.Code);
+                
                 return write;
             }
 
@@ -156,16 +157,25 @@ namespace LibraryConnectingDB
         {
             using (var db = new ConnectDB())
             {
+                var StudWrite = db.Write.FirstOrDefault(i => i.LessonId == write.LessonId && i.StudentId == write.StudentId);
                 if (write.CountAttempt == 0)
                 {
-                    write.Mark = decimal.Multiply(mark, 0.8m);
+                    StudWrite.Mark = decimal.Multiply(mark, 0.8m);
                 }
                 if (write.CountAttempt == 1)
                 {
-                    write.Mark = decimal.Multiply(mark, 0.6m);
+                    StudWrite.Mark = decimal.Multiply(mark, 0.6m);
                 }
-                write.CountAttempt = write.CountAttempt + 1;
-                db.SaveChanges();
+                StudWrite.CountAttempt = StudWrite.CountAttempt + 1;
+                try
+                {
+                    while (true)
+                    {
+                        db.SaveChanges();
+                        break;
+                    }
+                }
+                catch (Exception) { }
             }
         }
         //public void DecreaseWriteMark(StudentWrite write)
