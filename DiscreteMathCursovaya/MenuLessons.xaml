@@ -8,8 +8,12 @@
         WindowState="Maximized"
         Icon="/images/icon2.png"
         Title="MenuLessons" Height="4772" Width="1600" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize"  FontFamily="pack://application:,,,/fonts/#Jost Regular">
+    <Window.Resources>
+        <Color x:Key="GradientStopColor1">#FFF0F0F0</Color>
+        <Color x:Key="GradientStopColor2">#FFF0F0F0</Color>
+    </Window.Resources>
     <ScrollViewer>
-        <Grid>
+        <Grid Width="1481" Height="4751">
             <Label Content="Модуль 1" x:Name="Modyl1" HorizontalAlignment="Center" Margin="0,94,0,0" VerticalAlignment="Top" Height="102" Width="514" FontSize="65" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="pack://application:,,,/fonts/#Jost Medium"/>
             <TextBlock Margin="85,212,85,0" x:Name="Modyl1_Text" TextWrapping="Wrap" TextAlignment="Center" Text="Модуль посвящен элементарной комбинаторике.В нем вы узнаете о том, что такое дискретные структуры и когда их можно применять. Также вы познакомитесь с самыми распространенными дискретными структурами: сочетания и перестановки " FontSize="30" Height="135" VerticalAlignment="Top" FontFamily="pack://application:,,,/fonts/#Jost Regular"/>
             <Button x:Name="Yrok1_1" HorizontalAlignment="Left" Margin="85,372,0,0" VerticalAlignment="Top" Height="415" Width="415" Click="Yrok1_1_Click">
@@ -332,7 +336,7 @@
                     </Style>
                 </Button.Style>
             </Button>
-            <Button x:Name="Yrok4_2" HorizontalAlignment="Center" Margin="0,3469,0,0" VerticalAlignment="Top" Height="415" Width="350">
+            <Button x:Name="Yrok4_2" HorizontalAlignment="Center" Margin="0,3469,0,0" VerticalAlignment="Top" Height="350" Width="350">
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
                         <Setter Property="Template">
@@ -388,13 +392,73 @@
                     </Style>
                 </Button.Style>
             </Button>
-            <Button x:Name="Yrok4_4"  HorizontalAlignment="Left" Margin="85,3938,0,0" VerticalAlignment="Top" Height="350" Width="350">
+            <Rectangle Height="78" Stroke="#FFF" VerticalAlignment="Top" Margin="-52,0,-118,0"/>
+            <Button x:Name="ButtonLinkToReport" Content="Отчет" FontSize="24" HorizontalAlignment="Right" Height="33" Margin="0,15,466,0" VerticalAlignment="Top" Width="176" FontFamily="pack://application:,,,/fonts/#Jost Regular" Background="{x:Null}" BorderBrush="{x:Null}" Cursor="Hand" Click="ButtonLinkToReport_Click">
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
                         <Setter Property="Template">
                             <Setter.Value>
                                 <ControlTemplate TargetType="{x:Type Button}">
                                     <Border CornerRadius="12"
+                                Background="{TemplateBinding Background}">
+
+                                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="RenderTransformOrigin" Value="0.5, 0.5"/>
+                                <Setter Property="RenderTransform">
+                                    <Setter.Value>
+                                        <ScaleTransform ScaleX="1.05" ScaleY="1.05"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+            </Button>
+            <Button x:Name="ButtonLinkToProfil" Content="Профиль" FontSize="24" HorizontalAlignment="Right" Height="33" Margin="0,15,290,0" VerticalAlignment="Top" Width="176" FontFamily="pack://application:,,,/fonts/#Jost Regular" Background="{x:Null}" BorderBrush="{x:Null}" Cursor="Hand" Click="ButtonLinkToProfil_Click">
+                <Button.Style>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Border CornerRadius="12"
+                                Background="{TemplateBinding Background}">
+
+                                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="RenderTransformOrigin" Value="0.5, 0.5"/>
+                                <Setter Property="RenderTransform">
+                                    <Setter.Value>
+                                        <ScaleTransform ScaleX="1.05" ScaleY="1.05"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+            </Button>
+            <Button x:Name="ButtonComeOUT" Content="Выйти" HorizontalAlignment="Right" Margin="0,10,83,0" VerticalAlignment="Top"  FontSize="24" FontFamily="pack://application:,,,/fonts/#Jost Medium" Width="178" Height="45" Cursor="Hand" Background="#ff6666" Foreground="White" BorderBrush="#ff6666" Click="ButtonComeOUT_Click">
+                <Button.Effect>
+                    <DropShadowEffect Color="#FFE0E0E0"/>
+                </Button.Effect>
+                <Button.Style>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Border CornerRadius="6"
                                 Background="{TemplateBinding Background}">
 
                                         <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
@@ -416,9 +480,7 @@
                     </Style>
                 </Button.Style>
             </Button>
-            <Button Content="Отчет"  x:Name="Otschet" Margin="0,27,405,0" VerticalAlignment="Top" Height="40" HorizontalAlignment="Right" Width="180" Background="White" FontSize="24" BorderBrush="White"/>
-            <Button Content="Профиль" x:Name="Profil" Margin="0,27,220,0" VerticalAlignment="Top" Height="40" HorizontalAlignment="Right" Width="180" Background="White" FontSize="24" BorderBrush="White"/>
-            <Button Content="Выйти"  x:Name="Exit" Margin="0,27,22,0" VerticalAlignment="Top" Height="40" HorizontalAlignment="Right" Width="180" Background="#FFFF6666" FontSize="24" Foreground="White" BorderBrush="White"/>
+
         </Grid>
     </ScrollViewer>
 </Window>

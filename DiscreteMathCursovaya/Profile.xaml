@@ -1,0 +1,242 @@
+﻿<Window x:Class="DiscreteMathCursovaya.Profile"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DiscreteMathCursovaya"
+        mc:Ignorable="d"
+        WindowState="Maximized"
+        Icon="./images/icon2.png"
+        Title="Profile" Width="1600" Height="900" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize"  FontFamily="pack://application:,,,/fonts/#Jost Regular">
+
+    <Grid Background="#FFF0F0F0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="15*"/>
+            <RowDefinition Height="206*"/>
+        </Grid.RowDefinitions>
+        <Rectangle HorizontalAlignment="Left" Height="647" Margin="950,76,0,0" Stroke="white" VerticalAlignment="Top" Width="492" Visibility="Visible" RadiusX="6" RadiusY="6" Fill="White" Grid.Row="1" />
+        <Label x:Name="LabelNameProfile" Content="Имя:" HorizontalAlignment="Left" Margin="1020,115,0,0" VerticalAlignment="Top" Width="114" FontFamily="pack://application:,,,/fonts/#Jost Medium" FontSize="23" RenderTransformOrigin="0.488,1.961" Grid.Row="1"/>
+        <TextBox x:Name="TextBoxNameProfile" IsReadOnly="True" MaxLength="30" HorizontalAlignment="Left" Margin="1020,158,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="350" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39"  VerticalContentAlignment="Center" Padding="4,4,4,4" Cursor="IBeam" Grid.Row="1" GotFocus="TextBoxProfile_GotFocus" >
+            <TextBox.Template >
+                <ControlTemplate >
+                    <Border Background="#FFF" CornerRadius="6" Padding="2" BorderThickness="1" BorderBrush="#9f9f99">
+                        <Viewbox Stretch="Uniform" HorizontalAlignment="Left">
+                            <ScrollViewer  Margin="0" x:Name="PART_ContentHost"/>
+                        </Viewbox>
+                    </Border>
+                </ControlTemplate>
+            </TextBox.Template>
+        </TextBox>
+        <Label x:Name="LabelSurNameProfile" Content="Фамилия:" HorizontalAlignment="Left" Margin="1020,206,0,0" VerticalAlignment="Top" Width="114" FontFamily="pack://application:,,,/fonts/#Jost Medium" FontSize="23" RenderTransformOrigin="0.488,1.961" Grid.Row="1"/>
+        <TextBox x:Name="TextBoxSurNameProfile" IsReadOnly="True" MaxLength="30" HorizontalAlignment="Left" Margin="1020,251,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="350" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39"  VerticalContentAlignment="Center" Padding="4,4,4,4" Cursor="IBeam" Grid.Row="1" GotFocus="TextBoxProfile_GotFocus">
+            <TextBox.Template >
+                <ControlTemplate >
+                    <Border Background="#FFF" CornerRadius="6" Padding="2" BorderThickness="1" BorderBrush="#9f9f99">
+                        <Viewbox Stretch="Uniform" HorizontalAlignment="Left">
+                            <ScrollViewer  Margin="0" x:Name="PART_ContentHost"/>
+                        </Viewbox>
+                    </Border>
+                </ControlTemplate>
+            </TextBox.Template>
+        </TextBox>
+        <Label x:Name="LabelGroupProfile" Content="Группа:" HorizontalAlignment="Left" Margin="1018,301,0,0" VerticalAlignment="Top" Width="114" FontFamily="pack://application:,,,/fonts/#Jost Medium" FontSize="23" RenderTransformOrigin="0.488,1.961" Grid.Row="1"/>
+        <TextBox x:Name="TextBoxGroupProfile" IsReadOnly="True" MaxLength="30" HorizontalAlignment="Left" Margin="1020,345,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="350" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39"  VerticalContentAlignment="Center" Padding="4,4,4,4" Cursor="IBeam" Grid.Row="1" GotFocus="TextBoxProfile_GotFocus">
+            <TextBox.Template >
+                <ControlTemplate >
+                    <Border Background="#FFF" CornerRadius="6" Padding="2" BorderThickness="1" BorderBrush="#9f9f99">
+                        <Viewbox Stretch="Uniform" HorizontalAlignment="Left">
+                            <ScrollViewer  Margin="0" x:Name="PART_ContentHost"/>
+                        </Viewbox>
+                    </Border>
+                </ControlTemplate>
+            </TextBox.Template>
+        </TextBox>
+        <Label x:Name="LabelLoginProfile" Content="Логин:" HorizontalAlignment="Left" Margin="1020,400,0,0" VerticalAlignment="Top" Width="114" FontFamily="pack://application:,,,/fonts/#Jost Medium" FontSize="23" RenderTransformOrigin="0.488,1.961" Grid.Row="1"/>
+        <TextBox x:Name="TextBoxLoginProfile" IsReadOnly="True" MaxLength="30" HorizontalAlignment="Left" Margin="1018,441,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="350" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39"  VerticalContentAlignment="Center" Padding="4,4,4,4" Cursor="IBeam" Grid.Row="1" GotFocus="TextBoxProfile_GotFocus" >
+            <TextBox.Template >
+                <ControlTemplate >
+                    <Border Background="#FFF" CornerRadius="6" Padding="2" BorderThickness="1" BorderBrush="#9f9f99">
+                        <Viewbox Stretch="Uniform" HorizontalAlignment="Left">
+                            <ScrollViewer  Margin="0" x:Name="PART_ContentHost"/>
+                        </Viewbox>
+                    </Border>
+                </ControlTemplate>
+            </TextBox.Template>
+        </TextBox>
+        <Label x:Name="LabelPasswordProfile" Content="Пароль:" HorizontalAlignment="Left" Margin="1018,490,0,0" VerticalAlignment="Top" Width="114" FontFamily="pack://application:,,,/fonts/#Jost Medium" FontSize="23" Grid.Row="1"/>
+        <PasswordBox x:Name="PasswordBoxProfile" MaxLength="25" HorizontalAlignment="Left" Margin="1018,528,0,0" VerticalAlignment="Top" Width="350" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39" VerticalContentAlignment="Center" Padding="4,0,0,0" Cursor="IBeam" Grid.Row="1" IsEnabled="False">
+            <PasswordBox.Template>
+                <ControlTemplate >
+                    <Border Background="#FFF0F0F0" CornerRadius="6" Padding="2" BorderThickness="1" BorderBrush="#9f9f99">
+                        <ScrollViewer Margin="0" x:Name="PART_ContentHost"/>
+                    </Border>
+                </ControlTemplate>
+            </PasswordBox.Template>
+        </PasswordBox>
+        <TextBox x:Name="TextBoxShowPasswordA" HorizontalAlignment="Left"  Margin="1020,529,0,0" VerticalAlignment="Top" Width="348" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="37" VerticalContentAlignment="Center" Padding="4,4,4,4"  TextWrapping="Wrap" Text="" IsReadOnly="True" Visibility="Hidden" Grid.Row="1">
+            <TextBox.Template>
+                <ControlTemplate >
+                    <Border Background="#FFF0F0F0" CornerRadius="6" Padding="2" BorderThickness="1" BorderBrush="#FFF0F0F0" Margin="0,0,48,0">
+                        <Viewbox Stretch="Uniform" HorizontalAlignment="Left">
+                            <ScrollViewer  Margin="0" x:Name="PART_ContentHost"/>
+                        </Viewbox>
+                    </Border>
+                </ControlTemplate>
+            </TextBox.Template>
+        </TextBox>
+        <Image x:Name="ShowPasswordA" HorizontalAlignment="Left" Height="28" Source="images/eyeclose2.png" Margin="1325,533,0,0" VerticalAlignment="Top" Width="28"   Cursor="Hand" MouseDown="ShowPasswordA_MouseDown" Grid.Row="1" IsEnabled="False" ></Image>
+        <Image x:Name="HidePasswordA" HorizontalAlignment="Left" Height="28" Source="images/eye2.png" Margin="1325,533,0,0" VerticalAlignment="Top" Width="28"   Visibility="Hidden" Cursor="Hand" MouseLeave="HidePasswordA_MouseLeave" MouseUp="HidePasswordA_MouseUp" Grid.Row="1"></Image>
+        <Button x:Name="ButtonEditProfile" Content="" HorizontalAlignment="Left" Margin="1057,595,0,0" VerticalAlignment="Top"  FontSize="20" FontFamily="pack://application:,,,/fonts/#Jost Medium" Width="272" Height="45" Cursor="Hand" Background="#ff6666" Foreground="White" BorderBrush="#ff6666" Grid.Row="1" Click="ButtonEditProfile_Click" >
+            <Button.Effect>
+                <DropShadowEffect Color="#FFE0E0E0"/>
+            </Button.Effect>
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border CornerRadius="6"
+                                Background="{TemplateBinding Background}">
+
+                                    <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="RenderTransformOrigin" Value="0.5, 0.5"/>
+                            <Setter Property="RenderTransform">
+                                <Setter.Value>
+                                    <ScaleTransform ScaleX="1.1" ScaleY="1.1"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+        </Button>
+        <Button x:Name="Cancel" Content="Oтменить" FontSize="18" HorizontalAlignment="Left" Height="33" Margin="1105,645,0,0" VerticalAlignment="Top" Width="176" FontFamily="pack://application:,,,/fonts/#Jost Regular" Background="{x:Null}" BorderBrush="{x:Null}" Cursor="Hand"  Grid.Row="1" Visibility="Hidden" Click="Cancel_Click">
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border CornerRadius="12"
+                                Background="{TemplateBinding Background}">
+
+                                    <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="RenderTransformOrigin" Value="0.5, 0.5"/>
+                            <Setter Property="RenderTransform">
+                                <Setter.Value>
+                                    <ScaleTransform ScaleX="1.05" ScaleY="1.05"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+        </Button>
+        <Rectangle HorizontalAlignment="Left" Height="585" Margin="126,72,0,0" Stroke="#FFF0F0F0" VerticalAlignment="Top" Width="691" Grid.Row="1">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="/images/profile.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle Height="68" Stroke="#FFF0F0F0" VerticalAlignment="Top" Fill="white" Grid.RowSpan="2"/>
+        <Button x:Name="ButtonLinkToReport" Content="Отчет" FontSize="24" HorizontalAlignment="Right" Height="33" Margin="0,15,466,0" VerticalAlignment="Top" Width="176" FontFamily="pack://application:,,,/fonts/#Jost Regular" Background="{x:Null}" BorderBrush="{x:Null}" Cursor="Hand" Click="ButtonLinkToReport_Click">
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border CornerRadius="12"
+                                Background="{TemplateBinding Background}">
+
+                                    <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="RenderTransformOrigin" Value="0.5, 0.5"/>
+                            <Setter Property="RenderTransform">
+                                <Setter.Value>
+                                    <ScaleTransform ScaleX="1.05" ScaleY="1.05"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+        </Button>
+        <Button x:Name="ButtonLinkToProfil" Content="Меню" FontSize="24" HorizontalAlignment="Right" Height="33" Margin="0,15,290,0" VerticalAlignment="Top" Width="176" FontFamily="pack://application:,,,/fonts/#Jost Regular" Background="{x:Null}" BorderBrush="{x:Null}" Cursor="Hand" Click="ButtonLinkToProfil_Click">
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border CornerRadius="12"
+                                Background="{TemplateBinding Background}">
+
+                                    <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="RenderTransformOrigin" Value="0.5, 0.5"/>
+                            <Setter Property="RenderTransform">
+                                <Setter.Value>
+                                    <ScaleTransform ScaleX="1.05" ScaleY="1.05"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+        </Button>
+        <Button x:Name="ButtonComeOUT" Content="Выйти" HorizontalAlignment="Right" Margin="0,10,83,0" VerticalAlignment="Top"  FontSize="24" FontFamily="pack://application:,,,/fonts/#Jost Medium" Width="178" Height="45" Cursor="Hand" Background="#ff6666" Foreground="White" BorderBrush="#ff6666" Click="ButtonComeOUT_Click">
+            <Button.Effect>
+                <DropShadowEffect Color="#FFE0E0E0"/>
+            </Button.Effect>
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border CornerRadius="6"
+                                Background="{TemplateBinding Background}">
+
+                                    <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="RenderTransformOrigin" Value="0.5, 0.5"/>
+                            <Setter Property="RenderTransform">
+                                <Setter.Value>
+                                    <ScaleTransform ScaleX="1.1" ScaleY="1.1"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+        </Button>
+    </Grid>
+</Window>

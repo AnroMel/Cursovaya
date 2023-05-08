@@ -34,19 +34,38 @@ namespace DiscreteMathCursovaya
             using (OverrideCursor cursor = new OverrideCursor(Cursors.Wait))
             {
                 dbconnect = new ConnectingDB();
-                var write = dbconnect.FirstOrDefaultWrite(Login,1,1);
+                var write = dbconnect.FirstOrDefaultWrite(Login, 1, 1);
                 if (write == null || write.CountAttempt == 0 || write.CountAttempt == 1)
                 {
                     M1Y1 window = new M1Y1(Login);
                     window.Show();
                     Close();
-                    
+
                 }
                 else
                 {
                     MessageBox.Show("Превышено количество попыток");
                 }
             }
+        }
+
+        private void ButtonComeOUT_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow window = new MainWindow();
+            window.Show();
+            Close();
+        }
+
+        private void ButtonLinkToProfil_Click(object sender, RoutedEventArgs e)
+        {
+            Profile window = new Profile(Login);
+            window.Show();
+            Close();
+        }
+
+        private void ButtonLinkToReport_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

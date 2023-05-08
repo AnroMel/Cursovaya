@@ -26,6 +26,7 @@
     <None Remove="images\M3Y1.jpg" />
     <None Remove="images\M3Y2.jpg" />
     <None Remove="images\M3Y3.jpg" />
+    <None Remove="images\profile.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -35,6 +36,10 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Include="App.xaml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -94,6 +99,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="images\M3Y3.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\profile.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>
