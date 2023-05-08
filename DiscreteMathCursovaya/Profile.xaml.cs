@@ -29,7 +29,17 @@ namespace DiscreteMathCursovaya
             Login = login;
             InitializeComponent();
             ButtonEditProfile.Content = "Изменить";
-            //Выборка данных из бд
+            using (OverrideCursor cursor = new OverrideCursor(Cursors.Wait))
+            {
+                dbconnect = new ConnectingDB();
+
+                var user = dbconnect.FirstOrDefault(login);
+                    TextBoxNameProfile.Text = user.FirstName;
+                    TextBoxSurNameProfile.Text = user.LastName.ToString();
+                    TextBoxGroupProfile.Text = user.Group.ToString();
+                    TextBoxLoginProfile.Text = user.Login;
+
+            }
 
         }
 
@@ -103,7 +113,8 @@ namespace DiscreteMathCursovaya
                 }
                 using (OverrideCursor cursor = new OverrideCursor(Cursors.Wait))
                 {
-                    // ВЫЗОВ МЕТОДА СОХРАНЕНИЯ В БД
+                    dbconnect = new ConnectingDB();
+                    dbconnect.UpdatePassword(Login, Crypt.GetHashPassword(PasswordBoxProfile.Password));
                 }
                 CancelEditProfile();
 

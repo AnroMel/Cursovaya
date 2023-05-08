@@ -161,12 +161,14 @@ namespace LibraryConnectingDB
                 if (write.CountAttempt == 0)
                 {
                     StudWrite.Mark = decimal.Multiply(mark, 0.8m);
+
                 }
                 if (write.CountAttempt == 1)
                 {
                     StudWrite.Mark = decimal.Multiply(mark, 0.6m);
                 }
                 StudWrite.CountAttempt = StudWrite.CountAttempt + 1;
+                db.Write.Update(StudWrite);
                 try
                 {
                     while (true)
@@ -193,5 +195,26 @@ namespace LibraryConnectingDB
         //        db.SaveChanges();
         //    }
         //}
+
+
+        public void UpdatePassword(string login, string HashPassword)
+        {
+            using (var db = new ConnectDB())
+            {
+                User user = FirstOrDefault(login);
+                user.Password= HashPassword;
+                db.Users.Update(user);
+                try
+                {
+                    while (true)
+                    {
+                        db.SaveChanges();
+                        break;
+                    }
+                }
+                catch (Exception) { }
+            }
+        }
+
     }
 }

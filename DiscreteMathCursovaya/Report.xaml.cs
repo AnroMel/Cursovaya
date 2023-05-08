@@ -36,7 +36,7 @@ namespace DiscreteMathCursovaya
             using (OverrideCursor cursor = new OverrideCursor(Cursors.Wait))
             {
                 Chart.Plot.Clear();
-                double[] values = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+                double[] values = { 0, 0, 0, 0, 0, 10, 0, 0, 0, 0, 0 };
                 double[] positions = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
                 string[] labels = { "Модуль 1 Урок 1", "Модуль 1 Урок 2", "Модуль 1 Урок 3", "Модуль 2 Урок 1", "Модуль 2 Урок 2", "Модуль 3 Урок 1", "Модуль 3 Урок 2", "Модуль 3 Урок 3", "Модуль 4 Урок 1", "Модуль 4 Урок 2", "Модуль 4 Урок 3" };
                 Chart.Plot.AddBar(values, positions);
@@ -48,6 +48,7 @@ namespace DiscreteMathCursovaya
                 Chart.Plot.Style(ScottPlot.Style.Control);
                 bar.FillColor = Color.FromArgb(255, 102, 102);
                 Chart.Plot.Grid(lineStyle: LineStyle.Dot);
+                Chart.Refresh();
             }
         }
 

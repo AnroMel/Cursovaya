@@ -22,13 +22,13 @@ namespace DiscreteMathCursovaya
     public partial class Registration : Window
     {
         private IConnectDB dbconnect;
-        private string? Login;
+        
         private string? Group;
         private Rectangle[] rectangles;
         public Registration()
         {
             InitializeComponent();
-            Login = TextBoxLoginRegestration.Text;
+            
             rectangles = new Rectangle[]
             {
                 imgG1,
@@ -84,7 +84,7 @@ namespace DiscreteMathCursovaya
                     }
                     );
             
-                MenuLessons window = new MenuLessons(Login);
+                MenuLessons window = new MenuLessons(TextBoxLoginRegestration.Text);
                 window.Show();
                 Close();
             }
