@@ -10,11 +10,7 @@
         Title="Profile" Width="1600" Height="900" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize"  FontFamily="pack://application:,,,/fonts/#Jost Regular">
 
     <Grid Background="#FFF0F0F0">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="15*"/>
-            <RowDefinition Height="206*"/>
-        </Grid.RowDefinitions>
-        <Rectangle HorizontalAlignment="Left" Height="647" Margin="950,76,0,0" Stroke="white" VerticalAlignment="Top" Width="492" Visibility="Visible" RadiusX="6" RadiusY="6" Fill="White" Grid.Row="1" />
+        <Rectangle HorizontalAlignment="Left" Height="621" Margin="950,102,0,0" Stroke="white" VerticalAlignment="Top" Width="492" Visibility="Visible" RadiusX="6" RadiusY="6" Fill="White" />
         <Label x:Name="LabelNameProfile" Content="Имя:" HorizontalAlignment="Left" Margin="1020,115,0,0" VerticalAlignment="Top" Width="114" FontFamily="pack://application:,,,/fonts/#Jost Medium" FontSize="23" RenderTransformOrigin="0.488,1.961" Grid.Row="1"/>
         <TextBox x:Name="TextBoxNameProfile" IsReadOnly="True" MaxLength="30" HorizontalAlignment="Left" Margin="1020,158,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="350" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39"  VerticalContentAlignment="Center" Padding="4,4,4,4" Cursor="IBeam" Grid.Row="1" GotFocus="TextBoxProfile_GotFocus" >
             <TextBox.Template >
@@ -145,13 +141,13 @@
                 </Style>
             </Button.Style>
         </Button>
-        <Rectangle HorizontalAlignment="Left" Height="585" Margin="126,72,0,0" Stroke="#FFF0F0F0" VerticalAlignment="Top" Width="691" Grid.Row="1">
+        <Rectangle HorizontalAlignment="Left" Height="585" Margin="109,0,0,0" Stroke="#FFF0F0F0" VerticalAlignment="Center" Width="691">
             <Rectangle.Fill>
                 <ImageBrush ImageSource="/images/profile.png"/>
             </Rectangle.Fill>
         </Rectangle>
-        <Rectangle Height="68" Stroke="#FFF0F0F0" VerticalAlignment="Top" Fill="white" Grid.RowSpan="2"/>
-        <Button x:Name="ButtonLinkToReport" Content="Отчет" FontSize="24" HorizontalAlignment="Right" Height="33" Margin="0,15,466,0" VerticalAlignment="Top" Width="176" FontFamily="pack://application:,,,/fonts/#Jost Regular" Background="{x:Null}" BorderBrush="{x:Null}" Cursor="Hand" Click="ButtonLinkToReport_Click">
+        <Rectangle Height="67" Stroke="black" VerticalAlignment="Top" Fill="white" Grid.RowSpan="2"/>
+        <Button x:Name="ButtonLinkToReport" Content="Отчет" FontSize="21" HorizontalAlignment="Right" Height="33" Margin="0,15,447,0" VerticalAlignment="Top" Width="133" FontFamily="pack://application:,,,/fonts/#Jost Regular" Background="{x:Null}" BorderBrush="{x:Null}" Cursor="Hand" Click="ButtonLinkToReport_Click">
             <Button.Style>
                 <Style TargetType="{x:Type Button}">
                     <Setter Property="Template">
@@ -179,7 +175,7 @@
                 </Style>
             </Button.Style>
         </Button>
-        <Button x:Name="ButtonLinkToProfil" Content="Меню" FontSize="24" HorizontalAlignment="Right" Height="33" Margin="0,15,290,0" VerticalAlignment="Top" Width="176" FontFamily="pack://application:,,,/fonts/#Jost Regular" Background="{x:Null}" BorderBrush="{x:Null}" Cursor="Hand" Click="ButtonLinkToProfil_Click">
+        <Button x:Name="ButtonLinkToProfil" Content="Меню" FontSize="21" HorizontalAlignment="Right" Height="33" Margin="0,15,292,0" VerticalAlignment="Top" Width="176" FontFamily="pack://application:,,,/fonts/#Jost Regular" Background="{x:Null}" BorderBrush="{x:Null}" Cursor="Hand" Click="ButtonLinkToProfil_Click">
             <Button.Style>
                 <Style TargetType="{x:Type Button}">
                     <Setter Property="Template">
@@ -207,7 +203,7 @@
                 </Style>
             </Button.Style>
         </Button>
-        <Button x:Name="ButtonComeOUT" Content="Выйти" HorizontalAlignment="Right" Margin="0,10,83,0" VerticalAlignment="Top"  FontSize="24" FontFamily="pack://application:,,,/fonts/#Jost Medium" Width="178" Height="45" Cursor="Hand" Background="#ff6666" Foreground="White" BorderBrush="#ff6666" Click="ButtonComeOUT_Click">
+        <Button x:Name="ButtonComeOUT" Content="Выйти" HorizontalAlignment="Right" Margin="0,10,83,0" VerticalAlignment="Top"  FontSize="21" FontFamily="pack://application:,,,/fonts/#Jost Medium" Width="178" Height="45" Cursor="Hand" Background="#ff6666" Foreground="White" BorderBrush="#ff6666" Click="ButtonComeOUT_Click">
             <Button.Effect>
                 <DropShadowEffect Color="#FFE0E0E0"/>
             </Button.Effect>

@@ -65,7 +65,9 @@ namespace DiscreteMathCursovaya
 
         private void ButtonLinkToReport_Click(object sender, RoutedEventArgs e)
         {
-
+            Report window = new Report(Login);
+            window.Show();
+            Close();
         }
     }
 }

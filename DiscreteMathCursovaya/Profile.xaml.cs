@@ -78,7 +78,9 @@ namespace DiscreteMathCursovaya
         
         private void ButtonLinkToReport_Click(object sender, RoutedEventArgs e)
         {
-
+            Report window = new Report(Login);
+            window.Show();
+            Close();
         }
 
         private protected void ButtonEditProfile_Click(object sender, RoutedEventArgs e)
@@ -103,12 +105,7 @@ namespace DiscreteMathCursovaya
                 {
                     // ВЫЗОВ МЕТОДА СОХРАНЕНИЯ В БД
                 }
-                ButtonEditProfile.Content = "Изменить";
-                PasswordBoxProfile.IsEnabled = false;
-                ShowPasswordA.IsEnabled = false;
-                Cancel.Visibility = Visibility.Hidden;
-                PasswordBoxProfile.Password = "";
-                MessageBox.Show("Пароль сохранён");
+                CancelEditProfile();
 
             }
         }
@@ -117,19 +114,6 @@ namespace DiscreteMathCursovaya
             string regex = "^(?=.*[0-9])(?=.*[A-Z])(?=.*[a-z])[0-9A-Za-z]{7,}$";
             return Regex.IsMatch(passwordBox.Password, regex);
         }
-        public Boolean IsUserExists()
-        {
-            //ПРОВЕРКА НА СУЩЕСТВУЮЩИЙ ЛОГИН В БД
-            dbconnect = new ConnectingDB();
-            var user = dbconnect.FirstOrDefault(TextBoxLoginProfile.Text);
-            if (user != null)
-            {
-                MessageBox.Show("Пользователь с таким логином уже существует ");
-                return true;
-            }
-            return false;
-        }
-
         private void TextBoxProfile_GotFocus(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("Для изменения этих данных, обратитесь к преподавателю");
@@ -137,6 +121,10 @@ namespace DiscreteMathCursovaya
         }
 
         private void Cancel_Click(object sender, RoutedEventArgs e)
+        {
+            CancelEditProfile();
+        }
+        private void CancelEditProfile()
         {
             ButtonEditProfile.Content = "Изменить";
             PasswordBoxProfile.IsEnabled = false;

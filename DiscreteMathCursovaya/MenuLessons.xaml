@@ -8,10 +8,6 @@
         WindowState="Maximized"
         Icon="/images/icon2.png"
         Title="MenuLessons" Height="4772" Width="1600" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize"  FontFamily="pack://application:,,,/fonts/#Jost Regular">
-    <Window.Resources>
-        <Color x:Key="GradientStopColor1">#FFF0F0F0</Color>
-        <Color x:Key="GradientStopColor2">#FFF0F0F0</Color>
-    </Window.Resources>
     <ScrollViewer>
         <Grid Width="1481" Height="4751">
             <Label Content="Модуль 1" x:Name="Modyl1" HorizontalAlignment="Center" Margin="0,94,0,0" VerticalAlignment="Top" Height="102" Width="514" FontSize="65" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="pack://application:,,,/fonts/#Jost Medium"/>
@@ -392,8 +388,8 @@
                     </Style>
                 </Button.Style>
             </Button>
-            <Rectangle Height="78" Stroke="#FFF" VerticalAlignment="Top" Margin="-52,0,-118,0"/>
-            <Button x:Name="ButtonLinkToReport" Content="Отчет" FontSize="24" HorizontalAlignment="Right" Height="33" Margin="0,15,466,0" VerticalAlignment="Top" Width="176" FontFamily="pack://application:,,,/fonts/#Jost Regular" Background="{x:Null}" BorderBrush="{x:Null}" Cursor="Hand" Click="ButtonLinkToReport_Click">
+            <Rectangle Height="67" Stroke="black" VerticalAlignment="Top" Margin="-52,0,-118,0" Fill="white"/>
+            <Button x:Name="ButtonLinkToReport" Content="Отчет" FontSize="21" HorizontalAlignment="Right" Height="33" Margin="0,15,429,0" VerticalAlignment="Top" Width="90" FontFamily="pack://application:,,,/fonts/#Jost Regular" Background="{x:Null}" BorderBrush="{x:Null}" Cursor="Hand" Click="ButtonLinkToReport_Click">
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
                         <Setter Property="Template">
@@ -421,7 +417,7 @@
                     </Style>
                 </Button.Style>
             </Button>
-            <Button x:Name="ButtonLinkToProfil" Content="Профиль" FontSize="24" HorizontalAlignment="Right" Height="33" Margin="0,15,290,0" VerticalAlignment="Top" Width="176" FontFamily="pack://application:,,,/fonts/#Jost Regular" Background="{x:Null}" BorderBrush="{x:Null}" Cursor="Hand" Click="ButtonLinkToProfil_Click">
+            <Button x:Name="ButtonLinkToProfil" Content="Профиль" FontSize="21" HorizontalAlignment="Right" Height="33" Margin="0,15,292,0" VerticalAlignment="Top" Width="122" FontFamily="pack://application:,,,/fonts/#Jost Regular" Background="{x:Null}" BorderBrush="{x:Null}" Cursor="Hand" Click="ButtonLinkToProfil_Click">
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
                         <Setter Property="Template">
@@ -449,7 +445,7 @@
                     </Style>
                 </Button.Style>
             </Button>
-            <Button x:Name="ButtonComeOUT" Content="Выйти" HorizontalAlignment="Right" Margin="0,10,83,0" VerticalAlignment="Top"  FontSize="24" FontFamily="pack://application:,,,/fonts/#Jost Medium" Width="178" Height="45" Cursor="Hand" Background="#ff6666" Foreground="White" BorderBrush="#ff6666" Click="ButtonComeOUT_Click">
+            <Button x:Name="ButtonComeOUT" Content="Выйти" HorizontalAlignment="Right" Margin="0,10,83,0" VerticalAlignment="Top"  FontSize="21" FontFamily="pack://application:,,,/fonts/#Jost Medium" Width="178" Height="45" Cursor="Hand" Background="#ff6666" Foreground="White" BorderBrush="#ff6666" Click="ButtonComeOUT_Click">
                 <Button.Effect>
                     <DropShadowEffect Color="#FFE0E0E0"/>
                 </Button.Effect>
