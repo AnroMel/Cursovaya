@@ -19,6 +19,7 @@ using System.Drawing;
 using Color = System.Drawing.Color;
 using LibraryConnectingDB;
 using LibraryConnectingDB.Models;
+using Microsoft.Identity.Client;
 
 namespace DiscreteMathCursovaya
 {
@@ -36,7 +37,20 @@ namespace DiscreteMathCursovaya
             using (OverrideCursor cursor = new OverrideCursor(Cursors.Wait))
             {
                 Chart.Plot.Clear();
-                double[] values = { 0, 0, 0, 0, 0, 10, 0, 0, 0, 0, 0 };
+                dbconnect = new ConnectingDB();
+
+                //double[] values = { 0, 0, 0, 0, 0, 10, 0, 0, 0, 0, 0 };
+                List<double> marks = new List<double>();
+                for (int i = 1; i <= dbconnect.GetModuleCount() ; i++)
+                {
+                    for (int j = 1; j <= dbconnect.GetModuleLessonsCount(i); j++)
+                    {
+                        marks.Add(GetMark(i,j,dbconnect));
+                        
+                    }
+                }
+                double[] values = new double[marks.Count];
+                values = marks.ToArray();
                 double[] positions = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
                 string[] labels = { "Модуль 1 Урок 1", "Модуль 1 Урок 2", "Модуль 1 Урок 3", "Модуль 2 Урок 1", "Модуль 2 Урок 2", "Модуль 3 Урок 1", "Модуль 3 Урок 2", "Модуль 3 Урок 3", "Модуль 4 Урок 1", "Модуль 4 Урок 2", "Модуль 4 Урок 3" };
                 Chart.Plot.AddBar(values, positions);
@@ -50,6 +64,13 @@ namespace DiscreteMathCursovaya
                 Chart.Plot.Grid(lineStyle: LineStyle.Dot);
                 Chart.Refresh();
             }
+            
+        }
+        public double GetMark(int ModuleId, int LessonNumb, IConnectDB dbconnect)
+        {
+            StudentWrite StWrite = dbconnect.FirstOrDefaultWrite(Login, ModuleId,LessonNumb);
+            if (StWrite == null) return 0;
+            else return Decimal.ToDouble((decimal)StWrite.Mark);
         }
 
         private void ButtonComeOUT_Click(object sender, RoutedEventArgs e)

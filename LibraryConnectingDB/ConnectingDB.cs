@@ -121,6 +121,7 @@ namespace LibraryConnectingDB
             }
         }
 
+
         public void AddReplyToDB(StudentReply reply)
         {
             using (var db = new ConnectDB())
@@ -147,10 +148,8 @@ namespace LibraryConnectingDB
                 User user = db.Users.FirstOrDefault(i => i.Login == login);  
                 Lesson lesson = db.Lessons.FirstOrDefault(i => i.ModuleId == moduleId && i.Numb == NumbLesson);
                 StudentWrite write = db.Write.FirstOrDefault(i => i.StudentId == user.Id && i.LessonId == lesson.Code);
-                
                 return write;
             }
-
         }
 
         public void UpdateWriteMarkAndCount(StudentWrite write, decimal mark)
@@ -178,6 +177,22 @@ namespace LibraryConnectingDB
                     }
                 }
                 catch (Exception) { }
+            }
+        }
+
+        public int GetModuleCount()
+        {
+            using (var db = new ConnectDB())
+            {
+                return db.Module.Count();
+            }
+        }
+
+        public int GetModuleLessonsCount(int moduleid)
+        {
+            using (var db = new ConnectDB())
+            {
+                return db.Lessons.Count(l => l.ModuleId == moduleid);
             }
         }
         //public void DecreaseWriteMark(StudentWrite write)
@@ -215,6 +230,7 @@ namespace LibraryConnectingDB
                 catch (Exception) { }
             }
         }
+
 
     }
 }
