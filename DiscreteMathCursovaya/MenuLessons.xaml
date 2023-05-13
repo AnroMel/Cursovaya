@@ -43,7 +43,7 @@
                     </Style>
                 </Button.Style>
             </Button>
-            <Button x:Name="Yrok1_2" Margin="0,372,0,0" HorizontalAlignment="Center" Width="415" Height="415" VerticalAlignment="Top">
+            <Button x:Name="Yrok1_2" Margin="0,372,0,0" HorizontalAlignment="Center" Width="415" Height="415" VerticalAlignment="Top" Click="Yrok1_2_Click">
                 <Button.Background>
                     <ImageBrush ImageSource="/images/M1Y2.jpg"/>
                 </Button.Background>

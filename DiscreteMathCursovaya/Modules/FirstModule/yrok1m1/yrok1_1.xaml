@@ -1,0 +1,24 @@
+﻿<Window x:Class="DiscreteMathCursovaya.yrok1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DiscreteMathCursovaya"
+        mc:Ignorable="d"
+        Title="yrok1" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Orientation="Horizontal">
+            <Button x:Name="T11" Grid.Row="0"  Height="35" MinWidth="100" Content="теория" Margin="5,5,5,5" Click="TM1Y1_Click"></Button>
+            <Button x:Name="p11" Grid.Row="0" Height="35" MinWidth="100" Content="примеры" Margin="5,5,5,5" Click="PM1Y1_Click"></Button>
+            <Button x:Name="z11" Grid.Row="0" Height="35" MinWidth="100" Content="задачи" Margin="5,5,5,5" Click="ZM1Y1_Click"></Button>
+            
+        </StackPanel>
+        <Frame x:Name="yrokTM1" Grid.Row="1" Background="#FFF0F0F0"></Frame>
+       
+    </Grid>
+</Window>

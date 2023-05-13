@@ -69,5 +69,12 @@ namespace DiscreteMathCursovaya
             window.Show();
             Close();
         }
+
+        private void Yrok1_2_Click(object sender, RoutedEventArgs e)
+        {
+             yrok1_2 window = new yrok1_2();
+            window.Show();
+            Close();
+        }
     }
 }
