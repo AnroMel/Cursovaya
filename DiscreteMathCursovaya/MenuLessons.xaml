@@ -388,7 +388,7 @@
                     </Style>
                 </Button.Style>
             </Button>
-            <Rectangle Height="67" Stroke="black" VerticalAlignment="Top" Margin="-52,0,-118,0" Fill="white"/>
+           
             <Button x:Name="ButtonLinkToReport" Content="Отчет" FontSize="21" HorizontalAlignment="Right" Height="33" Margin="0,15,429,0" VerticalAlignment="Top" Width="90" FontFamily="pack://application:,,,/fonts/#Jost Regular" Background="{x:Null}" BorderBrush="{x:Null}" Cursor="Hand" Click="ButtonLinkToReport_Click">
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
