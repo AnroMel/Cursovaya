@@ -13,13 +13,103 @@
             <RowDefinition></RowDefinition>
 
         </Grid.RowDefinitions>
-        <StackPanel Grid.Row="0" Orientation="Horizontal">
-            <Button x:Name="T12" Grid.Row="0"  Height="70" Width="200" MinWidth="100" Content="теория" Margin="5,5,5,5" Click="TM1Y2_Click"></Button>
-            <Button x:Name="p12" Grid.Row="0" Height="70" Width="200" MinWidth="100" Content="примеры" Margin="5,5,5,5" Click="PM1Y2_Click"></Button>
-            <Button x:Name="z12" Grid.Row="0" Height="70" Width="200" MinWidth="100" Content="задачи" Margin="5,5,5,5" Click="ZM1Y2_Click"></Button>
+        <StackPanel Grid.Row="0" Height="67" Orientation="Horizontal">
+            <Button x:Name="T12" Content="Теория" Margin="30, 5, 5, 5" FontSize="21" FontFamily="pack://application:,,,/fonts/#Jost Medium" Width="178" Height="44" Cursor="Hand" Background="#ff6666" Foreground="White" BorderBrush="#ff6666" Click="TM1Y2_Click">
+                <Button.Effect>
+                    <DropShadowEffect Color="#FFE0E0E0"/>
+                </Button.Effect>
+                <Button.Style>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Border CornerRadius="6"
+                                Background="{TemplateBinding Background}">
+
+                                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="RenderTransformOrigin" Value="0.5, 0.5"/>
+                                <Setter Property="RenderTransform">
+                                    <Setter.Value>
+                                        <ScaleTransform ScaleX="1.1" ScaleY="1.1"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+            </Button>
+            <Button x:Name="p12" Content="Примеры" Margin="30, 5, 5, 5" FontSize="21" FontFamily="pack://application:,,,/fonts/#Jost Medium" Width="178" Height="44" Cursor="Hand" Background="#ff6666" Foreground="White" BorderBrush="#ff6666" Click="PM1Y2_Click">
+                <Button.Effect>
+                    <DropShadowEffect Color="#FFE0E0E0"/>
+                </Button.Effect>
+                <Button.Style>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Border CornerRadius="6"
+                                Background="{TemplateBinding Background}">
+
+                                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="RenderTransformOrigin" Value="0.5, 0.5"/>
+                                <Setter Property="RenderTransform">
+                                    <Setter.Value>
+                                        <ScaleTransform ScaleX="1.1" ScaleY="1.1"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+            </Button>
+            <Button x:Name="z12" Content="Задачи" Margin="30, 5, 5, 5" FontSize="21" FontFamily="pack://application:,,,/fonts/#Jost Medium" Width="178" Height="44" Cursor="Hand" Background="#ff6666" Foreground="White" BorderBrush="#ff6666" Click="ZM1Y2_Click">
+                <Button.Effect>
+                    <DropShadowEffect Color="#FFE0E0E0"/>
+                </Button.Effect>
+                <Button.Style>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Border CornerRadius="6"
+                                Background="{TemplateBinding Background}">
+
+                                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="RenderTransformOrigin" Value="0.5, 0.5"/>
+                                <Setter Property="RenderTransform">
+                                    <Setter.Value>
+                                        <ScaleTransform ScaleX="1.1" ScaleY="1.1"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+            </Button>
 
         </StackPanel>
-        <Frame x:Name="f_yrokM1Y2" Grid.Row="1" Background="#FFF0F0F0" NavigationUIVisibility="Hidden" Margin="0,10,0,0"></Frame>
+        <Frame x:Name="f_yrokM1Y2" Grid.Row="1"  Background="#FFF0F0F0" NavigationUIVisibility="Hidden" Margin="0,10,0,0"></Frame>
 
     </Grid>
 </Window>

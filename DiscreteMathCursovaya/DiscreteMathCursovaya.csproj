@@ -85,9 +85,6 @@
     <Resource Include="images\M1Y3.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="images\M1Y4.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
     <Resource Include="images\M2Y1.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>

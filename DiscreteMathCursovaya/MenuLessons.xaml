@@ -105,40 +105,7 @@
                     </Style>
                 </Button.Style>
             </Button>
-            <Button x:Name="Yrok1_4" HorizontalAlignment="Left" Margin="85,842,0,0" VerticalAlignment="Top" Height="415" Width="415">
-                <Button.Background>
-                    <ImageBrush ImageSource="/images/M1Y4.jpg"/>
-                </Button.Background>
-                <Button.Style>
-                    <Style TargetType="{x:Type Button}">
-                        <Setter Property="Template">
-                            <Setter.Value>
-                                <ControlTemplate TargetType="{x:Type Button}">
-                                    <Border CornerRadius="12"
-                                Background="{TemplateBinding Background}">
-
-                                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-                                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
-                                    </Border>
-                                </ControlTemplate>
-                            </Setter.Value>
-                        </Setter>
-                        <Style.Triggers>
-                            <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="RenderTransformOrigin" Value="0.5, 0.5"/>
-                                <Setter Property="RenderTransform">
-                                    <Setter.Value>
-                                        <ScaleTransform ScaleX="1.1" ScaleY="1.1"/>
-                                    </Setter.Value>
-                                </Setter>
-                            </Trigger>
-                        </Style.Triggers>
-                    </Style>
-                </Button.Style>
-            </Button>
-
-
-
+            
             <Label Content="Модуль 2"  x:Name="Modyl2" Margin="503,1244,506,0" VerticalAlignment="Top" Height="102" FontSize="65" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="pack://application:,,,/fonts/#Jost Medium"/>
             <TextBlock HorizontalAlignment="Center" x:Name="Modyl2_Text" Margin="0,1349,0,0" TextWrapping="Wrap" Text="TextBlock" Width="1353" FontSize="30" Height="135" VerticalAlignment="Top" FontFamily="pack://application:,,,/fonts/#Jost Regular"/>
             <Button x:Name="Yrok2_1" HorizontalAlignment="Left" Margin="85,1530,0,0" VerticalAlignment="Top" Height="415" Width="415">
