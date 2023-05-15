@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+
 using LibraryConnectingDB;
 using LibraryConnectingDB.Models;
 
@@ -38,6 +39,7 @@ namespace DiscreteMathCursovaya
                 if (write == null || write.CountAttempt == 0 || write.CountAttempt == 1)
                 {
                     M1Y1 window = new M1Y1(Login);
+
                     window.Show();
                     Close();
 
@@ -73,6 +75,70 @@ namespace DiscreteMathCursovaya
         private void Yrok1_2_Click(object sender, RoutedEventArgs e)
         {
              yrok1_2 window = new yrok1_2();
+            window.Show();
+            Close();
+        }
+
+        private void Yrok1_3_Click(object sender, RoutedEventArgs e)
+        {
+            yrok1_3 window = new yrok1_3();
+            window.Show();
+            
+        }
+
+        private void Yrok2_1_Click(object sender, RoutedEventArgs e)
+        {
+            yrokM2_1 window = new yrokM2_1();
+            window.Show();
+            Close();
+
+        }
+
+        private void Yrok2_2_Click(object sender, RoutedEventArgs e)
+        {
+            yrokM2_2 window = new yrokM2_2();
+            window.Show();
+            Close();
+        }
+
+        private void Yrok3_1_Click(object sender, RoutedEventArgs e)
+        {
+            yrokM3_1 window = new yrokM3_1();
+            window.Show();
+            Close();
+        }
+
+        private void Yrok3_2_Click(object sender, RoutedEventArgs e)
+        {
+            yrokM3_2 window = new yrokM3_2();
+            window.Show();
+            Close();
+        }
+
+        private void Yrok3_3_Click(object sender, RoutedEventArgs e)
+        {
+            yrokM3_3 window = new yrokM3_3();
+            window.Show();
+            Close();
+        }
+
+        private void Yrok4_1_Click(object sender, RoutedEventArgs e)
+        {
+            yrokM4_1 window = new yrokM4_1();
+            window.Show();
+            Close();
+        }
+
+        private void Yrok4_2_Click(object sender, RoutedEventArgs e)
+        {
+            yrokM4_2 window = new yrokM4_2();
+            window.Show();
+            Close();
+        }
+
+        private void Yrok4_3_Click(object sender, RoutedEventArgs e)
+        {
+            yrokM4_3 window = new yrokM4_3();
             window.Show();
             Close();
         }

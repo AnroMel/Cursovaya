@@ -15,28 +15,28 @@ using System.Windows.Shapes;
 namespace DiscreteMathCursovaya
 {
     /// <summary>
-    /// Логика взаимодействия для yrok1.xaml
+    /// Логика взаимодействия для yrokM2_1.xaml
     /// </summary>
-    public partial class yrok1 : Window
+    public partial class yrokM2_1 : Window
     {
-        public yrok1()
+        public yrokM2_1()
         {
             InitializeComponent();
         }
 
-        private void TM1Y1_Click(object sender, RoutedEventArgs e)
+        private void TM2Y1_Click(object sender, RoutedEventArgs e)
         {
-            f_yrokM1Y1.Content = new TM1Y1();
+            f_yrokM2Y1.Content = new TM2Y1();
         }
 
-        private void PM1Y1_Click(object sender, RoutedEventArgs e)
+        private void PM2Y1_Click(object sender, RoutedEventArgs e)
         {
-            f_yrokM1Y1.Content = new PM1Y1();
+            f_yrokM2Y1.Content = new PM2Y1();
         }
 
-        private void ZM1Y1_Click(object sender, RoutedEventArgs e)
+        private void ZM2Y1_Click(object sender, RoutedEventArgs e)
         {
-            f_yrokM1Y1.Content = new ZM1Y1();
+            f_yrokM2Y1.Content = new ZM2Y1();
         }
     }
 }
