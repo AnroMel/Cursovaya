@@ -11,7 +11,7 @@
         <Grid>
             <TextBlock Height="1780" Width="800">
                  <TextBlock.Background>
-                    <ImageBrush ImageSource="C:\Users\Администратор\Desktop\курсовая\DiscreteMathCursovaya\images\Frame_19.jpg"/> 
+                    <ImageBrush ImageSource="/Modules/3_Module/yrok1m3/Frame_19.jpg"/> 
                 </TextBlock.Background>
             
             </TextBlock>
