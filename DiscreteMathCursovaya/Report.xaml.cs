@@ -39,15 +39,17 @@ namespace DiscreteMathCursovaya
                 Chart.Plot.Clear();
                 dbconnect = new ConnectingDB();
 
-                //double[] values = { 0, 0, 0, 0, 0, 10, 0, 0, 0, 0, 0 };
                 List<double> marks = new List<double>();
                 for (int i = 1; i <= dbconnect.GetModuleCount() ; i++)
                 {
                     for (int j = 1; j <= dbconnect.GetModuleLessonsCount(i); j++)
                     {
-                        marks.Add(GetMark(i,j,dbconnect));
-                        
+                        marks.Add(GetMark(i,j,dbconnect));                       
                     }
+                }
+                for (int i = 0; i < 11; i++)
+                {
+                    marks[i] *= 100;
                 }
                 double[] values = new double[marks.Count];
                 values = marks.ToArray();

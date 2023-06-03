@@ -10,10 +10,9 @@
     <ScrollViewer>
         <Grid>
             <TextBlock Height="1780" Width="800">
-                 <TextBlock.Background>
-                    <ImageBrush ImageSource="/Modules/3_Module/yrok1m3/Frame_19.jpg"/> 
+                <TextBlock.Background>
+                    <ImageBrush ImageSource="/Modules/3_Module/yrok1m3/Frame_19.jpg"/>
                 </TextBlock.Background>
-            
             </TextBlock>
         </Grid>
     </ScrollViewer>

@@ -5,8 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DiscreteMathCursovaya"
         mc:Ignorable="d"
-         WindowState="Maximized"
-        Title="yrok1_1" Height="1600" Width="1600">
+        WindowState="Maximized"
+        Icon="/images/icon2.png"
+        Title="yrok1_1" Height="2180" Width="1600" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize"  FontFamily="pack://application:,,,/fonts/#Jost Regular">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"></RowDefinition>

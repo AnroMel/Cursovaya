@@ -38,8 +38,7 @@ namespace DiscreteMathCursovaya
                 var write = dbconnect.FirstOrDefaultWrite(Login, 1, 1);
                 if (write == null || write.CountAttempt == 0 || write.CountAttempt == 1)
                 {
-                    M1Y1 window = new M1Y1(Login);
-
+                    yrok1 window = new yrok1 (Login);
                     window.Show();
                     Close();
 
