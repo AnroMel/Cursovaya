@@ -41,7 +41,6 @@ namespace DiscreteMathCursovaya
                     yrok1 window = new yrok1 (Login);
                     window.Show();
                     Close();
-
                 }
                 else
                 {
@@ -73,9 +72,18 @@ namespace DiscreteMathCursovaya
 
         private void Yrok1_2_Click(object sender, RoutedEventArgs e)
         {
-             yrok1_2 window = new yrok1_2();
-            window.Show();
-            Close();
+            dbconnect = new ConnectingDB();
+            var write = dbconnect.FirstOrDefaultWrite(Login, 1, 2);
+            if (write == null || write.CountAttempt == 0 || write.CountAttempt == 1)
+            {
+                yrok1_2 window = new yrok1_2(Login);
+                window.Show();
+                Close();
+            }
+            else
+            {
+                MessageBox.Show("Превышено количество попыток");
+            }
         }
 
         private void Yrok1_3_Click(object sender, RoutedEventArgs e)

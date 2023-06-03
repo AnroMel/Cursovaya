@@ -5,10 +5,187 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:DiscreteMathCursovaya"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="2250" d:DesignWidth="1000"
       Title="ZM1Y2">
+    <ScrollViewer>
+        <Grid Background="#FFF0F0F0">
+            <TextBlock x:Name="TextTaskM1Y1" HorizontalAlignment="Center" Margin="0,58,0,0" TextWrapping="Wrap" Text="Сколько различных пятизначных чисел можно записать с помощью цифр 0,1,2,3,4, если ни одна цифра в записи числа не повторяется дважды ?" VerticalAlignment="Top" Height="73" Width="522" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="16"/>
+            <TextBox x:Name="Task1M1Y1" PreviewTextInput="OnPreviewTextInput" DataObject.Pasting="OnPasting" MaxLength="10" HorizontalAlignment="Center" Margin="231,121,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="265" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39"  VerticalContentAlignment="Center" Padding="4,4,4,4" Cursor="IBeam">
+                <TextBox.Template >
+                    <ControlTemplate >
+                        <Border Background="#FFF0F0F0" CornerRadius="6" Padding="2" BorderThickness="1" BorderBrush="#9f9f99">
+                            <Viewbox Stretch="Uniform" HorizontalAlignment="Left">
+                                <ScrollViewer  Margin="0" x:Name="PART_ContentHost"/>
+                            </Viewbox>
+                        </Border>
+                    </ControlTemplate>
+                </TextBox.Template>
+            </TextBox>
+            <TextBlock x:Name="TextTask2M1Y1" HorizontalAlignment="Center" Margin="0,234,0,0" TextWrapping="Wrap" Text="В скачках участвуют лошадей, при этом призы дают лишь трем лошадям, пришедшим первыми. Сколько различных распределений призов может быть? " VerticalAlignment="Top" Height="68" Width="522" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="16"/>
+            <TextBox x:Name="Task2M1Y1" PreviewTextInput="OnPreviewTextInput" DataObject.Pasting="OnPasting" MaxLength="10" HorizontalAlignment="Center" Margin="231,300,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="265" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39"  VerticalContentAlignment="Center" Padding="4,4,4,4" Cursor="IBeam">
+                <TextBox.Template >
+                    <ControlTemplate >
+                        <Border Background="#FFF0F0F0" CornerRadius="6" Padding="2" BorderThickness="1" BorderBrush="#9f9f99">
+                            <Viewbox Stretch="Uniform" HorizontalAlignment="Left">
+                                <ScrollViewer  Margin="0" x:Name="PART_ContentHost"/>
+                            </Viewbox>
+                        </Border>
+                    </ControlTemplate>
+                </TextBox.Template>
+            </TextBox>
+            <TextBlock x:Name="TextTask3M1Y1" HorizontalAlignment="Center" Margin="0,404,0,0" TextWrapping="Wrap" Text="Сколькими способами можно разместиться студентов КБ-3 из человек за столом в столовке 7го корпуса?" VerticalAlignment="Top" Height="73" Width="522" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="16"/>
+            <TextBox x:Name="Task3M1Y1" PreviewTextInput="OnPreviewTextInput" DataObject.Pasting="OnPasting" MaxLength="10" HorizontalAlignment="Center" Margin="231,460,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="266" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39"  VerticalContentAlignment="Center" Padding="4,4,4,4" Cursor="IBeam" >
+                <TextBox.Template >
+                    <ControlTemplate >
+                        <Border Background="#FFF0F0F0" CornerRadius="6" Padding="2" BorderThickness="1" BorderBrush="#9f9f99">
+                            <Viewbox Stretch="Uniform" HorizontalAlignment="Left">
+                                <ScrollViewer  Margin="0" x:Name="PART_ContentHost"/>
+                            </Viewbox>
+                        </Border>
+                    </ControlTemplate>
+                </TextBox.Template>
+            </TextBox>
+            <TextBlock x:Name="TextTask4M1Y1" HorizontalAlignment="Center" Margin="0,580,0,0" TextWrapping="Wrap" Text="Сколько существует комбинаций из букв Л Е Т О" VerticalAlignment="Top" Height="73" Width="522" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="16"/>
+            <TextBox x:Name="Task4M1Y1" PreviewTextInput="OnPreviewTextInput" DataObject.Pasting="OnPasting" MaxLength="10" HorizontalAlignment="Center" Margin="231,621,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="265" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39"  VerticalContentAlignment="Center" Padding="4,4,4,4" Cursor="IBeam" >
+                <TextBox.Template >
+                    <ControlTemplate >
+                        <Border Background="#FFF0F0F0" CornerRadius="6" Padding="2" BorderThickness="1" BorderBrush="#9f9f99">
+                            <Viewbox Stretch="Uniform" HorizontalAlignment="Left">
+                                <ScrollViewer  Margin="0" x:Name="PART_ContentHost"/>
+                            </Viewbox>
+                        </Border>
+                    </ControlTemplate>
+                </TextBox.Template>
+            </TextBox>
+            <TextBlock x:Name="TextTask5M1Y1" HorizontalAlignment="Center" Margin="0,762,0,0" TextWrapping="Wrap" Text="Сколько существует перестановок длины 7 из букв Т Р А Т А Т А 
+" VerticalAlignment="Top" Height="48" Width="522" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="16"/>
+            <TextBox x:Name="Task5M1Y1" PreviewTextInput="OnPreviewTextInput" DataObject.Pasting="OnPasting" MaxLength="10" HorizontalAlignment="Center" Margin="231,805,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="265" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39"  VerticalContentAlignment="Center" Padding="4,4,4,4" Cursor="IBeam" >
+                <TextBox.Template >
+                    <ControlTemplate >
+                        <Border Background="#FFF0F0F0" CornerRadius="6" Padding="2" BorderThickness="1" BorderBrush="#9f9f99">
+                            <Viewbox Stretch="Uniform" HorizontalAlignment="Left">
+                                <ScrollViewer  Margin="0" x:Name="PART_ContentHost"/>
+                            </Viewbox>
+                        </Border>
+                    </ControlTemplate>
+                </TextBox.Template>
+            </TextBox>
+            <TextBlock x:Name="TextTask6M1Y1" HorizontalAlignment="Center" Margin="0,916,0,0" TextWrapping="Wrap" Text="Сколько существует перестановок длины 8 из букв О Д К О Е К О Д" VerticalAlignment="Top" Height="73" Width="522" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="16"/>
+            <TextBox x:Name="Task6M1Y1" PreviewTextInput="OnPreviewTextInput" DataObject.Pasting="OnPasting" MaxLength="10" HorizontalAlignment="Center" Margin="231,956,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="265" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39"  VerticalContentAlignment="Center" Padding="4,4,4,4" Cursor="IBeam" >
+                <TextBox.Template >
+                    <ControlTemplate >
+                        <Border Background="#FFF0F0F0" CornerRadius="6" Padding="2" BorderThickness="1" BorderBrush="#9f9f99">
+                            <Viewbox Stretch="Uniform" HorizontalAlignment="Left">
+                                <ScrollViewer  Margin="0" x:Name="PART_ContentHost"/>
+                            </Viewbox>
+                        </Border>
+                    </ControlTemplate>
+                </TextBox.Template>
+            </TextBox>
+            <TextBlock x:Name="TextTask7M1Y1" HorizontalAlignment="Center" Margin="0,1090,0,0" TextWrapping="Wrap" Text="Сколько различных «слов» можно получить, переставляя буквы в слове: ПАРАБОЛА" VerticalAlignment="Top" Height="54" Width="523" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="16"/>
+            <TextBox x:Name="Task7M1Y1" PreviewTextInput="OnPreviewTextInput" DataObject.Pasting="OnPasting" MaxLength="10" HorizontalAlignment="Center" Margin="231,1147,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="265" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39"  VerticalContentAlignment="Center" Padding="4,4,4,4" Cursor="IBeam" >
+                <TextBox.Template >
+                    <ControlTemplate >
+                        <Border Background="#FFF0F0F0" CornerRadius="6" Padding="2" BorderThickness="1" BorderBrush="#9f9f99">
+                            <Viewbox Stretch="Uniform" HorizontalAlignment="Left">
+                                <ScrollViewer  Margin="0" x:Name="PART_ContentHost"/>
+                            </Viewbox>
+                        </Border>
+                    </ControlTemplate>
+                </TextBox.Template>
+            </TextBox>
+            <TextBlock x:Name="TextTask8M1Y1" HorizontalAlignment="Center" Margin="0,1273,0,0" TextWrapping="Wrap" Text="Сколько различных «слов» можно получить, переставляя буквы в слове: ИНГРЕДИЕНТ" VerticalAlignment="Top" Height="48" Width="522" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="16"/>
+            <TextBox x:Name="Task8M1Y1" PreviewTextInput="OnPreviewTextInput" DataObject.Pasting="OnPasting" MaxLength="10" HorizontalAlignment="Center" Margin="231,1326,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="265" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39"  VerticalContentAlignment="Center" Padding="4,4,4,4" Cursor="IBeam" >
+                <TextBox.Template >
+                    <ControlTemplate >
+                        <Border Background="#FFF0F0F0" CornerRadius="6" Padding="2" BorderThickness="1" BorderBrush="#9f9f99">
+                            <Viewbox Stretch="Uniform" HorizontalAlignment="Left">
+                                <ScrollViewer  Margin="0" x:Name="PART_ContentHost"/>
+                            </Viewbox>
+                        </Border>
+                    </ControlTemplate>
+                </TextBox.Template>
+            </TextBox>
+            <TextBlock x:Name="TextTask9M1Y1" HorizontalAlignment="Center" Margin="0,1449,0,0" TextWrapping="Wrap" Text="Сколько существует перестановок длины 6 из букв З А И С П Ь, если Ь нельзя ставить на первое место и после гласных" VerticalAlignment="Top" Height="44" Width="523" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="16"/>
+            <TextBox x:Name="Task9M1Y1" PreviewTextInput="OnPreviewTextInput" DataObject.Pasting="OnPasting" MaxLength="10" HorizontalAlignment="Center" Margin="231,1521,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="266" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39"  VerticalContentAlignment="Center" Padding="4,4,4,4" Cursor="IBeam" RenderTransformOrigin="0.438,1.674" >
+                <TextBox.Template >
+                    <ControlTemplate >
+                        <Border Background="#FFF0F0F0" CornerRadius="6" Padding="2" BorderThickness="1" BorderBrush="#9f9f99">
+                            <Viewbox Stretch="Uniform" HorizontalAlignment="Left">
+                                <ScrollViewer  Margin="0" x:Name="PART_ContentHost"/>
+                            </Viewbox>
+                        </Border>
+                    </ControlTemplate>
+                </TextBox.Template>
+            </TextBox>
+            <TextBlock x:Name="TextTask10M1Y1" HorizontalAlignment="Center" Margin="0,1635,0,0" TextWrapping="Wrap" Text="У  Ольги Павловны n одинаковых блокнотов и x одинаковых ручек. Каждый день в течение n+x дней подряд она выдает по одному предмету студенту, который показывает лучший результат на паре. Сколькими способами это может быть сделано? " VerticalAlignment="Top" Height="92" Width="520" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="16"/>
+            <TextBox x:Name="Task10M1Y1" PreviewTextInput="OnPreviewTextInput" DataObject.Pasting="OnPasting" MaxLength="10" HorizontalAlignment="Center" Margin="231,1737,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="265" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39"  VerticalContentAlignment="Center" Padding="4,4,4,4" Cursor="IBeam" >
+                <TextBox.Template >
+                    <ControlTemplate >
+                        <Border Background="#FFF0F0F0" CornerRadius="6" Padding="2" BorderThickness="1" BorderBrush="#9f9f99">
+                            <Viewbox Stretch="Uniform" HorizontalAlignment="Left">
+                                <ScrollViewer  Margin="0" x:Name="PART_ContentHost"/>
+                            </Viewbox>
+                        </Border>
+                    </ControlTemplate>
+                </TextBox.Template>
+            </TextBox>
+            <TextBlock x:Name="TextTask11M1Y1" HorizontalAlignment="Center" Margin="0,1876,0,0" TextWrapping="Wrap" Text="Сколько четырехзначных чисел больше 2100 можно составить из цифр 1,2,3,4,5,0, если каждую можно выбрать только один раз? " VerticalAlignment="Top" Height="73" Width="522" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="16"/>
+            <TextBox x:Name="Task11M1Y1" PreviewTextInput="OnPreviewTextInput" DataObject.Pasting="OnPasting" MaxLength="10" HorizontalAlignment="Center" Margin="231,1950,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="264" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39"  VerticalContentAlignment="Center" Padding="4,4,4,4" Cursor="IBeam" >
+                <TextBox.Template >
+                    <ControlTemplate >
+                        <Border Background="#FFF0F0F0" CornerRadius="6" Padding="2" BorderThickness="1" BorderBrush="#9f9f99">
+                            <Viewbox Stretch="Uniform" HorizontalAlignment="Left">
+                                <ScrollViewer  Margin="0" x:Name="PART_ContentHost"/>
+                            </Viewbox>
+                        </Border>
+                    </ControlTemplate>
+                </TextBox.Template>
+            </TextBox>
+            <Button x:Name="ButtonFinishTask1" Content="Завершить" HorizontalAlignment="Center" Margin="231,2060,0,0" VerticalAlignment="Top"  FontSize="20" FontFamily="pack://application:,,,/fonts/#Jost Medium" Width="264" Height="44" Cursor="Hand" Background="#ff6666" Foreground="White" BorderBrush="#ff6666" Click="ButtonFinishTask1_Click"  >
+                <Button.Effect>
+                    <DropShadowEffect Color="#FFE0E0E0"/>
+                </Button.Effect>
+                <Button.Style>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Border CornerRadius="6"
+                                Background="{TemplateBinding Background}">
 
-    <Grid>
-        <TextBlock>задачи урок 2</TextBlock>
-    </Grid>
+                                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="RenderTransformOrigin" Value="0.5, 0.5"/>
+                                <Setter Property="RenderTransform">
+                                    <Setter.Value>
+                                        <ScaleTransform ScaleX="1.1" ScaleY="1.1"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+            </Button>
+            <Rectangle HorizontalAlignment="Center" Height="151" Margin="0,26,0,0" Stroke="#ff6666" VerticalAlignment="Top" Width="800" RadiusX="15" RadiusY="15" />
+            <Rectangle HorizontalAlignment="Center" Height="165" Margin="0,196,0,0" Stroke="#ff6666" VerticalAlignment="Top" Width="800" RadiusX="15" RadiusY="15" />
+            <Rectangle HorizontalAlignment="Center" Height="133" Margin="0,380,0,0" Stroke="#ff6666" VerticalAlignment="Top" Width="800" RadiusX="15" RadiusY="15" />
+            <Rectangle HorizontalAlignment="Center" Height="158" Margin="0,530,0,0" Stroke="#ff6666" VerticalAlignment="Top" Width="800" RadiusX="15" RadiusY="15" />
+            <Rectangle HorizontalAlignment="Center" Height="156" Margin="0,707,0,0" Stroke="#ff6666" VerticalAlignment="Top" Width="800" RadiusX="15" RadiusY="15" />
+            <Rectangle HorizontalAlignment="Center" Height="155" Margin="0,879,0,0" Stroke="#ff6666" VerticalAlignment="Top" Width="800" RadiusX="15" RadiusY="15" />
+            <Rectangle HorizontalAlignment="Center" Height="151" Margin="0,1053,0,0" Stroke="#ff6666" VerticalAlignment="Top" Width="800" RadiusX="15" RadiusY="15" />
+            <Rectangle HorizontalAlignment="Center" Height="164" Margin="0,1222,0,0" Stroke="#ff6666" VerticalAlignment="Top" Width="800" RadiusX="15" RadiusY="15" />
+            <Rectangle HorizontalAlignment="Center" Height="177" Margin="0,1405,0,0" Stroke="#ff6666" VerticalAlignment="Top" Width="800" RadiusX="15" RadiusY="15" />
+            <Rectangle HorizontalAlignment="Center" Height="196" Margin="0,1602,0,0" Stroke="#ff6666" VerticalAlignment="Top" Width="800" RadiusX="15" RadiusY="15" />
+            <Rectangle HorizontalAlignment="Center" Height="192" Margin="0,1817,0,0" Stroke="#ff6666" VerticalAlignment="Top" Width="800" RadiusX="15" RadiusY="15" />
+
+            <Button Content="Button" HorizontalAlignment="Left" Margin="708,2160,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
+        </Grid>
+    </ScrollViewer>
 </Page>

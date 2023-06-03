@@ -94,7 +94,6 @@ namespace DiscreteMathCursovaya
             return false;
         }
 
-
         public static bool VerificationTask5(TextBox Task5M1Y1)
         {
             if (Task5M1Y1.Text == "" || Task5M1Y1.Text.Replace(" ", "") == "")
