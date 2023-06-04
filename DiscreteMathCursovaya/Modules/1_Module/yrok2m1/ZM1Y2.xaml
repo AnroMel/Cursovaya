@@ -57,8 +57,7 @@
                     </ControlTemplate>
                 </TextBox.Template>
             </TextBox>
-            <TextBlock x:Name="TextTask5M1Y1" HorizontalAlignment="Center" Margin="0,762,0,0" TextWrapping="Wrap" Text="Сколько существует перестановок длины 7 из букв Т Р А Т А Т А 
-" VerticalAlignment="Top" Height="48" Width="522" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="16"/>
+            <TextBlock x:Name="TextTask5M1Y1" HorizontalAlignment="Center" Margin="0,762,0,0" TextWrapping="Wrap" Text="Сколько существует перестановок длины 7 из букв Т Р А Т А Т А " VerticalAlignment="Top" Height="48" Width="522" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="16"/>
             <TextBox x:Name="Task5M1Y1" PreviewTextInput="OnPreviewTextInput" DataObject.Pasting="OnPasting" MaxLength="10" HorizontalAlignment="Center" Margin="231,805,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="265" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39"  VerticalContentAlignment="Center" Padding="4,4,4,4" Cursor="IBeam" >
                 <TextBox.Template >
                     <ControlTemplate >

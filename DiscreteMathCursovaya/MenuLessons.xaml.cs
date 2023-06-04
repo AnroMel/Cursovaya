@@ -100,22 +100,23 @@ namespace DiscreteMathCursovaya
             {
                 MessageBox.Show("Превышено количество попыток");
             }
-            
         }
 
         private void Yrok2_1_Click(object sender, RoutedEventArgs e)
         {
-            yrokM2_1 window = new yrokM2_1();
-            window.Show();
-            Close();
+            MessageBox.Show("Модуль находится в разработке");
+            //yrokM2_1 window = new yrokM2_1();
+            //window.Show();
+            //Close();
 
         }
 
         private void Yrok2_2_Click(object sender, RoutedEventArgs e)
         {
-            yrokM2_2 window = new yrokM2_2();
-            window.Show();
-            Close();
+            MessageBox.Show("Модуль находится в разработке");
+            //yrokM2_2 window = new yrokM2_2();
+            //window.Show();
+            //Close();
         }
 
         private void Yrok3_1_Click(object sender, RoutedEventArgs e)
@@ -141,23 +142,34 @@ namespace DiscreteMathCursovaya
 
         private void Yrok4_1_Click(object sender, RoutedEventArgs e)
         {
-            yrokM4_1 window = new yrokM4_1();
-            window.Show();
-            Close();
+            dbconnect = new ConnectingDB();
+            var write = dbconnect.FirstOrDefaultWrite(Login, 4, 1);
+            if (write == null || write.CountAttempt == 0 || write.CountAttempt == 1)
+            {
+                yrokM4_1 window = new yrokM4_1(Login);
+                window.Show();
+                Close();
+            }
+            else
+            {
+                MessageBox.Show("Превышено количество попыток");
+            }
         }
 
         private void Yrok4_2_Click(object sender, RoutedEventArgs e)
         {
-            yrokM4_2 window = new yrokM4_2();
-            window.Show();
-            Close();
-        }
-
-        private void Yrok4_3_Click(object sender, RoutedEventArgs e)
-        {
-            yrokM4_3 window = new yrokM4_3();
-            window.Show();
-            Close();
+            dbconnect = new ConnectingDB();
+            var write = dbconnect.FirstOrDefaultWrite(Login, 4, 2);
+            if (write == null || write.CountAttempt == 0 || write.CountAttempt == 1)
+            {
+                yrokM4_2 window = new yrokM4_2(Login);
+                window.Show();
+                Close();
+            }
+            else
+            {
+                MessageBox.Show("Превышено количество попыток");
+            }
         }
     }
 }

@@ -41,6 +41,10 @@
     <None Remove="Modules\1_Module\yrok3m1\Theory1_3.jpg" />
     <None Remove="Modules\3_Module\imgModule3\Frame_19.jpg" />
     <None Remove="Modules\3_Module\yrok1m3\Frame_19.jpg" />
+    <None Remove="Modules\4_Module\imgModule4\Examples4_1.jpg" />
+    <None Remove="Modules\4_Module\imgModule4\Theory4_1.jpg" />
+    <None Remove="Modules\4_Module\yrok1m4\Examples4_1.jpg" />
+    <None Remove="Modules\4_Module\yrok1m4\Theory4_1.jpg" />
   </ItemGroup>
 
   <ItemGroup>
@@ -145,6 +149,14 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Modules\3_Module\yrok1m3\Frame_19.jpg" />
+    <Resource Include="Modules\4_Module\imgModule4\Examples4_1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Modules\4_Module\imgModule4\Theory4_1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Modules\4_Module\yrok1m4\Examples4_1.jpg" />
+    <Resource Include="Modules\4_Module\yrok1m4\Theory4_1.jpg" />
   </ItemGroup>
 
 </Project>

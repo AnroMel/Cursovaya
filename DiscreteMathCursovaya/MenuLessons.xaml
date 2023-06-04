@@ -7,9 +7,9 @@
         mc:Ignorable="d"
         WindowState="Maximized"
         Icon="/images/icon2.png"
-        Title="MenuLessons" Height="4772" Width="1600" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize"  FontFamily="pack://application:,,,/fonts/#Jost Regular">
+        Title="MenuLessons" Height="3772" Width="1600" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize"  FontFamily="pack://application:,,,/fonts/#Jost Regular">
     <ScrollViewer>
-        <Grid Width="1481" Height="4751">
+        <Grid Width="1481" Height="3772">
             <Label Content="Модуль 1" x:Name="Modyl1" HorizontalAlignment="Center" Margin="0,94,0,0" VerticalAlignment="Top" Height="102" Width="514" FontSize="65" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="pack://application:,,,/fonts/#Jost Medium"/>
             <TextBlock Margin="85,212,85,0" x:Name="Modyl1_Text" TextWrapping="Wrap" TextAlignment="Center" Text="Модуль посвящен элементарной комбинаторике.В нем вы узнаете о том, что такое дискретные структуры и когда их можно применять. Также вы познакомитесь с самыми распространенными дискретными структурами: сочетания и перестановки " FontSize="30" Height="135" VerticalAlignment="Top" FontFamily="pack://application:,,,/fonts/#Jost Regular"/>
             <Button x:Name="Yrok1_1" HorizontalAlignment="Left" Margin="85,372,0,0" VerticalAlignment="Top" Height="415" Width="415" Click="Yrok1_1_Click">
@@ -105,10 +105,10 @@
                     </Style>
                 </Button.Style>
             </Button>
-            
+
             <Label Content="Модуль 2"  x:Name="Modyl2" Margin="503,899,506,0" VerticalAlignment="Top" Height="102" FontSize="65" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="pack://application:,,,/fonts/#Jost Medium"/>
-            <TextBlock HorizontalAlignment="Center" x:Name="Modyl2_Text" Margin="0,1064,0,0" TextWrapping="Wrap" Text="TextBlock" Width="1353" FontSize="30" Height="135" VerticalAlignment="Top" FontFamily="pack://application:,,,/fonts/#Jost Regular"/>
-            <Button x:Name="Yrok2_1" HorizontalAlignment="Left" Margin="85,1530,0,0" VerticalAlignment="Top" Height="415" Width="415" Click="Yrok2_1_Click">
+            <TextBlock HorizontalAlignment="Center" x:Name="Modyl2_Text" Margin="0,1066,0,0" TextWrapping="Wrap" Text="TextBlock" Width="1313" FontSize="30" Height="135" VerticalAlignment="Top" FontFamily="pack://application:,,,/fonts/#Jost Regular"/>
+            <Button x:Name="Yrok2_1" HorizontalAlignment="Left" Margin="85,1260,0,0" VerticalAlignment="Top" Height="415" Width="415" Click="Yrok2_1_Click">
                 <Button.Background>
                     <ImageBrush ImageSource="/images/M2Y1.jpg"/>
                 </Button.Background>
@@ -139,7 +139,7 @@
                     </Style>
                 </Button.Style>
             </Button>
-            <Button x:Name="Yrok2_2"  Margin="0,1530,0,0" HorizontalAlignment="Center" Width="415" Height="415" VerticalAlignment="Top" Click="Yrok2_2_Click">
+            <Button x:Name="Yrok2_2"  Margin="0,1260,0,0" HorizontalAlignment="Center" Width="415" Height="415" VerticalAlignment="Top" Click="Yrok2_2_Click">
                 <Button.Background>
                     <ImageBrush ImageSource="/images/M2Y2.jpg"/>
                 </Button.Background>
@@ -172,9 +172,9 @@
             </Button>
 
 
-            <Label Content="Модуль 3"  x:Name="Modyl3" Margin="503,1995,506,0" VerticalAlignment="Top" Height="102" FontSize="65" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="pack://application:,,,/fonts/#Jost Medium"/>
-            <TextBlock Margin="85,2114,85,0" TextWrapping="Wrap" x:Name="Modyl3_Text" Text="TextBlock" FontSize="30" Height="135" VerticalAlignment="Top" FontFamily="pack://application:,,,/fonts/#Jost Regular"/>
-            <Button x:Name="Yrok3_1" HorizontalAlignment="Left" Margin="85,2281,0,0" VerticalAlignment="Top" Height="415" Width="415" Click="Yrok3_1_Click">
+            <Label Content="Модуль 3"  x:Name="Modyl3" Margin="503,1809,506,0" VerticalAlignment="Top" Height="102" FontSize="65" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="pack://application:,,,/fonts/#Jost Medium"/>
+            <TextBlock Margin="85,1961,85,0" TextWrapping="Wrap" x:Name="Modyl3_Text" Text="TextBlock" FontSize="30" Height="135" VerticalAlignment="Top" FontFamily="pack://application:,,,/fonts/#Jost Regular"/>
+            <Button x:Name="Yrok3_1" HorizontalAlignment="Left" Margin="64,2170,0,0" VerticalAlignment="Top" Height="415" Width="415" Click="Yrok3_1_Click">
                 <Button.Background>
                     <ImageBrush ImageSource="/images/M3Y1.jpg"/>
                 </Button.Background>
@@ -205,7 +205,7 @@
                     </Style>
                 </Button.Style>
             </Button>
-            <Button x:Name="Yrok3_2" HorizontalAlignment="Center" Width="450" Height="415" VerticalAlignment="Top" Margin="0,2281,0,0" Click="Yrok3_2_Click">
+            <Button x:Name="Yrok3_2" HorizontalAlignment="Center" Width="450" Height="415" VerticalAlignment="Top" Click="Yrok3_2_Click" Margin="0,2170,0,0">
                 <Button.Background>
                     <ImageBrush ImageSource="/images/M3Y2.jpg"/>
                 </Button.Background>
@@ -236,7 +236,7 @@
                     </Style>
                 </Button.Style>
             </Button>
-            <Button x:Name="Yrok3_3" Margin="0,2271,85,0" VerticalAlignment="Top" Height="415" HorizontalAlignment="Right" Width="414" Click="Yrok3_3_Click">
+            <Button x:Name="Yrok3_3" Margin="0,2170,85,0" VerticalAlignment="Top" Height="415" HorizontalAlignment="Right" Width="414" Click="Yrok3_3_Click">
                 <Button.Background>
                     <ImageBrush ImageSource="/images/M3Y3.jpg"/>
                 </Button.Background>
@@ -269,9 +269,9 @@
             </Button>
 
 
-            <Label Content="Модуль 4"  x:Name="Modyl4" Margin="503,3124,506,0" VerticalAlignment="Top" Height="102" FontSize="65" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="pack://application:,,,/fonts/#Jost Medium"/>
-            <TextBlock Margin="85,3231,85,0" TextWrapping="Wrap" Text="TextBlock"  x:Name="Modyl4_Text" FontSize="30" Height="135" VerticalAlignment="Top" FontFamily="pack://application:,,,/fonts/#Jost Regular"/>
-            <Button x:Name="Yrok4_1" HorizontalAlignment="Left" Margin="85,3469,0,0" VerticalAlignment="Top" Height="350" Width="350" Click="Yrok4_1_Click">
+            <Label Content="Модуль 4"  x:Name="Modyl4" Margin="503,2760,506,0" VerticalAlignment="Top" Height="102" FontSize="65" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="pack://application:,,,/fonts/#Jost Medium"/>
+            <TextBlock Margin="85,2927,85,0" TextWrapping="Wrap" TextAlignment="Center" Text="В данном модуле вы познакомитесь с базовыми определениями и свойствами двудольных графов. Вы узнаете, что такое двудольный граф, как он строится и какие особенности он имеет. Также вы узнаете о циклах и связности графов"  x:Name="Modyl4_Text" FontSize="30" Height="135" VerticalAlignment="Top" FontFamily="pack://application:,,,/fonts/#Jost Regular"/>
+            <Button x:Name="Yrok4_1" HorizontalAlignment="Left" Margin="85,3156,0,0" VerticalAlignment="Top" Height="350" Width="350" Click="Yrok4_1_Click">
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
                         <Setter Property="Template">
@@ -299,7 +299,7 @@
                     </Style>
                 </Button.Style>
             </Button>
-            <Button x:Name="Yrok4_2" HorizontalAlignment="Center" Margin="0,3469,0,0" VerticalAlignment="Top" Height="350" Width="350" Click="Yrok4_2_Click">
+            <Button x:Name="Yrok4_2" HorizontalAlignment="Center" Margin="0,3156,0,0" VerticalAlignment="Top" Height="350" Width="350" Click="Yrok4_2_Click">
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
                         <Setter Property="Template">
@@ -327,35 +327,8 @@
                     </Style>
                 </Button.Style>
             </Button>
-            <Button x:Name="Yrok4_3" HorizontalAlignment="Right" Margin="0,3469,85,0" VerticalAlignment="Top" Height="350" Width="350" Click="Yrok4_3_Click">
-                <Button.Style>
-                    <Style TargetType="{x:Type Button}">
-                        <Setter Property="Template">
-                            <Setter.Value>
-                                <ControlTemplate TargetType="{x:Type Button}">
-                                    <Border CornerRadius="12"
-                                Background="{TemplateBinding Background}">
 
-                                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-                                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
-                                    </Border>
-                                </ControlTemplate>
-                            </Setter.Value>
-                        </Setter>
-                        <Style.Triggers>
-                            <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="RenderTransformOrigin" Value="0.5, 0.5"/>
-                                <Setter Property="RenderTransform">
-                                    <Setter.Value>
-                                        <ScaleTransform ScaleX="1.1" ScaleY="1.1"/>
-                                    </Setter.Value>
-                                </Setter>
-                            </Trigger>
-                        </Style.Triggers>
-                    </Style>
-                </Button.Style>
-            </Button>
-           
+
             <Button x:Name="ButtonLinkToReport" Content="Отчет" FontSize="21" HorizontalAlignment="Right" Height="33" Margin="0,15,429,0" VerticalAlignment="Top" Width="90" FontFamily="pack://application:,,,/fonts/#Jost Regular" Background="{x:Null}" BorderBrush="{x:Null}" Cursor="Hand" Click="ButtonLinkToReport_Click">
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
