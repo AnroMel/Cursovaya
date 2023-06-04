@@ -24,7 +24,7 @@ namespace DiscreteMathCursovaya
     {
         private IConnectDB dbconnect;
         private string Login;
-        IEnumerable<CommonTask> tasks;
+        CommonTask[] tasks;
         public ZM4Y1(string login)
         {
             Login = login;
@@ -42,7 +42,8 @@ namespace DiscreteMathCursovaya
                 MessageBox.Show(a.Question);
             }*/
 
-            TextTaskM1Y1.Text = new Task1().Question;
+            TextTaskM1Y1.Text = tasks[0].Question;
+            TextTask3M1Y1.Text = tasks[1].Question;
 
         }
 
@@ -104,25 +105,52 @@ namespace DiscreteMathCursovaya
     }
     public class Task2 : CommonTask
     {
-        private static int U = rnd.Next(3, 15);
-        private static int R = rnd.Next(3, 15);
-        public Task2() : base(String.Format(("1. Каждый граф можно превратить в двудольный, " +
-            "покрасив все его вершины в белый цвет и добавив чёрную вершину в " +
-            "середину каждого ребра. Сколько вершин каждого цвета и сколько " +
-            "рёбер у полученного графа, если у исходного было {0} вершин и {1} рёбер?"), U, R))
+        private static int U = rnd.Next(10, 20) * 2;
+
+        public Task2() : base(String.Format((" В классе {0} человек. " +
+            "На праздник каждый мальчик подарил каждой девочке по цветку." +
+            "Какое наибольшее число цветков могло быть подарено"), U))
+
         {
 
         }
-
+        private static string Question2 = String.Format(("Тот же вопрос, если в классе  человек {0}"),U+1);
         public override bool ValidateAnswer(object Answer)
         {
-            if (Answer is int[] arrayIntAnswer)
+            if (Answer is int intAnswer)
             {
-                return arrayIntAnswer[0] == R * 2 && arrayIntAnswer[1] == U && arrayIntAnswer[2] == R;
+                if (U % 2 == 0)
+                    return intAnswer == (U * U) / 4;
+                else
+                {
+                U += 1;
+                return intAnswer == (U * U) / 4; 
+                }
             }
             return false;
         }
     }
+    //public class Task3 : CommonTask
+    //{
+    //    private static int U = new Task2().U;
+
+    //    public Task3() : base(String.Format((" В классе {0} человек. " +
+    //        "На праздник каждый мальчик подарил каждой девочке по цветку." +
+    //        "Какое наибольшее число цветков могло быть подарено"), U))
+
+    //    {
+
+    //    }
+
+    //    public override bool ValidateAnswer(object Answer)
+    //    {
+    //        if (Answer is int intAnswer)
+    //        {
+    //            return intAnswer == (U * U) / 4;
+    //        }
+    //        return false;
+    //    }
+    //}
     public class Task34 : CommonTask
     {
         public Task34() : base("Здесь условие задачи 2")
