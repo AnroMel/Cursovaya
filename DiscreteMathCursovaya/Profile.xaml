@@ -10,9 +10,9 @@
         Title="Profile" Width="1600" Height="900" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize"  FontFamily="pack://application:,,,/fonts/#Jost Regular">
 
     <Grid Background="#FFF0F0F0">
-        <Rectangle HorizontalAlignment="Left" Height="621" Margin="950,102,0,0" Stroke="white" VerticalAlignment="Top" Width="492" Visibility="Visible" RadiusX="6" RadiusY="6" Fill="White" />
-        <Label x:Name="LabelNameProfile" Content="Имя:" HorizontalAlignment="Left" Margin="1020,115,0,0" VerticalAlignment="Top" Width="114" FontFamily="pack://application:,,,/fonts/#Jost Medium" FontSize="23" RenderTransformOrigin="0.488,1.961" Grid.Row="1"/>
-        <TextBox x:Name="TextBoxNameProfile" IsReadOnly="True" MaxLength="30" HorizontalAlignment="Left" Margin="1020,158,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="350" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39"  VerticalContentAlignment="Center" Padding="4,4,4,4" Cursor="IBeam" Grid.Row="1" GotFocus="TextBoxProfile_GotFocus" >
+        <Rectangle HorizontalAlignment="Right" Height="621" Margin="0,10,159,0" Stroke="white" VerticalAlignment="Center" Width="492" Visibility="Visible" RadiusX="6" RadiusY="6" Fill="White" />
+        <Label x:Name="LabelNameProfile" Content="Имя:" HorizontalAlignment="Right" Margin="0,-479,464,0" VerticalAlignment="Center" Width="114" FontFamily="pack://application:,,,/fonts/#Jost Medium" FontSize="23" RenderTransformOrigin="0.488,1.961"/>
+        <TextBox x:Name="TextBoxNameProfile" IsReadOnly="True" MaxLength="30" HorizontalAlignment="Right" Margin="0,-401,232,0" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="350" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39"  VerticalContentAlignment="Center" Padding="4,4,4,4" Cursor="IBeam" GotFocus="TextBoxProfile_GotFocus" >
             <TextBox.Template >
                 <ControlTemplate >
                     <Border Background="#FFF" CornerRadius="6" Padding="2" BorderThickness="1" BorderBrush="#9f9f99">
@@ -23,8 +23,8 @@
                 </ControlTemplate>
             </TextBox.Template>
         </TextBox>
-        <Label x:Name="LabelSurNameProfile" Content="Фамилия:" HorizontalAlignment="Left" Margin="1020,206,0,0" VerticalAlignment="Top" Width="114" FontFamily="pack://application:,,,/fonts/#Jost Medium" FontSize="23" RenderTransformOrigin="0.488,1.961" Grid.Row="1"/>
-        <TextBox x:Name="TextBoxSurNameProfile" IsReadOnly="True" MaxLength="30" HorizontalAlignment="Left" Margin="1020,251,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="350" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39"  VerticalContentAlignment="Center" Padding="4,4,4,4" Cursor="IBeam" Grid.Row="1" GotFocus="TextBoxProfile_GotFocus">
+        <Label x:Name="LabelSurNameProfile" Content="Фамилия:" HorizontalAlignment="Right" Margin="0,-310,464,0" VerticalAlignment="Center" Width="114" FontFamily="pack://application:,,,/fonts/#Jost Medium" FontSize="23" RenderTransformOrigin="0.488,1.961"/>
+        <TextBox x:Name="TextBoxSurNameProfile" IsReadOnly="True" MaxLength="30" HorizontalAlignment="Right" Margin="0,-230,232,0" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="350" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39"  VerticalContentAlignment="Center" Padding="4,4,4,4" Cursor="IBeam" GotFocus="TextBoxProfile_GotFocus">
             <TextBox.Template >
                 <ControlTemplate >
                     <Border Background="#FFF" CornerRadius="6" Padding="2" BorderThickness="1" BorderBrush="#9f9f99">
@@ -35,8 +35,8 @@
                 </ControlTemplate>
             </TextBox.Template>
         </TextBox>
-        <Label x:Name="LabelGroupProfile" Content="Группа:" HorizontalAlignment="Left" Margin="1018,301,0,0" VerticalAlignment="Top" Width="114" FontFamily="pack://application:,,,/fonts/#Jost Medium" FontSize="23" RenderTransformOrigin="0.488,1.961" Grid.Row="1"/>
-        <TextBox x:Name="TextBoxGroupProfile" IsReadOnly="True" MaxLength="30" HorizontalAlignment="Left" Margin="1020,345,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="350" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39"  VerticalContentAlignment="Center" Padding="4,4,4,4" Cursor="IBeam" Grid.Row="1" GotFocus="TextBoxProfile_GotFocus">
+        <Label x:Name="LabelGroupProfile" Content="Группа:" HorizontalAlignment="Right" Margin="0,-120,468,0" VerticalAlignment="Center" Width="114" FontFamily="pack://application:,,,/fonts/#Jost Medium" FontSize="23" RenderTransformOrigin="0.488,1.961"/>
+        <TextBox x:Name="TextBoxGroupProfile" IsReadOnly="True" MaxLength="30" HorizontalAlignment="Right" Margin="0,-40,232,0" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="350" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39"  VerticalContentAlignment="Center" Padding="4,4,4,4" Cursor="IBeam" GotFocus="TextBoxProfile_GotFocus">
             <TextBox.Template >
                 <ControlTemplate >
                     <Border Background="#FFF" CornerRadius="6" Padding="2" BorderThickness="1" BorderBrush="#9f9f99">
@@ -47,8 +47,8 @@
                 </ControlTemplate>
             </TextBox.Template>
         </TextBox>
-        <Label x:Name="LabelLoginProfile" Content="Логин:" HorizontalAlignment="Left" Margin="1020,400,0,0" VerticalAlignment="Top" Width="114" FontFamily="pack://application:,,,/fonts/#Jost Medium" FontSize="23" RenderTransformOrigin="0.488,1.961" Grid.Row="1"/>
-        <TextBox x:Name="TextBoxLoginProfile" IsReadOnly="True" MaxLength="30" HorizontalAlignment="Left" Margin="1018,441,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="350" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39"  VerticalContentAlignment="Center" Padding="4,4,4,4" Cursor="IBeam" Grid.Row="1" GotFocus="TextBoxProfile_GotFocus" >
+        <Label x:Name="LabelLoginProfile" Content="Логин:" HorizontalAlignment="Right" Margin="0,69,466,0" VerticalAlignment="Center" Width="114" FontFamily="pack://application:,,,/fonts/#Jost Medium" FontSize="23" RenderTransformOrigin="0.488,1.961"/>
+        <TextBox x:Name="TextBoxLoginProfile" IsReadOnly="True" MaxLength="30" HorizontalAlignment="Right" Margin="0,140,230,0" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="350" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39"  VerticalContentAlignment="Center" Padding="4,4,4,4" Cursor="IBeam" GotFocus="TextBoxProfile_GotFocus" >
             <TextBox.Template >
                 <ControlTemplate >
                     <Border Background="#FFF" CornerRadius="6" Padding="2" BorderThickness="1" BorderBrush="#9f9f99">
@@ -59,8 +59,8 @@
                 </ControlTemplate>
             </TextBox.Template>
         </TextBox>
-        <Label x:Name="LabelPasswordProfile" Content="Пароль:" HorizontalAlignment="Left" Margin="1018,490,0,0" VerticalAlignment="Top" Width="114" FontFamily="pack://application:,,,/fonts/#Jost Medium" FontSize="23" Grid.Row="1"/>
-        <PasswordBox x:Name="PasswordBoxProfile" MaxLength="25" HorizontalAlignment="Left" Margin="1018,528,0,0" VerticalAlignment="Top" Width="350" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39" VerticalContentAlignment="Center" Padding="4,0,0,0" Cursor="IBeam" Grid.Row="1" IsEnabled="False">
+        <Label x:Name="LabelPasswordProfile" Content="Пароль:" HorizontalAlignment="Right" Margin="0,248,468,0" VerticalAlignment="Center" Width="114" FontFamily="pack://application:,,,/fonts/#Jost Medium" FontSize="23"/>
+        <PasswordBox x:Name="PasswordBoxProfile" MaxLength="25" HorizontalAlignment="Right" Margin="0,328,230,0" VerticalAlignment="Center" Width="350" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39" VerticalContentAlignment="Center" Padding="4,0,0,0" Cursor="IBeam" IsEnabled="False">
             <PasswordBox.Template>
                 <ControlTemplate >
                     <Border Background="#FFF0F0F0" CornerRadius="6" Padding="2" BorderThickness="1" BorderBrush="#9f9f99">
@@ -69,7 +69,7 @@
                 </ControlTemplate>
             </PasswordBox.Template>
         </PasswordBox>
-        <TextBox x:Name="TextBoxShowPasswordA" HorizontalAlignment="Left"  Margin="1020,529,0,0" VerticalAlignment="Top" Width="348" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="37" VerticalContentAlignment="Center" Padding="4,4,4,4"  TextWrapping="Wrap" Text="" IsReadOnly="True" Visibility="Hidden" Grid.Row="1">
+        <TextBox x:Name="TextBoxShowPasswordA" HorizontalAlignment="Right"  Margin="0,329,230,0" VerticalAlignment="Center" Width="348" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="37" VerticalContentAlignment="Center" Padding="4,4,4,4"  TextWrapping="Wrap" Text="" IsReadOnly="True" Visibility="Hidden" Grid.Row="1">
             <TextBox.Template>
                 <ControlTemplate >
                     <Border Background="#FFF0F0F0" CornerRadius="6" Padding="2" BorderThickness="1" BorderBrush="#FFF0F0F0" Margin="0,0,48,0">
@@ -80,9 +80,9 @@
                 </ControlTemplate>
             </TextBox.Template>
         </TextBox>
-        <Image x:Name="ShowPasswordA" HorizontalAlignment="Left" Height="28" Source="images/eyeclose2.png" Margin="1325,533,0,0" VerticalAlignment="Top" Width="28"   Cursor="Hand" MouseDown="ShowPasswordA_MouseDown" Grid.Row="1" IsEnabled="False" ></Image>
-        <Image x:Name="HidePasswordA" HorizontalAlignment="Left" Height="28" Source="images/eye2.png" Margin="1325,533,0,0" VerticalAlignment="Top" Width="28"   Visibility="Hidden" Cursor="Hand" MouseLeave="HidePasswordA_MouseLeave" MouseUp="HidePasswordA_MouseUp" Grid.Row="1"></Image>
-        <Button x:Name="ButtonEditProfile" Content="" HorizontalAlignment="Left" Margin="1057,595,0,0" VerticalAlignment="Top"  FontSize="20" FontFamily="pack://application:,,,/fonts/#Jost Medium" Width="272" Height="45" Cursor="Hand" Background="#ff6666" Foreground="White" BorderBrush="#ff6666" Grid.Row="1" Click="ButtonEditProfile_Click" >
+        <Image x:Name="ShowPasswordA" HorizontalAlignment="Right" Height="28" Source="images/eyeclose2.png" Margin="0,329,247,0" VerticalAlignment="Center" Width="28"   Cursor="Hand" MouseDown="ShowPasswordA_MouseDown" IsEnabled="False" />
+        <Image x:Name="HidePasswordA" HorizontalAlignment="Right" Height="28" Source="images/eye2.png" Margin="0,329,247,0" VerticalAlignment="Center" Width="28"   Visibility="Hidden" Cursor="Hand" MouseLeave="HidePasswordA_MouseLeave" MouseUp="HidePasswordA_MouseUp" Grid.Row="1"></Image>
+        <Button x:Name="ButtonEditProfile" Content="" HorizontalAlignment="Right" Margin="0,478,269,0" VerticalAlignment="Center"  FontSize="20" FontFamily="pack://application:,,,/fonts/#Jost Medium" Width="272" Height="45" Cursor="Hand" Background="#ff6666" Foreground="White" BorderBrush="#ff6666" Click="ButtonEditProfile_Click" >
             <Button.Effect>
                 <DropShadowEffect Color="#FFE0E0E0"/>
             </Button.Effect>
@@ -113,7 +113,7 @@
                 </Style>
             </Button.Style>
         </Button>
-        <Button x:Name="Cancel" Content="Oтменить" FontSize="18" HorizontalAlignment="Left" Height="33" Margin="1105,645,0,0" VerticalAlignment="Top" Width="176" FontFamily="pack://application:,,,/fonts/#Jost Regular" Background="{x:Null}" BorderBrush="{x:Null}" Cursor="Hand"  Grid.Row="1" Visibility="Hidden" Click="Cancel_Click">
+        <Button x:Name="Cancel" Content="Oтменить" FontSize="18" HorizontalAlignment="Right" Height="33" Margin="0,569,319,0" VerticalAlignment="Center" Width="176" FontFamily="pack://application:,,,/fonts/#Jost Regular" Background="{x:Null}" BorderBrush="{x:Null}" Cursor="Hand" Visibility="Hidden" Click="Cancel_Click">
             <Button.Style>
                 <Style TargetType="{x:Type Button}">
                     <Setter Property="Template">
@@ -141,7 +141,7 @@
                 </Style>
             </Button.Style>
         </Button>
-        <Rectangle HorizontalAlignment="Left" Height="585" Margin="109,0,0,0" Stroke="#FFF0F0F0" VerticalAlignment="Center" Width="691">
+        <Rectangle HorizontalAlignment="Left" Height="585" Margin="144,0,0,0" Stroke="#FFF0F0F0" VerticalAlignment="Center" Width="691">
             <Rectangle.Fill>
                 <ImageBrush ImageSource="/images/profile.png"/>
             </Rectangle.Fill>
