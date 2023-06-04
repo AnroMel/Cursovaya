@@ -24,10 +24,26 @@ namespace DiscreteMathCursovaya
     {
         private IConnectDB dbconnect;
         private string Login;
+        IEnumerable<CommonTask> tasks;
         public ZM4Y1(string login)
         {
             Login = login;
             InitializeComponent();
+            var arrayyy = new Type[]
+            {
+                typeof(Task1),
+                typeof(Task2),
+            };
+
+            tasks = arrayyy.Select(item => (CommonTask)Activator.CreateInstance(item)).ToArray();
+            /*foreach (var item in arrayyy)
+            {
+                var a = (CommonTask)Activator.CreateInstance(item);
+                MessageBox.Show(a.Question);
+            }*/
+
+            TextTaskM1Y1.Text = new Task1().Question;
+
         }
 
         void OnPreviewTextInput(object sender, TextCompositionEventArgs e)
@@ -48,52 +64,78 @@ namespace DiscreteMathCursovaya
                 return true;
             return false;
         }
+
+        private void ButtonFinishTask1_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
-        public abstract class CommonTask
+    public abstract class CommonTask
+    {
+        protected static Random rnd = new Random();
+        public string Question { get; protected set; }
+        protected CommonTask(string Question)
         {
-            protected static Random rnd = new Random();
-            protected string Question;
-            protected CommonTask(string Question)
-            {
-                this.Question = Question;
-            }
-            public abstract bool ValidateAnswer(object Answer);
+            this.Question = Question;
+        }
+        public abstract bool ValidateAnswer(object Answer);
+    }
+
+    public class Task1 : CommonTask
+    {
+        private static int U = rnd.Next(3, 15);
+        private static int R = rnd.Next(3, 15);
+        public Task1() : base(String.Format(("1. Каждый граф можно превратить в двудольный, " +
+            "покрасив все его вершины в белый цвет и добавив чёрную вершину в " +
+            "середину каждого ребра. Сколько вершин каждого цвета и сколько " +
+            "рёбер у полученного графа, если у исходного было {0} вершин и {1} рёбер?"), U, R))
+        {
+
         }
 
-        public class Task1 : CommonTask
+        public override bool ValidateAnswer(object Answer)
         {
-            private int a = 10;
-            private int b = rnd.Next(100);
-            public Task1() : base(String.Format(("Каждый граф можно превратить в двудольный, " +
-                "покрасив все его вершины в белый цвет и добавив чёрную вершину в " +
-                "середину каждого ребра. Сколько вершин каждого цвета и сколько " +
-                "рёбер у полученного графа, если у исходного было {0} вершин и {1} рёбер?"), a, b))
+            if (Answer is int[] arrayIntAnswer)
             {
+                return arrayIntAnswer[0] == R * 2 && arrayIntAnswer[1] == U && arrayIntAnswer[2] == R;
             }
+            return false;
+        }
+    }
+    public class Task2 : CommonTask
+    {
+        private static int U = rnd.Next(3, 15);
+        private static int R = rnd.Next(3, 15);
+        public Task2() : base(String.Format(("1. Каждый граф можно превратить в двудольный, " +
+            "покрасив все его вершины в белый цвет и добавив чёрную вершину в " +
+            "середину каждого ребра. Сколько вершин каждого цвета и сколько " +
+            "рёбер у полученного графа, если у исходного было {0} вершин и {1} рёбер?"), U, R))
+        {
 
-            public override bool ValidateAnswer(object Answer)
-            {
-                if (Answer is int intAnswer)
-                {
-                    return intAnswer == a * b;
-                }
-                return false;
-            }
         }
 
-        public class Task2 : CommonTask
+        public override bool ValidateAnswer(object Answer)
         {
-            public Task2() : base("Здесь условие задачи 2")
-            { }
-
-            public override bool ValidateAnswer(object Answer)
+            if (Answer is int[] arrayIntAnswer)
             {
-                if (Answer is string stringAnswer)
-                {
-                    return stringAnswer.ToLower() == "нет";
-                }
-                return false;
+                return arrayIntAnswer[0] == R * 2 && arrayIntAnswer[1] == U && arrayIntAnswer[2] == R;
             }
+            return false;
         }
-    
+    }
+    public class Task34 : CommonTask
+    {
+        public Task34() : base("Здесь условие задачи 2")
+        { }
+
+        public override bool ValidateAnswer(object Answer)
+        {
+            if (Answer is string stringAnswer)
+            {
+                return stringAnswer.ToLower() == "нет";
+            }
+            return false;
+        }
+    }
+
 }
