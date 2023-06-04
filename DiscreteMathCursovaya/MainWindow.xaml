@@ -65,7 +65,7 @@
                 </ControlTemplate>
             </PasswordBox.Template>
         </PasswordBox>
-        <TextBox x:Name="TextBoxShowPasswordA" HorizontalAlignment="Right"  Margin="0,415,230,0" VerticalAlignment="Top" Width="348" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="37" VerticalContentAlignment="Center" Padding="4,4,4,4"  TextWrapping="Wrap" Text="" IsReadOnly="True" Visibility="Hidden">
+        <TextBox x:Name="TextBoxShowPasswordA" HorizontalAlignment="Right"  Margin="0,417,230,0" VerticalAlignment="Top" Width="348" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="37" VerticalContentAlignment="Center" Padding="4,4,4,4"  TextWrapping="Wrap" Text="" IsReadOnly="True" Visibility="Hidden">
             <TextBox.Template>
                 <ControlTemplate >
                     <Border Background="#FFF0F0F0" CornerRadius="6" Padding="2" BorderThickness="1" BorderBrush="#FFF0F0F0" Margin="0,0,48,0">
