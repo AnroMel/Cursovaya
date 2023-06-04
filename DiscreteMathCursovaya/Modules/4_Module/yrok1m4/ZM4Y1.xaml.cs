@@ -33,6 +33,8 @@ namespace DiscreteMathCursovaya
             {
                 typeof(Task1),
                 typeof(Task2),
+                typeof(Task4),
+                typeof(Task5),
             };
 
             tasks = arrayyy.Select(item => (CommonTask)Activator.CreateInstance(item)).ToArray();
@@ -44,6 +46,9 @@ namespace DiscreteMathCursovaya
 
             TextTaskM1Y1.Text = tasks[0].Question;
             TextTask3M1Y1.Text = tasks[1].Question;
+            TextTask4M1Y1.Text = new Task2().Question2;
+            TextTask5M1Y1.Text = tasks[2].Question;
+            TextTask6M1Y1.Text = tasks[3].Question;
 
         }
 
@@ -68,7 +73,55 @@ namespace DiscreteMathCursovaya
 
         private void ButtonFinishTask1_Click(object sender, RoutedEventArgs e)
         {
+            using (OverrideCursor cursor = new OverrideCursor(Cursors.Wait))
+            {
+                decimal resalt = 0.0m;
+                int[] ans = new int[3] { Convert.ToInt32(Task1M1Y1.Text.Replace(" ","")), Convert.ToInt32(Task1M1Y1_1.Text.Replace(" ", "")), Convert.ToInt32(Task1M1Y1_2.Text.Replace(" ", "")) };
+               
+                if (tasks[0].ValidateAnswer(ans))
+                    resalt += 1.0m;
+                if (tasks[1].ValidateAnswer(Task3M1Y1))
+                    resalt += 1.0m;
+                if (tasks[1].ValidateAnswer(Task4M1Y1))
+                    resalt += 1.0m;
+                if (tasks[2].ValidateAnswer(Task5M1Y1))
+                    resalt += 1.0m;
+                if (tasks[3].ValidateAnswer(Task6M1Y1))
+                    resalt += 1.0m;
+                resalt = Math.Round((resalt / 13.0m), 2);
 
+
+                dbconnect = new ConnectingDB();
+                var write = dbconnect.FirstOrDefaultWrite(Login, 4, 1);
+                if (write == null)
+                {
+                    var user = dbconnect.FirstOrDefault(Login);
+                    var lesson = dbconnect.FirstOrDefaultCodLesson(4, 1);
+
+                    if (user != null)
+                    {
+                        var test = new StudentWrite()
+                        {
+                            CountAttempt = 0,
+                            Mark = resalt,
+                            StudentId = user.Id,
+                            LessonId = lesson.Code
+                        };
+                        dbconnect.AddWriteToDB(test);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Произошла ошибка при входе в приложение", "Ошибка");
+                    }
+                }
+                else
+                {
+                    dbconnect.UpdateWriteMarkAndCount(write, resalt);
+                }
+                MenuLessons window = new MenuLessons(Login);
+                window.Show();
+                App.Current.MainWindow.Close();
+            }
         }
     }
     public abstract class CommonTask
@@ -107,50 +160,75 @@ namespace DiscreteMathCursovaya
     {
         private static int U = rnd.Next(10, 20) * 2;
 
-        public Task2() : base(String.Format((" В классе {0} человек. " +
-            "На праздник каждый мальчик подарил каждой девочке по цветку." +
+        public Task2() : base(String.Format(("2. В классе {0} человек. " +
+            "На праздник каждый мальчик подарил каждой девочке по цветку. " +
             "Какое наибольшее число цветков могло быть подарено"), U))
 
         {
 
         }
-        private static string Question2 = String.Format(("Тот же вопрос, если в классе  человек {0}"),U+1);
+        public string Question2 = String.Format(("3. Тот же вопрос, но если в классе {0} человек"),U+1);
         public override bool ValidateAnswer(object Answer)
         {
             if (Answer is int intAnswer)
             {
                 if (U % 2 == 0)
-                    return intAnswer == (U * U) / 4;
+                    return intAnswer == (int)((U * U) / 4);
                 else
                 {
                 U += 1;
-                return intAnswer == (U * U) / 4; 
+                return intAnswer == (int)((U * U) / 4); 
                 }
             }
             return false;
         }
     }
-    //public class Task3 : CommonTask
-    //{
-    //    private static int U = new Task2().U;
+    public class Task4 : CommonTask
+    {
+        private static int girls = rnd.Next(3, 15);
+        private static int boys = rnd.Next(3, 15);
+        private static int allgirls = rnd.Next(3, 15);
+        public Task4() : base(String.Format(("4. На школьном балу каждый мальчик станцевал с {0} девочками," +
+            " а каждая девочка — с {1} мальчиками." +
+            " Сколько мальчиков пришло на бал, если всего было {2} девочек?"), girls, boys, allgirls))
+        {
 
-    //    public Task3() : base(String.Format((" В классе {0} человек. " +
-    //        "На праздник каждый мальчик подарил каждой девочке по цветку." +
-    //        "Какое наибольшее число цветков могло быть подарено"), U))
+        }
 
-    //    {
+        public override bool ValidateAnswer(object Answer)
+        {
+            if (Answer is int intAnswer)
+            {
+                return intAnswer == boys*allgirls/girls;
+            }
+            return false;
+        }
+    }
 
-    //    }
+    public class Task5 : CommonTask
+    {
+        private static int bullys = rnd.Next(10, 21);
+        private static int snowballs = rnd.Next(10, 21);
 
-    //    public override bool ValidateAnswer(object Answer)
-    //    {
-    //        if (Answer is int intAnswer)
-    //        {
-    //            return intAnswer == (U * U) / 4;
-    //        }
-    //        return false;
-    //    }
-    //}
+        public Task5() : base(String.Format(("5. {0} хулиганов кидали снежки в окна школы. " +
+            "Первый хулиган попал в окно ровно 1 раз, второй — ровно 2 раза, …, {0} — ровно {0} раз," +
+            " причём никакой хулиган не попал в одно и то же окно дважды." +
+            " В каждое школьное окно либо попали снежком {1} раз, либо не попали вовсе. " +
+            "Сколько школьных окон пострадали от снежков?"), bullys,snowballs))
+
+        {
+
+        }
+
+        public override bool ValidateAnswer(object Answer)
+        {
+            if (Answer is int intAnswer)
+            {
+                return intAnswer == ((2 + (bullys-1)/2)*bullys)/snowballs;
+            }
+            return false;
+        }
+    }
     public class Task34 : CommonTask
     {
         public Task34() : base("Здесь условие задачи 2")
