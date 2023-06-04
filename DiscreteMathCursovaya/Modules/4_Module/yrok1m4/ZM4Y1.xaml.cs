@@ -22,7 +22,6 @@ namespace DiscreteMathCursovaya
     /// </summary>
     public partial class ZM4Y1 : Page
     {
-        static Random random = new Random();
         private IConnectDB dbconnect;
         private string Login;
         public ZM4Y1(string login)
@@ -50,4 +49,51 @@ namespace DiscreteMathCursovaya
             return false;
         }
     }
+        public abstract class CommonTask
+        {
+            protected static Random rnd = new Random();
+            protected string Question;
+            protected CommonTask(string Question)
+            {
+                this.Question = Question;
+            }
+            public abstract bool ValidateAnswer(object Answer);
+        }
+
+        public class Task1 : CommonTask
+        {
+            private int a = 10;
+            private int b = rnd.Next(100);
+            public Task1() : base(String.Format(("Каждый граф можно превратить в двудольный, " +
+                "покрасив все его вершины в белый цвет и добавив чёрную вершину в " +
+                "середину каждого ребра. Сколько вершин каждого цвета и сколько " +
+                "рёбер у полученного графа, если у исходного было {0} вершин и {1} рёбер?"), a, b))
+            {
+            }
+
+            public override bool ValidateAnswer(object Answer)
+            {
+                if (Answer is int intAnswer)
+                {
+                    return intAnswer == a * b;
+                }
+                return false;
+            }
+        }
+
+        public class Task2 : CommonTask
+        {
+            public Task2() : base("Здесь условие задачи 2")
+            { }
+
+            public override bool ValidateAnswer(object Answer)
+            {
+                if (Answer is string stringAnswer)
+                {
+                    return stringAnswer.ToLower() == "нет";
+                }
+                return false;
+            }
+        }
+    
 }
