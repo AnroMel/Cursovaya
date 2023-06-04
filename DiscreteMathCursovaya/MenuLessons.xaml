@@ -107,7 +107,7 @@
             </Button>
 
             <Label Content="Модуль 2"  x:Name="Modyl2" Margin="503,899,506,0" VerticalAlignment="Top" Height="102" FontSize="65" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="pack://application:,,,/fonts/#Jost Medium"/>
-            <TextBlock HorizontalAlignment="Center" x:Name="Modyl2_Text" Margin="0,1066,0,0" TextWrapping="Wrap" Text="TextBlock" Width="1313" FontSize="30" Height="135" VerticalAlignment="Top" FontFamily="pack://application:,,,/fonts/#Jost Regular"/>
+            <TextBlock HorizontalAlignment="Center" x:Name="Modyl2_Text" TextAlignment="Center" Margin="0,1066,0,0" TextWrapping="Wrap" Text="Полиномиальная теорема связывает многочлены и их корни, а биномиальная теорема связывает биномиальные коэффициенты и степени бинома. Обе теоремы имеют щирокое применение в дискретной математике. Мы можете ознакомиться с ними в этом модуле" Width="1313" FontSize="30" Height="135" VerticalAlignment="Top" FontFamily="pack://application:,,,/fonts/#Jost Regular"/>
             <Button x:Name="Yrok2_1" HorizontalAlignment="Left" Margin="85,1260,0,0" VerticalAlignment="Top" Height="415" Width="415" Click="Yrok2_1_Click">
                 <Button.Background>
                     <ImageBrush ImageSource="/images/M2Y1.jpg"/>
