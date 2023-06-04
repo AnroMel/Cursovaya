@@ -88,8 +88,18 @@ namespace DiscreteMathCursovaya
 
         private void Yrok1_3_Click(object sender, RoutedEventArgs e)
         {
-            yrok1_3 window = new yrok1_3();
-            window.Show();
+            dbconnect = new ConnectingDB();
+            var write = dbconnect.FirstOrDefaultWrite(Login, 1, 3);
+            if (write == null || write.CountAttempt == 0 || write.CountAttempt == 1)
+            {
+                yrok1_3 window = new yrok1_3(Login);
+                window.Show();
+                Close();
+            }
+            else
+            {
+                MessageBox.Show("Превышено количество попыток");
+            }
             
         }
 
