@@ -107,7 +107,7 @@
                     </Style>
                 </Button.Style>
             </Button>
-            <Button x:Name="Back"  Margin="700, 5, 5, 5" HorizontalAlignment="Right" VerticalAlignment="Center" Content="Вернуться" FontSize="21" FontFamily="pack://application:,,,/fonts/#Jost Medium" Width="178" Height="44" Cursor="Hand" Background="#ff6666" Foreground="White" BorderBrush="#ff6666" Click="Back_Click" >
+            <Button x:Name="Back"  Margin="700, 5, 5, 5" VerticalAlignment="Center" Content="Вернуться" FontSize="21" FontFamily="pack://application:,,,/fonts/#Jost Medium" Width="178" Height="44" Cursor="Hand" Background="#ff6666" Foreground="White" BorderBrush="#ff6666" Click="Back_Click" >
                 <Button.Effect>
                     <DropShadowEffect Color="#FFE0E0E0"/>
                 </Button.Effect>
