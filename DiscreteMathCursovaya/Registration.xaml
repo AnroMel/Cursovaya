@@ -39,10 +39,10 @@
             </Rectangle.Fill>
         </Rectangle>
 
-        <Rectangle HorizontalAlignment="Left" Height="685" Margin="938,87,0,0" Stroke="white" VerticalAlignment="Top" Width="493" Visibility="Visible" RadiusX="6" RadiusY="6" Fill="White" />
-        <Label x:Name="Regestration" Content="Регестрация" HorizontalAlignment="Left" Margin="1070,142,0,0" VerticalAlignment="Top" FontFamily="pack://application:,,,/fonts/#Jost Medium" FontSize="40"/>
-        <Label x:Name="LabelNameRegestration" Content="Имя:" HorizontalAlignment="Left" Margin="1018,210,0,0" VerticalAlignment="Top" Width="114" FontFamily="pack://application:,,,/fonts/#Jost Medium" FontSize="23" RenderTransformOrigin="0.488,1.961"/>
-        <TextBox x:Name="TextBoxNameRegestration" MaxLength="30" HorizontalAlignment="Left" Margin="1018,249,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="350" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39"  VerticalContentAlignment="Center" Padding="4,4,4,4" Cursor="IBeam">
+        <Rectangle HorizontalAlignment="Right" Height="686" Margin="0,86,158,0" Stroke="white" VerticalAlignment="Top" Width="494" Visibility="Visible" RadiusX="6" RadiusY="6" Fill="White" />
+        <Label x:Name="Regestration" Content="Регистрация" HorizontalAlignment="Right" Margin="0,141,289,0" VerticalAlignment="Top" FontFamily="pack://application:,,,/fonts/#Jost Medium" FontSize="40"/>
+        <Label x:Name="LabelNameRegestration" Content="Имя:" HorizontalAlignment="Right" Margin="0,201,466,0" VerticalAlignment="Top" Width="114" FontFamily="pack://application:,,,/fonts/#Jost Medium" FontSize="23" RenderTransformOrigin="0.488,1.961"/>
+        <TextBox x:Name="TextBoxNameRegestration" MaxLength="30" HorizontalAlignment="Right" Margin="0,249,230,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="350" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39"  VerticalContentAlignment="Center" Padding="4,4,4,4" Cursor="IBeam">
             <TextBox.Template >
                 <ControlTemplate >
                     <Border Background="#FFF0F0F0" CornerRadius="6" Padding="2" BorderThickness="1" BorderBrush="#9f9f99">
@@ -53,8 +53,8 @@
                 </ControlTemplate>
             </TextBox.Template>
         </TextBox>
-        <Label x:Name="LabelSurNameRegestration" Content="Фамилия:" HorizontalAlignment="Left" Margin="1018,296,0,0" VerticalAlignment="Top" Width="114" FontFamily="pack://application:,,,/fonts/#Jost Medium" FontSize="23" RenderTransformOrigin="0.488,1.961"/>
-        <TextBox x:Name="TextBoxSurNameRegestration" MaxLength="30" HorizontalAlignment="Left" Margin="1018,339,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="350" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39"  VerticalContentAlignment="Center" Padding="4,4,4,4" Cursor="IBeam">
+        <Label x:Name="LabelSurNameRegestration" Content="Фамилия:" HorizontalAlignment="Right" Margin="0,303,466,0" VerticalAlignment="Top" Width="114" FontFamily="pack://application:,,,/fonts/#Jost Medium" FontSize="23" RenderTransformOrigin="0.488,1.961"/>
+        <TextBox x:Name="TextBoxSurNameRegestration" MaxLength="30" HorizontalAlignment="Right" Margin="0,346,232,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="350" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39"  VerticalContentAlignment="Center" Padding="4,4,4,4" Cursor="IBeam">
             <TextBox.Template >
                 <ControlTemplate >
                     <Border Background="#FFF0F0F0" CornerRadius="6" Padding="2" BorderThickness="1" BorderBrush="#9f9f99">
@@ -66,8 +66,8 @@
             </TextBox.Template>
         </TextBox>
 
-        <Label x:Name="LabelLoginRegestration" Content="Логин:" HorizontalAlignment="Left" Margin="1020,460,0,0" VerticalAlignment="Top" Width="114" FontFamily="pack://application:,,,/fonts/#Jost Medium" FontSize="23" RenderTransformOrigin="0.488,1.961"/>
-        <TextBox x:Name="TextBoxLoginRegestration" MaxLength="30" HorizontalAlignment="Left" Margin="1018,501,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="350" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39"  VerticalContentAlignment="Center" Padding="4,4,4,4" Cursor="IBeam">
+        <Label x:Name="LabelLoginRegestration" Content="Логин:" HorizontalAlignment="Right" Margin="0,467,466,0" VerticalAlignment="Top" Width="114" FontFamily="pack://application:,,,/fonts/#Jost Medium" FontSize="23" RenderTransformOrigin="0.488,1.961"/>
+        <TextBox x:Name="TextBoxLoginRegestration" MaxLength="30" HorizontalAlignment="Right" Margin="0,505,230,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="350" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39"  VerticalContentAlignment="Center" Padding="4,4,4,4" Cursor="IBeam">
             <TextBox.Template >
                 <ControlTemplate >
                     <Border Background="#FFF0F0F0" CornerRadius="6" Padding="2" BorderThickness="1" BorderBrush="#9f9f99">
@@ -78,8 +78,8 @@
                 </ControlTemplate>
             </TextBox.Template>
         </TextBox>
-        <Label x:Name="LabelPasswordRegestration" Content="Пароль:" HorizontalAlignment="Left" Margin="1018,550,0,0" VerticalAlignment="Top" Width="114" FontFamily="pack://application:,,,/fonts/#Jost Medium" FontSize="23"/>
-        <PasswordBox x:Name="PasswordBoxRegestration" MaxLength="25" HorizontalAlignment="Left" Margin="1018,588,0,0" VerticalAlignment="Top" Width="350" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39" VerticalContentAlignment="Center" Padding="4,0,0,0" Cursor="IBeam">
+        <Label x:Name="LabelPasswordRegestration" Content="Пароль:" HorizontalAlignment="Right" Margin="0,550,466,0" VerticalAlignment="Top" Width="114" FontFamily="pack://application:,,,/fonts/#Jost Medium" FontSize="23"/>
+        <PasswordBox x:Name="PasswordBoxRegestration" MaxLength="25" HorizontalAlignment="Right" Margin="0,589,232,0" VerticalAlignment="Top" Width="350" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39" VerticalContentAlignment="Center" Padding="4,0,0,0" Cursor="IBeam">
             <PasswordBox.Template>
                 <ControlTemplate >
                     <Border Background="#FFF0F0F0" CornerRadius="6" Padding="2" BorderThickness="1" BorderBrush="#9f9f99">
@@ -88,7 +88,7 @@
                 </ControlTemplate>
             </PasswordBox.Template>
         </PasswordBox>
-        <TextBox x:Name="TextBoxShowPasswordA" HorizontalAlignment="Left"  Margin="1020,589,0,0" VerticalAlignment="Top" Width="348" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="37" VerticalContentAlignment="Center" Padding="4,4,4,4"  TextWrapping="Wrap" Text="" IsReadOnly="True" Visibility="Hidden">
+        <TextBox x:Name="TextBoxShowPasswordA" HorizontalAlignment="Right"  Margin="0,590,232,0" VerticalAlignment="Top" Width="348" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="37" VerticalContentAlignment="Center" Padding="4,4,4,4"  TextWrapping="Wrap" Text="" IsReadOnly="True" Visibility="Hidden">
             <TextBox.Template>
                 <ControlTemplate >
                     <Border Background="#FFF0F0F0" CornerRadius="6" Padding="2" BorderThickness="1" BorderBrush="#FFF0F0F0" Margin="0,0,48,0">
@@ -99,9 +99,9 @@
                 </ControlTemplate>
             </TextBox.Template>
         </TextBox>
-        <Image x:Name="ShowPasswordA" HorizontalAlignment="Left" Height="28" Source="images/eyeclose2.png" Margin="1325,593,0,0" VerticalAlignment="Top" Width="28"   Cursor="Hand" MouseDown="ShowPasswordA_MouseDown" ></Image>
-        <Image x:Name="HidePasswordA" HorizontalAlignment="Left" Height="28" Source="images/eye2.png" Margin="1325,593,0,0" VerticalAlignment="Top" Width="28"   Visibility="Hidden" Cursor="Hand" MouseLeave="HidePasswordA_MouseLeave" MouseUp="HidePasswordA_MouseUp"></Image>
-        <Button x:Name="ButtonComeInRegestration" Content="Зарегестрироваться" HorizontalAlignment="Left" Margin="1048,655,0,0" VerticalAlignment="Top"  FontSize="20" FontFamily="pack://application:,,,/fonts/#Jost Medium" Width="272" Height="45" Cursor="Hand" Background="#ff6666" Foreground="White" BorderBrush="#ff6666" Click="ButtonComeInRegestration_Click">
+        <Image x:Name="ShowPasswordA" HorizontalAlignment="Right" Height="28" Source="images/eyeclose2.png" Margin="0,594,247,0" VerticalAlignment="Top" Width="28"   Cursor="Hand" MouseDown="ShowPasswordA_MouseDown" ></Image>
+        <Image x:Name="HidePasswordA" HorizontalAlignment="Right" Height="28" Source="images/eye2.png" Margin="0,594,247,0" VerticalAlignment="Top" Width="28"   Visibility="Hidden" Cursor="Hand" MouseLeave="HidePasswordA_MouseLeave" MouseUp="HidePasswordA_MouseUp"></Image>
+        <Button x:Name="ButtonComeInRegestration" Content="Зарегистрироваться" HorizontalAlignment="Right" Margin="0,659,274,0" VerticalAlignment="Top"  FontSize="20" FontFamily="pack://application:,,,/fonts/#Jost Medium" Width="272" Height="45" Cursor="Hand" Background="#ff6666" Foreground="White" BorderBrush="#ff6666" Click="ButtonComeInRegestration_Click">
             <Button.Effect>
                 <DropShadowEffect Color="#FFE0E0E0"/>
             </Button.Effect>
@@ -132,7 +132,7 @@
                 </Style>
             </Button.Style>
         </Button>
-        <Button x:Name="ButtonLinkToRegistrationAuthorization" Content="Уже есть аккаунт?" FontSize="18" HorizontalAlignment="Left" Height="33" Margin="1096,704,0,0" VerticalAlignment="Top" Width="176" FontFamily="pack://application:,,,/fonts/#Jost Regular" Background="{x:Null}" BorderBrush="{x:Null}" Cursor="Hand" Click="ButtonLinkToRegistrationAuthorization_Click">
+        <Button x:Name="ButtonLinkToRegistrationAuthorization" Content="Уже есть аккаунт?" FontSize="18" HorizontalAlignment="Right" Height="33" Margin="0,709,328,0" VerticalAlignment="Top" Width="176" FontFamily="pack://application:,,,/fonts/#Jost Regular" Background="{x:Null}" BorderBrush="{x:Null}" Cursor="Hand" Click="ButtonLinkToRegistrationAuthorization_Click">
             <Button.Style>
                 <Style TargetType="{x:Type Button}">
                     <Setter Property="Template">
@@ -160,9 +160,9 @@
                 </Style>
             </Button.Style>
         </Button>
-        <Rectangle HorizontalAlignment="Left" Height="45" Margin="1018,401,0,0" Stroke="#FFFF6666" VerticalAlignment="Top" Width="350" Visibility="Visible" RadiusX="6" RadiusY="6"/>
-        <Label x:Name="LabelGroupRegestration" Content="Группа:" HorizontalAlignment="Left" Margin="1020,400,0,0" VerticalAlignment="Top" Width="114" FontFamily="pack://application:,,,/fonts/#Jost Medium" FontSize="23" RenderTransformOrigin="0.488,1.961"/>
-        <Button x:Name="Group1" Content="ИБ-2" FontSize="18" HorizontalAlignment="Left" Height="42" Margin="1123,402,0,0" VerticalAlignment="Top" Width="62" FontFamily="pack://application:,,,/fonts/#Jost Regular" Background="{x:Null}" BorderBrush="{x:Null}" Cursor="Hand" Click="Group1_Click">
+        <Rectangle HorizontalAlignment="Right" Height="45" Margin="0,405,230,0" Stroke="#FFFF6666" VerticalAlignment="Top" Width="350" Visibility="Visible" RadiusX="6" RadiusY="6"/>
+        <Label x:Name="LabelGroupRegestration" Content="Группа:" HorizontalAlignment="Right" Margin="0,405,466,0" VerticalAlignment="Top" Width="114" FontFamily="pack://application:,,,/fonts/#Jost Medium" FontSize="23" RenderTransformOrigin="0.488,1.961"/>
+        <Button x:Name="Group1" Content="ИБ-2" FontSize="18" HorizontalAlignment="Right" Height="42" Margin="0,408,416,0" VerticalAlignment="Top" Width="62" FontFamily="pack://application:,,,/fonts/#Jost Regular" Background="{x:Null}" BorderBrush="{x:Null}" Cursor="Hand" Click="Group1_Click">
             <Button.Style>
                 <Style TargetType="{x:Type Button}">
                     <Setter Property="Template">
@@ -190,7 +190,7 @@
                 </Style>
             </Button.Style>
         </Button>
-        <Button x:Name="Group2" Content="ПМИ-2" FontSize="18" HorizontalAlignment="Left" Height="42" Margin="1204,402,0,0" VerticalAlignment="Top" Width="62" FontFamily="pack://application:,,,/fonts/#Jost Regular" Background="{x:Null}" BorderBrush="{x:Null}" Cursor="Hand" Click="Group1_Click">
+        <Button x:Name="Group2" Content="ПМИ-2" FontSize="18" HorizontalAlignment="Right" Height="42" Margin="0,407,247,0" VerticalAlignment="Top" Width="62" FontFamily="pack://application:,,,/fonts/#Jost Regular" Background="{x:Null}" BorderBrush="{x:Null}" Cursor="Hand" Click="Group1_Click">
             <Button.Style>
                 <Style TargetType="{x:Type Button}">
                     <Setter Property="Template">
@@ -218,7 +218,7 @@
                 </Style>
             </Button.Style>
         </Button>
-        <Button x:Name="Group3" Content="МКН-2" FontSize="18" HorizontalAlignment="Left" Height="42" Margin="1291,402,0,0" VerticalAlignment="Top" Width="62" FontFamily="pack://application:,,,/fonts/#Jost Regular" Background="{x:Null}" BorderBrush="{x:Null}" Cursor="Hand" Click="Group1_Click">
+        <Button x:Name="Group3" Content="МКН-2" FontSize="18" HorizontalAlignment="Right" Height="42" Margin="0,408,334,0" VerticalAlignment="Top" Width="62" FontFamily="pack://application:,,,/fonts/#Jost Regular" Background="{x:Null}" BorderBrush="{x:Null}" Cursor="Hand" Click="Group1_Click">
             <Button.Style>
                 <Style TargetType="{x:Type Button}">
                     <Setter Property="Template">
@@ -246,17 +246,17 @@
                 </Style>
             </Button.Style>
         </Button>
-        <Rectangle x:Name="imgG1" HorizontalAlignment="Left" Height="8" Width="9" Margin="1149,434,0,0" VerticalAlignment="Top" Visibility="Hidden">
+        <Rectangle x:Name="imgG1" HorizontalAlignment="Right" Height="8" Width="10" Margin="0,437,444,0" VerticalAlignment="Top" Visibility="Hidden">
             <Rectangle.Fill>
                 <ImageBrush ImageSource="images/circle.png"/>
             </Rectangle.Fill>
         </Rectangle>
-        <Rectangle x:Name="imgG3" HorizontalAlignment="Left" Height="8" Width="9" Margin="1317,434,0,0" VerticalAlignment="Top" Visibility="Hidden">
+        <Rectangle x:Name="imgG3" HorizontalAlignment="Right" Height="8" Width="9" Margin="0,437,361,0" VerticalAlignment="Top" Visibility="Hidden">
             <Rectangle.Fill>
                 <ImageBrush ImageSource="images/circle.png"/>
             </Rectangle.Fill>
         </Rectangle>
-        <Rectangle x:Name="imgG2" HorizontalAlignment="Left" Height="8" Width="9" Margin="1230,434,0,0" VerticalAlignment="Top" Visibility="Hidden">
+        <Rectangle x:Name="imgG2" HorizontalAlignment="Right" Height="8" Width="8" Margin="0,437,274,0" VerticalAlignment="Top" Visibility="Hidden">
             <Rectangle.Fill>
                 <ImageBrush ImageSource="images/circle.png"/>
             </Rectangle.Fill>
