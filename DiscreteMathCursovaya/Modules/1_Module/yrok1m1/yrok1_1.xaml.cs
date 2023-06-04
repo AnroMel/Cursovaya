@@ -40,6 +40,14 @@ namespace DiscreteMathCursovaya
         private void ZM1Y1_Click(object sender, RoutedEventArgs e)
         {
             f_yrokM1Y1.Content = new ZM1Y1(Login);
+            Back.Visibility = Visibility.Hidden;
+        }
+
+        private void Back_Click(object sender, RoutedEventArgs e)
+        {
+            MenuLessons window = new MenuLessons(Login);
+            window.Show();
+            Close();
         }
     }
 }
