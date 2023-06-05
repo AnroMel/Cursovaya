@@ -5,10 +5,18 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:DiscreteMathCursovaya"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="1519" d:DesignWidth="800"
       Title="TM3Y2">
 
     <Grid>
-        <TextBlock>модуль 3 теория урок 2</TextBlock>
+        <ScrollViewer>
+            <Grid>
+                <TextBlock Height="1519" Width="800">
+                    <TextBlock.Background>
+                        <ImageBrush ImageSource="/Modules/3_Module/yrok1m3/Frame_20.jpg"/>
+                    </TextBlock.Background>
+                </TextBlock>
+            </Grid>
+        </ScrollViewer>
     </Grid>
 </Page>

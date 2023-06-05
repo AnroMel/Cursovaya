@@ -133,12 +133,7 @@ namespace DiscreteMathCursovaya
             Close();
         }
 
-        private void Yrok3_3_Click(object sender, RoutedEventArgs e)
-        {
-            yrokM3_3 window = new yrokM3_3();
-            window.Show();
-            Close();
-        }
+
 
         private void Yrok4_1_Click(object sender, RoutedEventArgs e)
         {

@@ -45,37 +45,7 @@
                     </Style>
                 </Button.Style>
             </Button>
-            <Button x:Name="p32" Content="Примеры" Margin="30, 5, 5, 5" FontSize="21" FontFamily="pack://application:,,,/fonts/#Jost Medium" Width="178" Height="44" Cursor="Hand" Background="#ff6666" Foreground="White" BorderBrush="#ff6666" Click="PM3Y2_Click">
-                <Button.Effect>
-                    <DropShadowEffect Color="#FFE0E0E0"/>
-                </Button.Effect>
-                <Button.Style>
-                    <Style TargetType="{x:Type Button}">
-                        <Setter Property="Template">
-                            <Setter.Value>
-                                <ControlTemplate TargetType="{x:Type Button}">
-                                    <Border CornerRadius="6"
-                                Background="{TemplateBinding Background}">
-
-                                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-                                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
-                                    </Border>
-                                </ControlTemplate>
-                            </Setter.Value>
-                        </Setter>
-                        <Style.Triggers>
-                            <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="RenderTransformOrigin" Value="0.5, 0.5"/>
-                                <Setter Property="RenderTransform">
-                                    <Setter.Value>
-                                        <ScaleTransform ScaleX="1.1" ScaleY="1.1"/>
-                                    </Setter.Value>
-                                </Setter>
-                            </Trigger>
-                        </Style.Triggers>
-                    </Style>
-                </Button.Style>
-            </Button>
+            
             <Button x:Name="z32" Content="Задачи" Margin="30, 5, 5, 5" FontSize="21" FontFamily="pack://application:,,,/fonts/#Jost Medium" Width="178" Height="44" Cursor="Hand" Background="#ff6666" Foreground="White" BorderBrush="#ff6666" Click="ZM3Y2_Click">
                 <Button.Effect>
                     <DropShadowEffect Color="#FFE0E0E0"/>

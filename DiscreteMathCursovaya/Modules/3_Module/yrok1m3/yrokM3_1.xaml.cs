@@ -29,10 +29,6 @@ namespace DiscreteMathCursovaya
             f_yrokM3Y1.Content = new TM3Y1();
         }
 
-        private void PM3Y1_Click(object sender, RoutedEventArgs e)
-        {
-            f_yrokM3Y1.Content = new PM3Y1();
-        }
 
         private void ZM3Y1_Click(object sender, RoutedEventArgs e)
         {

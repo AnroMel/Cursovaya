@@ -173,8 +173,8 @@
 
 
             <Label Content="Модуль 3"  x:Name="Modyl3" Margin="503,1809,506,0" VerticalAlignment="Top" Height="102" FontSize="65" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="pack://application:,,,/fonts/#Jost Medium"/>
-            <TextBlock Margin="85,1961,85,0" TextWrapping="Wrap" x:Name="Modyl3_Text" Text="TextBlock" FontSize="30" Height="135" VerticalAlignment="Top" FontFamily="pack://application:,,,/fonts/#Jost Regular"/>
-            <Button x:Name="Yrok3_1" HorizontalAlignment="Left" Margin="64,2170,0,0" VerticalAlignment="Top" Height="415" Width="415" Click="Yrok3_1_Click">
+            <TextBlock Margin="85,1961,85,0" TextWrapping="Wrap" x:Name="Modyl3_Text"  TextAlignment="Center" Text="В данном модуле вы познакомитесь с базовыми определениями и свойствами графов. Узнаете, что такое граф и какие особенности он имеет. Также вы узнаете о видах графов и операциями над ними"  FontSize="30" Height="135" VerticalAlignment="Top" FontFamily="pack://application:,,,/fonts/#Jost Regular"/>
+            <Button x:Name="Yrok3_1" HorizontalAlignment="Left" Margin="64,2166,0,0" VerticalAlignment="Top" Height="415" Width="415" Click="Yrok3_1_Click">
                 <Button.Background>
                     <ImageBrush ImageSource="/images/M3Y1.jpg"/>
                 </Button.Background>
@@ -236,9 +236,13 @@
                     </Style>
                 </Button.Style>
             </Button>
-            <Button x:Name="Yrok3_3" Margin="0,2170,85,0" VerticalAlignment="Top" Height="415" HorizontalAlignment="Right" Width="414" Click="Yrok3_3_Click">
+
+
+            <Label Content="Модуль 4"  x:Name="Modyl4" Margin="503,2732,506,0" VerticalAlignment="Top" Height="102" FontSize="65" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="pack://application:,,,/fonts/#Jost Medium"/>
+            <TextBlock Margin="85,2861,85,0" TextWrapping="Wrap" TextAlignment="Center" Text="В данном модуле вы познакомитесь с базовыми определениями и свойствами двудольных графов. Вы узнаете, что такое двудольный граф, как он строится и какие особенности он имеет. Также вы узнаете о циклах и связности графов"  x:Name="Modyl4_Text" FontSize="30" Height="135" VerticalAlignment="Top" FontFamily="pack://application:,,,/fonts/#Jost Regular"/>
+            <Button x:Name="Yrok4_1" HorizontalAlignment="Left" Margin="85,3066,0,0" VerticalAlignment="Top" Height="415" Width="415" Click="Yrok4_1_Click">
                 <Button.Background>
-                    <ImageBrush ImageSource="/images/M3Y3.jpg"/>
+                    <ImageBrush ImageSource="/images/M4Y1.jpg"/>
                 </Button.Background>
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
@@ -267,39 +271,10 @@
                     </Style>
                 </Button.Style>
             </Button>
-
-
-            <Label Content="Модуль 4"  x:Name="Modyl4" Margin="503,2760,506,0" VerticalAlignment="Top" Height="102" FontSize="65" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="pack://application:,,,/fonts/#Jost Medium"/>
-            <TextBlock Margin="85,2927,85,0" TextWrapping="Wrap" TextAlignment="Center" Text="В данном модуле вы познакомитесь с базовыми определениями и свойствами двудольных графов. Вы узнаете, что такое двудольный граф, как он строится и какие особенности он имеет. Также вы узнаете о циклах и связности графов"  x:Name="Modyl4_Text" FontSize="30" Height="135" VerticalAlignment="Top" FontFamily="pack://application:,,,/fonts/#Jost Regular"/>
-            <Button x:Name="Yrok4_1" HorizontalAlignment="Left" Margin="85,3156,0,0" VerticalAlignment="Top" Height="350" Width="350" Click="Yrok4_1_Click">
-                <Button.Style>
-                    <Style TargetType="{x:Type Button}">
-                        <Setter Property="Template">
-                            <Setter.Value>
-                                <ControlTemplate TargetType="{x:Type Button}">
-                                    <Border CornerRadius="12"
-                                Background="{TemplateBinding Background}">
-
-                                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-                                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
-                                    </Border>
-                                </ControlTemplate>
-                            </Setter.Value>
-                        </Setter>
-                        <Style.Triggers>
-                            <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="RenderTransformOrigin" Value="0.5, 0.5"/>
-                                <Setter Property="RenderTransform">
-                                    <Setter.Value>
-                                        <ScaleTransform ScaleX="1.1" ScaleY="1.1"/>
-                                    </Setter.Value>
-                                </Setter>
-                            </Trigger>
-                        </Style.Triggers>
-                    </Style>
-                </Button.Style>
-            </Button>
-            <Button x:Name="Yrok4_2" HorizontalAlignment="Center" Margin="0,3156,0,0" VerticalAlignment="Top" Height="350" Width="350" Click="Yrok4_2_Click">
+            <Button x:Name="Yrok4_2" HorizontalAlignment="Center" Margin="0,3066,0,0" VerticalAlignment="Top" Height="415" Width="415" Click="Yrok4_2_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/images/M4Y2.jpg"/>
+                </Button.Background>
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
                         <Setter Property="Template">
