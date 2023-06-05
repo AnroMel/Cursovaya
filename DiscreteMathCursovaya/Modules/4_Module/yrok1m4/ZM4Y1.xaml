@@ -105,7 +105,7 @@
                 </TextBox.Template>
             </TextBox>
             <TextBlock x:Name="TextTask8M1Y1" HorizontalAlignment="Center" Margin="0,1273,0,0" TextWrapping="Wrap" Text="text7" VerticalAlignment="Top" Height="48" Width="522" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="16"/>
-            <TextBox x:Name="Task8M1Y1" PreviewTextInput="OnPreviewTextInput" DataObject.Pasting="OnPasting" MaxLength="10" HorizontalAlignment="Center" Margin="231,1326,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="265" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39"  VerticalContentAlignment="Center" Padding="4,4,4,4" Cursor="IBeam" >
+            <TextBox x:Name="Task8M1Y1"  MaxLength="10" HorizontalAlignment="Center" Margin="231,1326,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="265" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39"  VerticalContentAlignment="Center" Padding="4,4,4,4" Cursor="IBeam" >
                 <TextBox.Template >
                     <ControlTemplate >
                         <Border Background="#FFF0F0F0" CornerRadius="6" Padding="2" BorderThickness="1" BorderBrush="#9f9f99">
@@ -117,7 +117,7 @@
                 </TextBox.Template>
             </TextBox>
             <TextBlock x:Name="TextTask9M1Y1" HorizontalAlignment="Center" Margin="0,1543,0,0" TextWrapping="Wrap" Text="text8" VerticalAlignment="Top" Height="44" Width="523" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="16"/>
-            <TextBox x:Name="Task9M1Y1" PreviewTextInput="OnPreviewTextInput" DataObject.Pasting="OnPasting" MaxLength="10" HorizontalAlignment="center" Margin="231,1584,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="265" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39"  VerticalContentAlignment="Center" Padding="4,4,4,4" Cursor="IBeam" RenderTransformOrigin="0.438,1.674" >
+            <TextBox x:Name="Task9M1Y1" MaxLength="10" HorizontalAlignment="center" Margin="231,1584,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="265" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39"  VerticalContentAlignment="Center" Padding="4,4,4,4" Cursor="IBeam" RenderTransformOrigin="0.438,1.674" >
                 <TextBox.Template >
                     <ControlTemplate >
                         <Border Background="#FFF0F0F0" CornerRadius="6" Padding="2" BorderThickness="1" BorderBrush="#9f9f99">
@@ -129,7 +129,7 @@
                 </TextBox.Template>
             </TextBox>
             <TextBlock x:Name="TextTask10M1Y1" HorizontalAlignment="Center" Margin="0,1681,0,0" TextWrapping="Wrap" Text="text9" VerticalAlignment="Top" Height="73" Width="522" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="16"/>
-            <TextBox x:Name="Task10M1Y1" PreviewTextInput="OnPreviewTextInput" DataObject.Pasting="OnPasting" MaxLength="10" HorizontalAlignment="Center" Margin="231,1742,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="265" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39"  VerticalContentAlignment="Center" Padding="4,4,4,4" Cursor="IBeam" >
+            <TextBox x:Name="Task10M1Y1"  MaxLength="10" HorizontalAlignment="Center" Margin="231,1742,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="265" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39"  VerticalContentAlignment="Center" Padding="4,4,4,4" Cursor="IBeam" >
                 <TextBox.Template >
                     <ControlTemplate >
                         <Border Background="#FFF0F0F0" CornerRadius="6" Padding="2" BorderThickness="1" BorderBrush="#9f9f99">
