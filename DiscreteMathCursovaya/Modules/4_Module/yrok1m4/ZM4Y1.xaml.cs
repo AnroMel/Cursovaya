@@ -79,16 +79,18 @@ namespace DiscreteMathCursovaya
                 return true;
             return false;
         }
-
+        
         private void ButtonFinishTask1_Click(object sender, RoutedEventArgs e)
         {
             using (OverrideCursor cursor = new OverrideCursor(Cursors.Wait))
             {
                 decimal resalt = 0.0m;
-                int[] ans = new int[3] { Convert.ToInt32(Task1M1Y1.Text.Replace(" ","")), Convert.ToInt32(Task1M1Y1_1.Text.Replace(" ", "")), Convert.ToInt32(Task1M1Y1_2.Text.Replace(" ", "")) };
-               
-                if (tasks[0].ValidateAnswer(ans))
+                if (Task1M1Y1.Text != "" && Task1M1Y1.Text.Replace(" ", "") != "" && Task1M1Y1_1.Text != "" && Task1M1Y1_1.Text.Replace(" ", "") != "" && Task1M1Y1_2.Text != "" && Task1M1Y1_2.Text.Replace(" ", "") != "")
+                { 
+                  int[] ans = new int[3] { Convert.ToInt32(Task1M1Y1.Text.Replace(" ", "")), Convert.ToInt32(Task1M1Y1_1.Text.Replace(" ", "")), Convert.ToInt32(Task1M1Y1_2.Text.Replace(" ", "")) };
+                  if (tasks[0].ValidateAnswer(ans))
                     resalt += 1.0m;
+                }
                 if (tasks[1].ValidateAnswer(Task3M1Y1))
                     resalt += 1.0m;
                 if (tasks[1].ValidateAnswer(Task4M1Y1))

@@ -27,10 +27,24 @@ namespace DiscreteMathCursovaya
         static string RandomTemp7, RandomTemp81, RandomTemp82, RandomTemp9, RandomTemp111, RandomTemp112, RandomTemp113;
         private IConnectDB dbconnect;
         private string Login;
+        CommonTask[] tasks;
         public ZM1Y1(string login)
         {
             Login = login;
             InitializeComponent();
+            //var arrayyy = new Type[]
+            //{
+            //    typeof(Task1_1),
+            //    typeof(Task2),
+            //    typeof(Task4),
+            //    typeof(Task5),
+            //    typeof(Task6),
+            //    typeof(Task7),
+            //    typeof(Task8),
+            //    typeof(Task9),
+            //};
+
+            //tasks = arrayyy.Select(item => (CommonTask)Activator.CreateInstance(item)).ToArray();
             RandomTemp1 = random.Next(5, 10).ToString();
             RandomTemp21 = random.Next(5, 10).ToString();
             RandomTemp22 = random.Next(5, 6).ToString();
@@ -255,4 +269,23 @@ namespace DiscreteMathCursovaya
             }
         }
     }
+    //public class Task1_1 : CommonTask
+    //{
+    //    private static int RandomTemp1 = rnd.Next(5, 10);
+        
+    //    public Task1_1() : base(String.Format(("1. {0}" + " студентов группы ИБ-2 сдают экзамен по философии." +
+    //        " Сколькими способами могут быть поставлены им отметки, если известно, что все студенты экзамен сдали ? "), RandomTemp1))
+    //    {
+
+    //    }
+
+    //    public override bool ValidateAnswer(object Answer)
+    //    {
+    //        if (Answer is int[] arrayIntAnswer)
+    //        {
+    //            return arrayIntAnswer[0] == R * 2 && arrayIntAnswer[1] == U && arrayIntAnswer[2] == R;
+    //        }
+    //        return false;
+    //    }
+    //}
 }

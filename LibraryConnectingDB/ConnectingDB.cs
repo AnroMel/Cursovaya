@@ -157,6 +157,7 @@ namespace LibraryConnectingDB
             using (var db = new ConnectDB())
             {
                 var StudWrite = db.Write.FirstOrDefault(i => i.LessonId == write.LessonId && i.StudentId == write.StudentId);
+                
                 if (write.CountAttempt == 0)
                 {
                     StudWrite.Mark = decimal.Multiply(mark, 0.8m);

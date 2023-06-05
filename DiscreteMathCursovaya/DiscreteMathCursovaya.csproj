@@ -46,6 +46,19 @@
     <None Remove="Modules\4_Module\imgModule4\Examples4_1.jpg" />
     <None Remove="Modules\4_Module\imgModule4\Theory4_1.jpg" />
     <None Remove="Modules\4_Module\imgModule4\Theory4_2.jpg" />
+    <None Remove="Modules\4_Module\imgModule4\Граф1.png" />
+    <None Remove="Modules\4_Module\imgModule4\Граф10.png" />
+    <None Remove="Modules\4_Module\imgModule4\Граф11.png" />
+    <None Remove="Modules\4_Module\imgModule4\Граф12.png" />
+    <None Remove="Modules\4_Module\imgModule4\Граф13.png" />
+    <None Remove="Modules\4_Module\imgModule4\Граф2.png" />
+    <None Remove="Modules\4_Module\imgModule4\Граф3.png" />
+    <None Remove="Modules\4_Module\imgModule4\Граф4.png" />
+    <None Remove="Modules\4_Module\imgModule4\Граф5.png" />
+    <None Remove="Modules\4_Module\imgModule4\Граф6.png" />
+    <None Remove="Modules\4_Module\imgModule4\Граф7.png" />
+    <None Remove="Modules\4_Module\imgModule4\Граф8.png" />
+    <None Remove="Modules\4_Module\imgModule4\Граф9.png" />
     <None Remove="Modules\4_Module\yrok1m4\Examples4_1.jpg" />
     <None Remove="Modules\4_Module\yrok1m4\Theory4_1.jpg" />
     <None Remove="Modules\4_Module\yrok2m4\Examples4_2.jpg" />
@@ -167,6 +180,45 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Modules\4_Module\imgModule4\Theory4_2.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Modules\4_Module\imgModule4\Граф1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Modules\4_Module\imgModule4\Граф10.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Modules\4_Module\imgModule4\Граф11.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Modules\4_Module\imgModule4\Граф12.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Modules\4_Module\imgModule4\Граф13.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Modules\4_Module\imgModule4\Граф2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Modules\4_Module\imgModule4\Граф3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Modules\4_Module\imgModule4\Граф4.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Modules\4_Module\imgModule4\Граф5.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Modules\4_Module\imgModule4\Граф6.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Modules\4_Module\imgModule4\Граф7.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Modules\4_Module\imgModule4\Граф8.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Modules\4_Module\imgModule4\Граф9.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Modules\4_Module\yrok1m4\Examples4_1.jpg" />

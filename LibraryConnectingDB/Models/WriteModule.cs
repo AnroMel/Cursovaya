@@ -11,7 +11,7 @@ namespace LibraryConnectingDB.Models
 {
     public class StudentWrite
     {
-            [Key]
+            
             public int StudentId { get; set; }
             public int LessonId { get; set; }        
             public int? CountAttempt { get; set; }
@@ -23,6 +23,7 @@ namespace LibraryConnectingDB.Models
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<StudentReply>().HasKey(r => new { r.StudentId, r.TaskId });
+            modelBuilder.Entity<StudentWrite>().HasKey(r => new { r.StudentId, r.LessonId });
         }
     }
 }
