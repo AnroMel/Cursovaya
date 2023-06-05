@@ -229,9 +229,47 @@ namespace DiscreteMathCursovaya
             return false;
         }
     }
-    public class Task34 : CommonTask
+    public class Task6 : CommonTask
     {
-        public Task34() : base("Здесь условие задачи 2")
+        private static int hokeyistG = rnd.Next(10, 21);
+        private static int hokeyistH= rnd.Next(10, 21);
+        private static int gimnastkaG= rnd.Next(10, 21);
+        private static int gimnastkaH= rnd.Next(10, 21);
+
+        public Task6() : base(String.Format(("6. В школе олимпийского резерва каждый хоккеист дружит с {0} гимнастками и {1} хоккеистами из школы," +
+            " а каждая гимнастка дружит с {2} гимнастками и {3} хоккеистами." +
+            " Какое наименьшее суммарное количество хоккеистов и гимнасток может учиться в школе олимпийского резерва?"), hokeyistG, hokeyistH, gimnastkaG, gimnastkaH))
+
+        {
+
+        }
+        public int schet(int hockeyG,int gimnastkaHock)
+        {
+            if (hockeyG < gimnastkaHock)
+            {
+                hockeyG *= 2;
+                return schet(hockeyG,gimnastkaHock);
+            }
+            return hockeyG;
+        }
+
+        public override bool ValidateAnswer(object Answer)
+        {
+            int x, y;
+            x = schet(hokeyistG,gimnastkaH);
+            y = schet(gimnastkaH,hokeyistG);
+
+
+            if (Answer is int intAnswer)
+            {
+                return intAnswer == x + y;
+            }
+            return false;
+        }
+    }
+    public class Task7 : CommonTask
+    {
+        public Task7() : base("7. Можно ли нарисовать на плоскости 9 отрезков так, чтобы каждый пересекался ровно с тремя другими?")
         { }
 
         public override bool ValidateAnswer(object Answer)
@@ -239,6 +277,36 @@ namespace DiscreteMathCursovaya
             if (Answer is string stringAnswer)
             {
                 return stringAnswer.ToLower() == "нет";
+            }
+            return false;
+        }
+    }
+    public class Task8 : CommonTask
+    {
+        public Task8() : base("8. Можно ли нарисовать на плоскости 9 отрезков так, чтобы каждый пересекался ровно с тремя другими?")
+        { }
+
+        public override bool ValidateAnswer(object Answer)
+        {
+            if (Answer is string stringAnswer)
+            {
+                return stringAnswer.ToLower() == "нет";
+            }
+            return false;
+        }
+    }
+    public class Task9 : CommonTask
+    {
+        public Task9() : base("9.  Джон, приехав из Диснейленда, рассказывал, что там," +
+            " на заколдованном озере имеются 7 островов, с каждого из которых ведет 1, 3 или 5 мостов. " +
+            "Верно ли, что хотя бы один из этих мостов обязательно выходит на берег озера?")
+        { }
+
+        public override bool ValidateAnswer(object Answer)
+        {
+            if (Answer is string stringAnswer)
+            {
+                return stringAnswer.ToLower() == "да";
             }
             return false;
         }
