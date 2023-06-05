@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using LibraryConnectingDB.Models;
 
 namespace DiscreteMathCursovaya
 {
@@ -26,8 +27,9 @@ namespace DiscreteMathCursovaya
         static string RandomTemp7, RandomTemp81, RandomTemp82, RandomTemp9, RandomTemp111, RandomTemp112, RandomTemp113;
         private IConnectDB dbconnect;
         private string Login;
-        public ZM3Y1()
+        public ZM3Y1(string login)
         {
+            Login = login;
             InitializeComponent();
             RandomTemp1 = random.Next(5 , 20).ToString();
             RandomTemp2 = random.Next(5, 10).ToString();

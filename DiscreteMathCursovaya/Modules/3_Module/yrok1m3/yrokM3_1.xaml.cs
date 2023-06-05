@@ -19,9 +19,12 @@ namespace DiscreteMathCursovaya
     /// </summary>
     public partial class yrokM3_1 : Window
     {
-        public yrokM3_1()
+        private string Login;
+        public yrokM3_1(string login)
         {
+            Login = login;
             InitializeComponent();
+            f_yrokM3Y1.Content = new TM3Y1();
         }
 
         private void TM3Y1_Click(object sender, RoutedEventArgs e)
@@ -32,7 +35,14 @@ namespace DiscreteMathCursovaya
 
         private void ZM3Y1_Click(object sender, RoutedEventArgs e)
         {
-            f_yrokM3Y1.Content = new ZM3Y1();
+            f_yrokM3Y1.Content = new ZM3Y1(Login);
+
+        }
+        private void Back_Click(object sender, RoutedEventArgs e)
+        {
+            MenuLessons window = new MenuLessons(Login);
+            window.Show();
+            Close();
         }
     }
 }
