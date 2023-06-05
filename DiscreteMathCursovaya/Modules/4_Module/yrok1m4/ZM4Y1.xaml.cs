@@ -35,6 +35,10 @@ namespace DiscreteMathCursovaya
                 typeof(Task2),
                 typeof(Task4),
                 typeof(Task5),
+                typeof(Task6),
+                typeof(Task7),
+                typeof(Task8),
+                typeof(Task9),
             };
 
             tasks = arrayyy.Select(item => (CommonTask)Activator.CreateInstance(item)).ToArray();
@@ -49,6 +53,11 @@ namespace DiscreteMathCursovaya
             TextTask4M1Y1.Text = new Task2().Question2;
             TextTask5M1Y1.Text = tasks[2].Question;
             TextTask6M1Y1.Text = tasks[3].Question;
+            TextTask7M1Y1.Text = tasks[4].Question;
+            TextTask8M1Y1.Text = tasks[5].Question;
+            TextTask9M1Y1.Text = tasks[6].Question;
+            TextTask10M1Y1.Text = tasks[7].Question;
+            
 
         }
 
@@ -88,7 +97,15 @@ namespace DiscreteMathCursovaya
                     resalt += 1.0m;
                 if (tasks[3].ValidateAnswer(Task6M1Y1))
                     resalt += 1.0m;
-                resalt = Math.Round((resalt / 13.0m), 2);
+                if (tasks[4].ValidateAnswer(Task7M1Y1))
+                    resalt += 1.0m;
+                if (tasks[5].ValidateAnswer(Task8M1Y1))
+                    resalt += 1.0m;
+                if (tasks[6].ValidateAnswer(Task9M1Y1))
+                    resalt += 1.0m;
+                if (tasks[7].ValidateAnswer(Task10M1Y1))
+                    resalt += 1.0m;
+                resalt = Math.Round((resalt / 9.0m), 2);
 
 
                 dbconnect = new ConnectingDB();
@@ -229,9 +246,64 @@ namespace DiscreteMathCursovaya
             return false;
         }
     }
-    public class Task34 : CommonTask
+    public class Task6 : CommonTask
     {
-        public Task34() : base("Здесь условие задачи 2")
+        private static int hokeyistG = rnd.Next(10, 21);
+        private static int hokeyistH= rnd.Next(10, 21);
+        private static int gimnastkaG= rnd.Next(10, 21);
+        private static int gimnastkaH= rnd.Next(10, 21);
+
+        public Task6() : base(String.Format(("6. В школе олимпийского резерва каждый хоккеист дружит с {0} гимнастками и {1} хоккеистами из школы," +
+            " а каждая гимнастка дружит с {2} гимнастками и {3} хоккеистами." +
+            " Какое наименьшее суммарное количество хоккеистов и гимнасток может учиться в школе олимпийского резерва?"), hokeyistG, hokeyistH, gimnastkaG, gimnastkaH))
+
+        {
+
+        }
+        public int schet(int hockeyG,int gimnastkaHock)
+        {
+            if (hockeyG < gimnastkaHock)
+            {
+                hockeyG *= 2;
+                return schet(hockeyG,gimnastkaHock);
+            }
+            return hockeyG;
+        }
+
+        public override bool ValidateAnswer(object Answer)
+        {
+            int x, y;
+            x = schet(hokeyistG,gimnastkaH);
+            y = schet(gimnastkaH,hokeyistG);
+
+
+            if (Answer is int intAnswer)
+            {
+                return intAnswer == x + y;
+            }
+            return false;
+        }
+    }
+    public class Task7 : CommonTask
+    {
+        private static int U = rnd.Next(4, 10)*2+1;
+        public Task7() : base(String.Format(("7. Можно ли нарисовать на плоскости {0} отрезков так, чтобы каждый пересекался ровно с тремя другими?"),U))
+        { }
+
+        public override bool ValidateAnswer(object Answer)
+        {
+            if (Answer is string stringAnswer)
+            {
+                if (U % 2 != 0)
+                    return stringAnswer.ToLower() == "нет";
+                else return stringAnswer.ToLower() == "да";
+            }
+            return false;
+        }
+    }
+    public class Task8 : CommonTask
+    {
+        public Task8() : base("8. В классе 30 человек. Может ли быть так, что 9 из них имеют по 3 друга (в этом классе), 11 - по 4 друга, а 10 по 5 друзей?")
         { }
 
         public override bool ValidateAnswer(object Answer)
@@ -239,6 +311,22 @@ namespace DiscreteMathCursovaya
             if (Answer is string stringAnswer)
             {
                 return stringAnswer.ToLower() == "нет";
+            }
+            return false;
+        }
+    }
+    public class Task9 : CommonTask
+    {
+        public Task9() : base("9.  Джон, приехав из Диснейленда, рассказывал, что там," +
+            " на заколдованном озере имеются 7 островов, с каждого из которых ведет 1, 3 или 5 мостов. " +
+            "Верно ли, что хотя бы один из этих мостов обязательно выходит на берег озера?")
+        { }
+
+        public override bool ValidateAnswer(object Answer)
+        {
+            if (Answer is string stringAnswer)
+            {
+                return stringAnswer.ToLower() == "да";
             }
             return false;
         }
