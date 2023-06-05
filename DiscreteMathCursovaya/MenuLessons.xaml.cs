@@ -121,19 +121,35 @@ namespace DiscreteMathCursovaya
 
         private void Yrok3_1_Click(object sender, RoutedEventArgs e)
         {
-            yrokM3_1 window = new yrokM3_1();
-            window.Show();
-            Close();
+            dbconnect = new ConnectingDB();
+            var write = dbconnect.FirstOrDefaultWrite(Login, 3, 1);
+            if (write == null || write.CountAttempt == 0 || write.CountAttempt == 1)
+            {
+                yrokM3_1 window = new yrokM3_1(Login);
+                window.Show();
+                Close();
+            }
+            else
+            {
+                MessageBox.Show("Превышено количество попыток");
+            }
         }
 
         private void Yrok3_2_Click(object sender, RoutedEventArgs e)
         {
-            yrokM3_2 window = new yrokM3_2();
-            window.Show();
-            Close();
+            dbconnect = new ConnectingDB();
+            var write = dbconnect.FirstOrDefaultWrite(Login, 3, 2);
+            if (write == null || write.CountAttempt == 0 || write.CountAttempt == 1)
+            {
+                yrokM3_2 window = new yrokM3_2(Login);
+                window.Show();
+                Close();
+            }
+            else
+            {
+                MessageBox.Show("Превышено количество попыток");
+            }
         }
-
-
 
         private void Yrok4_1_Click(object sender, RoutedEventArgs e)
         {
