@@ -46,10 +46,29 @@
     <None Remove="Modules\4_Module\imgModule4\Examples4_1.jpg" />
     <None Remove="Modules\4_Module\imgModule4\Theory4_1.jpg" />
     <None Remove="Modules\4_Module\imgModule4\Theory4_2.jpg" />
+    <None Remove="Modules\4_Module\imgModule4\Граф14.png" />
+    <None Remove="Modules\4_Module\imgModule4\Граф15.png" />
+    <None Remove="Modules\4_Module\imgModule4\Граф16.png" />
     <None Remove="Modules\4_Module\yrok1m4\Examples4_1.jpg" />
     <None Remove="Modules\4_Module\yrok1m4\Theory4_1.jpg" />
+    <None Remove="Modules\4_Module\yrok1m4\Граф1.png" />
+    <None Remove="Modules\4_Module\yrok1m4\Граф10.png" />
+    <None Remove="Modules\4_Module\yrok1m4\Граф11.png" />
+    <None Remove="Modules\4_Module\yrok1m4\Граф12.png" />
+    <None Remove="Modules\4_Module\yrok1m4\Граф13.png" />
+    <None Remove="Modules\4_Module\yrok1m4\Граф2.png" />
+    <None Remove="Modules\4_Module\yrok1m4\Граф3.png" />
+    <None Remove="Modules\4_Module\yrok1m4\Граф4.png" />
+    <None Remove="Modules\4_Module\yrok1m4\Граф5.png" />
+    <None Remove="Modules\4_Module\yrok1m4\Граф6.png" />
+    <None Remove="Modules\4_Module\yrok1m4\Граф7.png" />
+    <None Remove="Modules\4_Module\yrok1m4\Граф8.png" />
+    <None Remove="Modules\4_Module\yrok1m4\Граф9.png" />
     <None Remove="Modules\4_Module\yrok2m4\Examples4_2.jpg" />
     <None Remove="Modules\4_Module\yrok2m4\Theory4_2.jpg" />
+    <None Remove="Modules\4_Module\yrok2m4\Граф14.png" />
+    <None Remove="Modules\4_Module\yrok2m4\Граф15.png" />
+    <None Remove="Modules\4_Module\yrok2m4\Граф16.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -169,10 +188,35 @@
     <Resource Include="Modules\4_Module\imgModule4\Theory4_2.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Modules\4_Module\imgModule4\Граф14.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Modules\4_Module\imgModule4\Граф15.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Modules\4_Module\imgModule4\Граф16.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Modules\4_Module\yrok1m4\Examples4_1.jpg" />
     <Resource Include="Modules\4_Module\yrok1m4\Theory4_1.jpg" />
+    <Resource Include="Modules\4_Module\yrok1m4\Граф1.png" />
+    <Resource Include="Modules\4_Module\yrok1m4\Граф10.png" />
+    <Resource Include="Modules\4_Module\yrok1m4\Граф11.png" />
+    <Resource Include="Modules\4_Module\yrok1m4\Граф12.png" />
+    <Resource Include="Modules\4_Module\yrok1m4\Граф13.png" />
+    <Resource Include="Modules\4_Module\yrok1m4\Граф2.png" />
+    <Resource Include="Modules\4_Module\yrok1m4\Граф3.png" />
+    <Resource Include="Modules\4_Module\yrok1m4\Граф4.png" />
+    <Resource Include="Modules\4_Module\yrok1m4\Граф5.png" />
+    <Resource Include="Modules\4_Module\yrok1m4\Граф6.png" />
+    <Resource Include="Modules\4_Module\yrok1m4\Граф7.png" />
+    <Resource Include="Modules\4_Module\yrok1m4\Граф8.png" />
+    <Resource Include="Modules\4_Module\yrok1m4\Граф9.png" />
     <Resource Include="Modules\4_Module\yrok2m4\Examples4_2.jpg" />
     <Resource Include="Modules\4_Module\yrok2m4\Theory4_2.jpg" />
+    <Resource Include="Modules\4_Module\yrok2m4\Граф14.png" />
+    <Resource Include="Modules\4_Module\yrok2m4\Граф15.png" />
+    <Resource Include="Modules\4_Module\yrok2m4\Граф16.png" />
   </ItemGroup>
 
   <ItemGroup>

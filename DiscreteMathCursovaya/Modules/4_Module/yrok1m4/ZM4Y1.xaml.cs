@@ -22,6 +22,7 @@ namespace DiscreteMathCursovaya
     /// </summary>
     public partial class ZM4Y1 : Page
     {
+        static Random random = new Random();
         private IConnectDB dbconnect;
         private string Login;
         CommonTask[] tasks;
@@ -38,8 +39,30 @@ namespace DiscreteMathCursovaya
                 typeof(Task6),
                 typeof(Task7),
                 typeof(Task8),
-                typeof(Task9),
+                typeof(Task9)
             };
+            string[] arr = { @"pack://application:,,,/Modules/4_Module/yrok1m4/Граф1.png", 
+                @"pack://application:,,,/Modules/4_Module/yrok1m4/Граф2.png", 
+                @"pack://application:,,,/Modules/4_Module/yrok1m4/Граф3.png", 
+                @"pack://application:,,,/Modules/4_Module/yrok1m4/Граф4.png",
+                @"pack://application:,,,/Modules/4_Module/yrok1m4/Граф5.png",
+                @"pack://application:,,,/Modules/4_Module/yrok1m4/Граф6.png",
+                @"pack://application:,,,/Modules/4_Module/yrok1m4/Граф7.png",
+                @"pack://application:,,,/Modules/4_Module/yrok1m4/Граф8.png",
+                @"pack://application:,,,/Modules/4_Module/yrok1m4/Граф9.png",
+                @"pack://application:,,,/Modules/4_Module/yrok1m4/Граф10.png",
+                @"pack://application:,,,/Modules/4_Module/yrok1m4/Граф11.png",
+                @"pack://application:,,,/Modules/4_Module/yrok1m4/Граф12.png",
+                @"pack://application:,,,/Modules/4_Module/yrok1m4/Граф13.png" };
+            Image img = new Image();
+            Image img2 = new Image();
+            Image img3 = new Image();
+            img.Source = new BitmapImage(new Uri(arr[random.Next(0, 4)]));
+            img2.Source = new BitmapImage(new Uri(arr[random.Next(4, 8)]));
+            img3.Source = new BitmapImage(new Uri(arr[random.Next(8, 13)]));
+            Chart2.Content = img;
+            Chart1.Content = img2;
+            Chart3.Content = img3;
 
             tasks = arrayyy.Select(item => (CommonTask)Activator.CreateInstance(item)).ToArray();
             /*foreach (var item in arrayyy)
@@ -57,10 +80,17 @@ namespace DiscreteMathCursovaya
             TextTask8M1Y1.Text = tasks[5].Question;
             TextTask9M1Y1.Text = tasks[6].Question;
             TextTask10M1Y1.Text = tasks[7].Question;
-            
+
 
         }
-
+        public static bool VerificationTaskImg(TextBox Task11M1Y1)
+        {
+            if (Task11M1Y1.Text == "" || Task11M1Y1.Text.Replace(" ", "") == "")
+                return false;
+            if (12 == Convert.ToInt32(Task11M1Y1.Text.Replace(" ", "")))
+                return true;
+            return false;
+        }
         void OnPreviewTextInput(object sender, TextCompositionEventArgs e)
         {
             e.Handled = !e.Text.All(IsGood);
@@ -85,8 +115,8 @@ namespace DiscreteMathCursovaya
             using (OverrideCursor cursor = new OverrideCursor(Cursors.Wait))
             {
                 decimal resalt = 0.0m;
-                int[] ans = new int[3] { Convert.ToInt32(Task1M1Y1.Text.Replace(" ","")), Convert.ToInt32(Task1M1Y1_1.Text.Replace(" ", "")), Convert.ToInt32(Task1M1Y1_2.Text.Replace(" ", "")) };
-               
+                int[] ans = new int[3] { Convert.ToInt32(Task1M1Y1.Text.Replace(" ", "")), Convert.ToInt32(Task1M1Y1_1.Text.Replace(" ", "")), Convert.ToInt32(Task1M1Y1_2.Text.Replace(" ", "")) };
+
                 if (tasks[0].ValidateAnswer(ans))
                     resalt += 1.0m;
                 if (tasks[1].ValidateAnswer(Task3M1Y1))
@@ -105,7 +135,9 @@ namespace DiscreteMathCursovaya
                     resalt += 1.0m;
                 if (tasks[7].ValidateAnswer(Task10M1Y1))
                     resalt += 1.0m;
-                resalt = Math.Round((resalt / 9.0m), 2);
+                if(VerificationTaskImg(Task11M1Y1))
+                    resalt += 1.0m;
+                resalt = Math.Round((resalt / 10.0m), 2);
 
 
                 dbconnect = new ConnectingDB();
@@ -184,7 +216,7 @@ namespace DiscreteMathCursovaya
         {
 
         }
-        public string Question2 = String.Format(("3. Тот же вопрос, но если в классе {0} человек"),U+1);
+        public string Question2 = String.Format(("A если в классе {0} человек"), U + 1);
         public override bool ValidateAnswer(object Answer)
         {
             if (Answer is int intAnswer)
@@ -193,8 +225,8 @@ namespace DiscreteMathCursovaya
                     return intAnswer == (int)((U * U) / 4);
                 else
                 {
-                U += 1;
-                return intAnswer == (int)((U * U) / 4); 
+                    U += 1;
+                    return intAnswer == (int)((U * U) / 4);
                 }
             }
             return false;
@@ -205,7 +237,7 @@ namespace DiscreteMathCursovaya
         private static int girls = rnd.Next(3, 15);
         private static int boys = rnd.Next(3, 15);
         private static int allgirls = rnd.Next(3, 15);
-        public Task4() : base(String.Format(("4. На школьном балу каждый мальчик станцевал с {0} девочками," +
+        public Task4() : base(String.Format(("3. На школьном балу каждый мальчик станцевал с {0} девочками," +
             " а каждая девочка — с {1} мальчиками." +
             " Сколько мальчиков пришло на бал, если всего было {2} девочек?"), girls, boys, allgirls))
         {
@@ -216,7 +248,7 @@ namespace DiscreteMathCursovaya
         {
             if (Answer is int intAnswer)
             {
-                return intAnswer == boys*allgirls/girls;
+                return intAnswer == boys * allgirls / girls;
             }
             return false;
         }
@@ -227,11 +259,11 @@ namespace DiscreteMathCursovaya
         private static int bullys = rnd.Next(10, 21);
         private static int snowballs = rnd.Next(10, 21);
 
-        public Task5() : base(String.Format(("5. {0} хулиганов кидали снежки в окна школы. " +
+        public Task5() : base(String.Format(("4. {0} хулиганов кидали снежки в окна школы. " +
             "Первый хулиган попал в окно ровно 1 раз, второй — ровно 2 раза, …, {0}-ый — ровно {0} раз," +
             " причём никакой хулиган не попал в одно и то же окно дважды." +
             " В каждое школьное окно либо попали снежком {1} раз, либо не попали вовсе. " +
-            "Сколько школьных окон пострадали от снежков?"), bullys,snowballs))
+            "Сколько школьных окон пострадали от снежков?"), bullys, snowballs))
 
         {
 
@@ -241,7 +273,7 @@ namespace DiscreteMathCursovaya
         {
             if (Answer is int intAnswer)
             {
-                return intAnswer == ((2 + (bullys-1)/2)*bullys)/snowballs;
+                return intAnswer == ((2 + (bullys - 1) / 2) * bullys) / snowballs;
             }
             return false;
         }
@@ -249,23 +281,23 @@ namespace DiscreteMathCursovaya
     public class Task6 : CommonTask
     {
         private static int hokeyistG = rnd.Next(10, 21);
-        private static int hokeyistH= rnd.Next(10, 21);
-        private static int gimnastkaG= rnd.Next(10, 21);
-        private static int gimnastkaH= rnd.Next(10, 21);
+        private static int hokeyistH = rnd.Next(10, 21);
+        private static int gimnastkaG = rnd.Next(10, 21);
+        private static int gimnastkaH = rnd.Next(10, 21);
 
-        public Task6() : base(String.Format(("6. В школе олимпийского резерва каждый хоккеист дружит с {0} гимнастками и {1} хоккеистами из школы," +
+        public Task6() : base(String.Format(("5. В школе олимпийского резерва каждый хоккеист дружит с {0} гимнастками и {1} хоккеистами из школы," +
             " а каждая гимнастка дружит с {2} гимнастками и {3} хоккеистами." +
             " Какое наименьшее суммарное количество хоккеистов и гимнасток может учиться в школе олимпийского резерва?"), hokeyistG, hokeyistH, gimnastkaG, gimnastkaH))
 
         {
 
         }
-        public int schet(int hockeyG,int gimnastkaHock)
+        public int schet(int hockeyG, int gimnastkaHock)
         {
             if (hockeyG < gimnastkaHock)
             {
                 hockeyG *= 2;
-                return schet(hockeyG,gimnastkaHock);
+                return schet(hockeyG, gimnastkaHock);
             }
             return hockeyG;
         }
@@ -273,8 +305,8 @@ namespace DiscreteMathCursovaya
         public override bool ValidateAnswer(object Answer)
         {
             int x, y;
-            x = schet(hokeyistG,gimnastkaH);
-            y = schet(gimnastkaH,hokeyistG);
+            x = schet(hokeyistG, gimnastkaH);
+            y = schet(gimnastkaH, hokeyistG);
 
 
             if (Answer is int intAnswer)
@@ -286,8 +318,8 @@ namespace DiscreteMathCursovaya
     }
     public class Task7 : CommonTask
     {
-        private static int U = rnd.Next(4, 10)*2+1;
-        public Task7() : base(String.Format(("7. Можно ли нарисовать на плоскости {0} отрезков так, чтобы каждый пересекался ровно с тремя другими?"),U))
+        private static int U = rnd.Next(4, 10) * 2 + 1;
+        public Task7() : base(String.Format(("6. Можно ли нарисовать на плоскости {0} отрезков так, чтобы каждый пересекался ровно с тремя другими?"), U))
         { }
 
         public override bool ValidateAnswer(object Answer)
@@ -303,7 +335,7 @@ namespace DiscreteMathCursovaya
     }
     public class Task8 : CommonTask
     {
-        public Task8() : base("8. В классе 30 человек. Может ли быть так, что 9 из них имеют по 3 друга (в этом классе), 11 - по 4 друга, а 10 по 5 друзей?")
+        public Task8() : base("7. В классе 30 человек. Может ли быть так, что 9 из них имеют по 3 друга (в этом классе), 11 - по 4 друга, а 10 по 5 друзей?")
         { }
 
         public override bool ValidateAnswer(object Answer)
@@ -317,7 +349,7 @@ namespace DiscreteMathCursovaya
     }
     public class Task9 : CommonTask
     {
-        public Task9() : base("9.  Джон, приехав из Диснейленда, рассказывал, что там," +
+        public Task9() : base("8.  Джон, приехав из Диснейленда, рассказывал, что там," +
             " на заколдованном озере имеются 7 островов, с каждого из которых ведет 1, 3 или 5 мостов. " +
             "Верно ли, что хотя бы один из этих мостов обязательно выходит на берег озера?")
         { }
@@ -331,5 +363,13 @@ namespace DiscreteMathCursovaya
             return false;
         }
     }
-
+    //public class TaskImg1 : CommonTask
+    //{
+    //    Chart2.Source = new BitmapImage(new Uri("/Resources/00223.jpg", UriKind.Relative)) { CreateOptions = BitmapCreateOptions.IgnoreImageCache
+    //};
+    //public override bool ValidateAnswer(object Answer)
+    //    {
+            
+    //    }
+    //}
 }

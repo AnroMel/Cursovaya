@@ -48,5 +48,10 @@ namespace DiscreteMathCursovaya
                 return true;
             return false;
         }
+
+        private void ButtonFinishTask1_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

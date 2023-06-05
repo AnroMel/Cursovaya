@@ -10,6 +10,167 @@
 
     <ScrollViewer>
         <Grid Background="#FFF0F0F0">
+            <TextBlock x:Name="TextTask1M1Y1" HorizontalAlignment="Center" Margin="0,58,0,0" TextWrapping="Wrap" Text="1. Сколько различных Эйлеровых циклов есть в следующем графе (все вершины графа различны):" VerticalAlignment="Top" Height="94" Width="522" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="16"/>
+            <TextBox x:Name="Task1M1Y1" PreviewTextInput="OnPreviewTextInput" DataObject.Pasting="OnPasting" MaxLength="10" HorizontalAlignment="Center" Margin="231,291,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="266" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39"  VerticalContentAlignment="Center" Padding="4,4,4,4" Cursor="IBeam">
+                <TextBox.Template >
+                    <ControlTemplate >
+                        <Border Background="#FFF0F0F0" CornerRadius="6" Padding="2" BorderThickness="1" BorderBrush="#9f9f99">
+                            <Viewbox Stretch="Uniform" HorizontalAlignment="Left">
+                                <ScrollViewer  Margin="0" x:Name="PART_ContentHost"/>
+                            </Viewbox>
+                        </Border>
+                    </ControlTemplate>
+                </TextBox.Template>
+            </TextBox>
+            <Button x:Name="Chart1" HorizontalAlignment="Center" Margin="-290,110,0,0" VerticalAlignment="Top" Height="220" Width="220">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Modules/4_Module/yrok2m4/Граф14.png"/>
+                </Button.Background>
+                <Button.Style>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Border CornerRadius="12"
+                                Background="{TemplateBinding Background}">
+
+                                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="RenderTransformOrigin" Value="0.5, 0.5"/>
+                                <Setter Property="RenderTransform">
+                                    <Setter.Value>
+                                        <ScaleTransform ScaleX="1.1" ScaleY="1.1"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+            </Button>
+            <TextBlock x:Name="TextTask2M1Y1" HorizontalAlignment="Center" Margin="0,431,0,0" TextWrapping="Wrap" Text="2. Сколько различных Эйлеровых циклов в следующем графе" VerticalAlignment="Top" Height="56" Width="522" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="16"/>
+            <TextBox x:Name="Task2M1Y1" PreviewTextInput="OnPreviewTextInput" DataObject.Pasting="OnPasting" MaxLength="10" HorizontalAlignment="Center" Margin="231,657,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="265" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39"  VerticalContentAlignment="Center" Padding="4,4,4,4" Cursor="IBeam">
+                <TextBox.Template >
+                    <ControlTemplate >
+                        <Border Background="#FFF0F0F0" CornerRadius="6" Padding="2" BorderThickness="1" BorderBrush="#9f9f99">
+                            <Viewbox Stretch="Uniform" HorizontalAlignment="Left">
+                                <ScrollViewer  Margin="0" x:Name="PART_ContentHost"/>
+                            </Viewbox>
+                        </Border>
+                    </ControlTemplate>
+                </TextBox.Template>
+            </TextBox>
+            <Button x:Name="Chart2" HorizontalAlignment="Center" Margin="-290,480,0,0" VerticalAlignment="Top" Height="220" Width="220">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Modules/4_Module/yrok2m4/Граф15.png"/>
+                </Button.Background>
+                <Button.Style>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Border CornerRadius="12"
+                                Background="{TemplateBinding Background}">
+
+                                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="RenderTransformOrigin" Value="0.5, 0.5"/>
+                                <Setter Property="RenderTransform">
+                                    <Setter.Value>
+                                        <ScaleTransform ScaleX="1.1" ScaleY="1.1"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+            </Button>
+            <TextBlock x:Name="TextTask3M1Y1" HorizontalAlignment="center" Margin="0,809,0,0" TextWrapping="Wrap" Text="3. Сколько различных Эйлеровых циклов в следующем графе:" VerticalAlignment="Top" Height="55" Width="522" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="16"/>
+            <TextBox x:Name="Task3M1Y1" PreviewTextInput="OnPreviewTextInput" DataObject.Pasting="OnPasting" MaxLength="10" HorizontalAlignment="Center" Margin="231,1045,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="264" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39"  VerticalContentAlignment="Center" Padding="4,4,4,4" Cursor="IBeam">
+                <TextBox.Template >
+                    <ControlTemplate >
+                        <Border Background="#FFF0F0F0" CornerRadius="6" Padding="2" BorderThickness="1" BorderBrush="#9f9f99">
+                            <Viewbox Stretch="Uniform" HorizontalAlignment="Left">
+                                <ScrollViewer  Margin="0" x:Name="PART_ContentHost"/>
+                            </Viewbox>
+                        </Border>
+                    </ControlTemplate>
+                </TextBox.Template>
+            </TextBox>
+            <Button x:Name="Chart3" HorizontalAlignment="Center" Margin="-290,870,0,0" VerticalAlignment="Top" Height="220" Width="220">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Modules/4_Module/yrok2m4/Граф16.png"/>
+                </Button.Background>
+                <Button.Style>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Border CornerRadius="12"
+                                Background="{TemplateBinding Background}">
+
+                                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="RenderTransformOrigin" Value="0.5, 0.5"/>
+                                <Setter Property="RenderTransform">
+                                    <Setter.Value>
+                                        <ScaleTransform ScaleX="1.1" ScaleY="1.1"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+            </Button>
+            <Button x:Name="ButtonFinishTask1" Content="Завершить" HorizontalAlignment="Center" Margin="231,2056,0,0" VerticalAlignment="Top"  FontSize="20" FontFamily="pack://application:,,,/fonts/#Jost Medium" Width="264" Height="44" Cursor="Hand" Background="#ff6666" Foreground="White" BorderBrush="#ff6666" Click="ButtonFinishTask1_Click"  >
+                <Button.Effect>
+                    <DropShadowEffect Color="#FFE0E0E0"/>
+                </Button.Effect>
+                <Button.Style>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Border CornerRadius="6"
+                                Background="{TemplateBinding Background}">
+
+                                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="RenderTransformOrigin" Value="0.5, 0.5"/>
+                                <Setter Property="RenderTransform">
+                                    <Setter.Value>
+                                        <ScaleTransform ScaleX="1.1" ScaleY="1.1"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+            </Button>
+            <Button Content="Button" HorizontalAlignment="Left" Margin="607,2184,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
 
         </Grid>
     </ScrollViewer>
