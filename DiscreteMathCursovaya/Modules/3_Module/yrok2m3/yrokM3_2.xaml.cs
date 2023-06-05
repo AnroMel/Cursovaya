@@ -36,6 +36,7 @@ namespace DiscreteMathCursovaya
         private void ZM3Y2_Click(object sender, RoutedEventArgs e)
         {
             f_yrokM3Y2.Content = new ZM3Y2(Login);
+            Back.Visibility = Visibility.Hidden;
         }
 
         private void Back_Click(object sender, RoutedEventArgs e)
