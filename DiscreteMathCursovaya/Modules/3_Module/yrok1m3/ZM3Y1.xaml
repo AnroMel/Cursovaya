@@ -5,10 +5,73 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:DiscreteMathCursovaya"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="2250" d:DesignWidth="1000"
       Title="ZM3Y1">
 
-    <Grid>
-        <TextBlock>модуль 3 задачи урок 1</TextBlock>
-    </Grid>
+    <ScrollViewer>
+        <Grid Background="#FFF0F0F0">
+            <TextBlock x:Name="TextTask1M3Y1" HorizontalAlignment="Center" Margin="0,58,0,0" TextWrapping="Wrap" Text="text1" VerticalAlignment="Top" Height="73" Width="522" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="16"/>
+            <TextBox x:Name="Task1M3Y1" PreviewTextInput="OnPreviewTextInput" DataObject.Pasting="OnPasting" MaxLength="10" HorizontalAlignment="Center" Margin="231,121,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="265" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39"  VerticalContentAlignment="Center" Padding="4,4,4,4" Cursor="IBeam">
+                <TextBox.Template >
+                    <ControlTemplate >
+                        <Border Background="#FFF0F0F0" CornerRadius="6" Padding="2" BorderThickness="1" BorderBrush="#9f9f99">
+                            <Viewbox Stretch="Uniform" HorizontalAlignment="Left">
+                                <ScrollViewer  Margin="0" x:Name="PART_ContentHost"/>
+                            </Viewbox>
+                        </Border>
+                    </ControlTemplate>
+                </TextBox.Template>
+            </TextBox>
+            <TextBlock x:Name="TextTask2M3Y1" HorizontalAlignment="Center" Margin="0,234,0,0" TextWrapping="Wrap" Text="text2" VerticalAlignment="Top" Height="68" Width="522" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="16"/>
+            <TextBox x:Name="Task2M3Y1" PreviewTextInput="OnPreviewTextInput" DataObject.Pasting="OnPasting" MaxLength="10" HorizontalAlignment="Center" Margin="231,288,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="265" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39"  VerticalContentAlignment="Center" Padding="4,4,4,4" Cursor="IBeam">
+                <TextBox.Template >
+                    <ControlTemplate >
+                        <Border Background="#FFF0F0F0" CornerRadius="6" Padding="2" BorderThickness="1" BorderBrush="#9f9f99">
+                            <Viewbox Stretch="Uniform" HorizontalAlignment="Left">
+                                <ScrollViewer  Margin="0" x:Name="PART_ContentHost"/>
+                            </Viewbox>
+                        </Border>
+                    </ControlTemplate>
+                </TextBox.Template>
+            </TextBox>
+            <TextBlock x:Name="TextTask3M3Y1" HorizontalAlignment="Center" Margin="0,396,0,0" TextWrapping="Wrap" Text="text3" VerticalAlignment="Top" Height="73" Width="522" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="16"/>
+            <TextBox x:Name="Task3M3Y1" PreviewTextInput="OnPreviewTextInput" DataObject.Pasting="OnPasting" MaxLength="10" HorizontalAlignment="Center" Margin="231,460,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="266" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39"  VerticalContentAlignment="Center" Padding="4,4,4,4" Cursor="IBeam" >
+                <TextBox.Template >
+                    <ControlTemplate >
+                        <Border Background="#FFF0F0F0" CornerRadius="6" Padding="2" BorderThickness="1" BorderBrush="#9f9f99">
+                            <Viewbox Stretch="Uniform" HorizontalAlignment="Left">
+                                <ScrollViewer  Margin="0" x:Name="PART_ContentHost"/>
+                            </Viewbox>
+                        </Border>
+                    </ControlTemplate>
+                </TextBox.Template>
+            </TextBox>
+            <TextBlock x:Name="TextTask4M3Y1" HorizontalAlignment="Center" Margin="0,570,0,0" TextWrapping="Wrap" Text="text4" VerticalAlignment="Top" Height="73" Width="522" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="16"/>
+            <TextBox x:Name="Task4M3Y1" PreviewTextInput="OnPreviewTextInput" DataObject.Pasting="OnPasting" MaxLength="10" HorizontalAlignment="Center" Margin="231,643,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="265" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39"  VerticalContentAlignment="Center" Padding="4,4,4,4" Cursor="IBeam" >
+                <TextBox.Template >
+                    <ControlTemplate >
+                        <Border Background="#FFF0F0F0" CornerRadius="6" Padding="2" BorderThickness="1" BorderBrush="#9f9f99">
+                            <Viewbox Stretch="Uniform" HorizontalAlignment="Left">
+                                <ScrollViewer  Margin="0" x:Name="PART_ContentHost"/>
+                            </Viewbox>
+                        </Border>
+                    </ControlTemplate>
+                </TextBox.Template>
+            </TextBox>
+
+            <Rectangle HorizontalAlignment="Center" Height="151" Margin="0,26,0,0" Stroke="#ff6666" VerticalAlignment="Top" Width="800" RadiusX="15" RadiusY="15" />
+            <Rectangle HorizontalAlignment="Center" Height="152" Margin="0,192,0,0" Stroke="#ff6666" VerticalAlignment="Top" Width="800" RadiusX="15" RadiusY="15" />
+            <Rectangle HorizontalAlignment="Center" Height="153" Margin="0,360,0,0" Stroke="#ff6666" VerticalAlignment="Top" Width="800" RadiusX="15" RadiusY="15" />
+            <Rectangle HorizontalAlignment="Center" Height="168" Margin="0,530,0,0" Stroke="#ff6666" VerticalAlignment="Top" Width="800" RadiusX="15" RadiusY="15" />
+            <Rectangle HorizontalAlignment="Center" Height="150" Margin="0,713,0,0" Stroke="#ff6666" VerticalAlignment="Top" Width="800" RadiusX="15" RadiusY="15" />
+            <Rectangle HorizontalAlignment="Center" Height="172" Margin="0,879,0,0" Stroke="#ff6666" VerticalAlignment="Top" Width="800" RadiusX="15" RadiusY="15" />
+            <Rectangle HorizontalAlignment="Center" Height="138" Margin="0,1066,0,0" Stroke="#ff6666" VerticalAlignment="Top" Width="800" RadiusX="15" RadiusY="15" />
+            <Rectangle HorizontalAlignment="Center" Height="252" Margin="0,1222,0,0" Stroke="#ff6666" VerticalAlignment="Top" Width="800" RadiusX="15" RadiusY="15" />
+            <Rectangle HorizontalAlignment="Center" Height="161" Margin="0,1490,0,0" Stroke="#ff6666" VerticalAlignment="Top" Width="800" RadiusX="15" RadiusY="15" />
+            <Rectangle HorizontalAlignment="Center" Height="243" Margin="0,1668,0,0" Stroke="#ff6666" VerticalAlignment="Top" Width="800" RadiusX="15" RadiusY="15" />
+            <Rectangle HorizontalAlignment="Center" Height="179" Margin="0,1927,0,0" Stroke="#ff6666" VerticalAlignment="Top" Width="800" RadiusX="15" RadiusY="15" />
+            <Button Content="Button" HorizontalAlignment="Left" Margin="546,2220,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
+
+        </Grid>
+    </ScrollViewer>
 </Page>
