@@ -22,7 +22,7 @@ namespace DiscreteMathCursovaya
         private string Login;
         public yrokM4_2(string login)
         {
-            login = login;
+            Login = login;
             InitializeComponent();
             f_yrokM4Y2.Content = new TM4Y2();
         }

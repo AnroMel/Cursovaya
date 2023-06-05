@@ -176,6 +176,67 @@ namespace DiscreteMathCursovaya
                 MenuLessons window = new MenuLessons(Login);
                 window.Show();
                 App.Current.MainWindow.Close();
+            } using (OverrideCursor cursor = new OverrideCursor(Cursors.Wait))
+            {
+                decimal resalt = 0.0m;
+                if (Task1M1Y1.Text.Replace(" ", "") != ""&& Task1M1Y1_1.Text.Replace(" ", "") != "" && Task1M1Y1_2.Text.Replace(" ", "") != "")
+                { 
+                  int[] ans = new int[3] { Convert.ToInt32(Task1M1Y1.Text.Replace(" ", "")), Convert.ToInt32(Task1M1Y1_1.Text.Replace(" ", "")), Convert.ToInt32(Task1M1Y1_2.Text.Replace(" ", "")) };
+                  if (tasks[0].ValidateAnswer(ans))
+                    resalt += 1.0m;
+                }
+                if (tasks[1].ValidateAnswer(Task3M1Y1.Text))
+                    resalt += 1.0m;
+                if (new Task2().ValidateAnswer2(Task4M1Y1.Text))
+                    resalt += 1.0m;
+                if (tasks[2].ValidateAnswer(Task5M1Y1.Text))
+                    resalt += 1.0m;
+                if (tasks[3].ValidateAnswer(Task6M1Y1.Text))
+                    resalt += 1.0m;
+                if (tasks[4].ValidateAnswer(Task7M1Y1.Text))
+                    resalt += 1.0m;
+                if (tasks[5].ValidateAnswer(Task8M1Y1.Text))
+                    resalt += 1.0m;
+                if (tasks[6].ValidateAnswer(Task9M1Y1.Text))
+                    resalt += 1.0m;
+                if (tasks[7].ValidateAnswer(Task10M1Y1.Text))
+                    resalt += 1.0m;
+                if(tasks[8].ValidateAnswer(Convert.ToInt32(Task11M1Y1.Text)))
+                    resalt += 1.0m;
+                MessageBox.Show(resalt.ToString());
+                resalt = Math.Round((resalt / 10.0m), 2);
+
+
+                dbconnect = new ConnectingDB();
+                var write = dbconnect.FirstOrDefaultWrite(Login, 4, 1);
+                if (write == null)
+                {
+                    var user = dbconnect.FirstOrDefault(Login);
+                    var lesson = dbconnect.FirstOrDefaultCodLesson(4, 1);
+
+                    if (user != null)
+                    {
+                        var test = new StudentWrite()
+                        {
+                            CountAttempt = 0,
+                            Mark = resalt,
+                            StudentId = user.Id,
+                            LessonId = lesson.Code
+                        };
+                        dbconnect.AddWriteToDB(test);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Произошла ошибка при входе в приложение", "Ошибка");
+                    }
+                }
+                else
+                {
+                    dbconnect.UpdateWriteMarkAndCount(write, resalt);
+                }
+                MenuLessons window = new MenuLessons(Login);
+                window.Show();
+                App.Current.MainWindow.Close();
             }
         }
     }
