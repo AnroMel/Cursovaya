@@ -29,13 +29,11 @@ namespace DiscreteMathCursovaya
         private string Login;
         public ZM3Y1(string login)
         {
-
             string[] arr = { @"pack://application:,,,/Modules/3_Module/yrok1m3/Frame_22.jpg",
                 @"pack://application:,,,/Modules/3_Module/yrok1m3/Frame_23.jpg",
                 @"pack://application:,,,/Modules/3_Module/yrok1m3/Frame_24.jpg",
                 @"pack://application:,,,/Modules/3_Module/yrok1m3/Frame_25.jpg",
-                @"pack://application:,,,/Modules/3_Module/yrok1m3/Frame_27.jpg",
- };
+                @"pack://application:,,,/Modules/3_Module/yrok1m3/Frame_27.jpg"};
             Image img = new Image();
             Image img2 = new Image();
             Image img3 = new Image();

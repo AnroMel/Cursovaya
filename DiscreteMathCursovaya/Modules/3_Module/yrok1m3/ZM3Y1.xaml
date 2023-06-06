@@ -60,10 +60,8 @@
             </TextBox>
             <Button x:Name="Chart1" HorizontalAlignment="Center" Margin="0,2314,0,0" VerticalAlignment="Top" Height="170" Width="170">
                 <Button.Background>
-                    <ImageBrush ImageSource="/Modules/3_Module/yrok1m3/Frame_23.jpg"/>
+                    <ImageBrush ImageSource="/Modules/3_Module/yrok1m3/Frame_27.jpg"/>
                 </Button.Background>
-
-
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
                         <Setter Property="Template">
@@ -93,9 +91,8 @@
             </Button>
             <Button x:Name="Chart2" HorizontalAlignment="Center" Margin="-360,2314,0,0" VerticalAlignment="Top" Height="170" Width="170">
                 <Button.Background>
-                    <ImageBrush ImageSource="/Modules/3_Module/yrok1m3/Frame_25.jpg"/>
+                    <ImageBrush ImageSource="/Modules/3_Module/yrok1m3/Frame_27.jpg"/>
                 </Button.Background>
-
 
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
@@ -126,9 +123,8 @@
             </Button>
             <Button x:Name="Chart3" HorizontalAlignment="Center" Margin="360,2314,0,0" VerticalAlignment="Top" Height="170" Width="170">
                 <Button.Background>
-                    <ImageBrush ImageSource="/Modules/3_Module/yrok1m3/Frame_23.jpg"/>
+                    <ImageBrush ImageSource="/Modules/3_Module/yrok1m3/Frame_27.jpg"/>
                 </Button.Background>
-
 
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
