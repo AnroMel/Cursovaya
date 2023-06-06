@@ -58,10 +58,7 @@
                     </ControlTemplate>
                 </TextBox.Template>
             </TextBox>
-            <Button x:Name="Chart1" HorizontalAlignment="Center" Margin="0,2314,0,0" VerticalAlignment="Top" Height="170" Width="170">
-                <Button.Background>
-                    <ImageBrush ImageSource="/Modules/3_Module/yrok1m3/Frame_23.jpg"/>
-                </Button.Background>
+            <Button x:Name="Chart1" HorizontalAlignment="Center" Margin="0,2314,0,0" VerticalAlignment="Top" Height="170" Width="170" Background="{x:Null}" BorderBrush="{x:Null}">
 
 
                 <Button.Style>
@@ -91,10 +88,7 @@
                     </Style>
                 </Button.Style>
             </Button>
-            <Button x:Name="Chart2" HorizontalAlignment="Center" Margin="-360,2314,0,0" VerticalAlignment="Top" Height="170" Width="170">
-                <Button.Background>
-                    <ImageBrush ImageSource="/Modules/3_Module/yrok1m3/Frame_25.jpg"/>
-                </Button.Background>
+            <Button x:Name="Chart2" HorizontalAlignment="Center" Margin="-360,2314,0,0" VerticalAlignment="Top" Height="170" Width="170" BorderBrush="{x:Null}" Background="{x:Null}">
 
 
                 <Button.Style>
@@ -124,11 +118,7 @@
                     </Style>
                 </Button.Style>
             </Button>
-            <Button x:Name="Chart3" HorizontalAlignment="Center" Margin="360,2314,0,0" VerticalAlignment="Top" Height="170" Width="170">
-                <Button.Background>
-                    <ImageBrush ImageSource="/Modules/3_Module/yrok1m3/Frame_23.jpg"/>
-                </Button.Background>
-
+            <Button x:Name="Chart3" HorizontalAlignment="Center" Margin="360,2314,0,0" VerticalAlignment="Top" Height="170" Width="170" BorderBrush="{x:Null}" Background="{x:Null}">
 
                 <Button.Style>
                     <Style TargetType="{x:Type Button}">
