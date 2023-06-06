@@ -5,12 +5,12 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:DiscreteMathCursovaya"
       mc:Ignorable="d" 
-      d:DesignHeight="1140" d:DesignWidth="800"
+      d:DesignHeight="2540" d:DesignWidth="800"
       Title="TM4Y2">
 
     <ScrollViewer>
         <Grid >
-            <TextBlock Height="1140" Width="800">
+            <TextBlock Height="2540" Width="800">
                 <TextBlock.Background>
                     <ImageBrush ImageSource="/Modules/4_Module/yrok2m4/Theory4_2.jpg"/>
                 </TextBlock.Background>
