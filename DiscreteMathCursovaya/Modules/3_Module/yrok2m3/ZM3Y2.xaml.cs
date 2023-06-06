@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using LibraryConnectingDB;
+using LibraryConnectingDB.Models;
 
 namespace DiscreteMathCursovaya
 {
@@ -20,8 +22,10 @@ namespace DiscreteMathCursovaya
     /// </summary>
     public partial class ZM3Y2 : Page
     {
-        public ZM3Y2()
+        private string Login;
+        public ZM3Y2(string login)
         {
+            Login = login;
             InitializeComponent();
         }
     }

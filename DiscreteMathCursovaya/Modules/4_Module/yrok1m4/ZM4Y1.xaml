@@ -140,7 +140,7 @@
                     </ControlTemplate>
                 </TextBox.Template>
             </TextBox>
-            <TextBlock x:Name="TextTask11M1Y1" HorizontalAlignment="Center" Margin="0,2254,0,0" TextWrapping="Wrap" Text="9. Напишите в порядке возрастания номера двудольных графов через пробел" VerticalAlignment="Top" Height="74" Width="522" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="16"/>
+            <TextBlock x:Name="TextTask11M1Y1" HorizontalAlignment="Center" Margin="0,2254,0,0" TextWrapping="Wrap" Text="9. Напишите в порядке возрастания номера двудольных графов без пробелов" VerticalAlignment="Top" Height="74" Width="522" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="16"/>
             <TextBox x:Name="Task11M1Y1" PreviewTextInput="OnPreviewTextInput" DataObject.Pasting="OnPasting" MaxLength="10" HorizontalAlignment="Center" Margin="231,2532,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="264" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="40"  VerticalContentAlignment="Center" Padding="4,4,4,4" Cursor="IBeam" >
                 <TextBox.Template >
                     <ControlTemplate >

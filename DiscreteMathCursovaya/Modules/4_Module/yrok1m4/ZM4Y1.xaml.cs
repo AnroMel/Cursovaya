@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -39,11 +40,13 @@ namespace DiscreteMathCursovaya
                 typeof(Task6),
                 typeof(Task7),
                 typeof(Task8),
-                typeof(Task9)
+                typeof(Task9),
+                typeof(Task10)
             };
-            string[] arr = { @"pack://application:,,,/Modules/4_Module/yrok1m4/Граф1.png", 
-                @"pack://application:,,,/Modules/4_Module/yrok1m4/Граф2.png", 
-                @"pack://application:,,,/Modules/4_Module/yrok1m4/Граф3.png", 
+            tasks = arrayyy.Select(item => (CommonTask)Activator.CreateInstance(item)).ToArray();
+            string[] arr = { @"pack://application:,,,/Modules/4_Module/yrok1m4/Граф1.png",
+                @"pack://application:,,,/Modules/4_Module/yrok1m4/Граф2.png",
+                @"pack://application:,,,/Modules/4_Module/yrok1m4/Граф3.png",
                 @"pack://application:,,,/Modules/4_Module/yrok1m4/Граф4.png",
                 @"pack://application:,,,/Modules/4_Module/yrok1m4/Граф5.png",
                 @"pack://application:,,,/Modules/4_Module/yrok1m4/Граф6.png",
@@ -64,7 +67,7 @@ namespace DiscreteMathCursovaya
             Chart1.Content = img2;
             Chart3.Content = img3;
 
-            tasks = arrayyy.Select(item => (CommonTask)Activator.CreateInstance(item)).ToArray();
+
             /*foreach (var item in arrayyy)
             {
                 var a = (CommonTask)Activator.CreateInstance(item);
@@ -82,15 +85,16 @@ namespace DiscreteMathCursovaya
             TextTask10M1Y1.Text = tasks[7].Question;
 
 
+
         }
-        public static bool VerificationTaskImg(TextBox Task11M1Y1)
-        {
-            if (Task11M1Y1.Text == "" || Task11M1Y1.Text.Replace(" ", "") == "")
-                return false;
-            if (12 == Convert.ToInt32(Task11M1Y1.Text.Replace(" ", "")))
-                return true;
-            return false;
-        }
+        //public static bool VerificationTaskImg(TextBox Task11M1Y1)
+        //{
+        //    if (Task11M1Y1.Text == "" || Task11M1Y1.Text.Replace(" ", "") == "")
+        //        return false;
+        //    if (12 == Convert.ToInt32(Task11M1Y1.Text.Replace(" ", "")))
+        //        return true;
+        //    return false;
+        //}
         void OnPreviewTextInput(object sender, TextCompositionEventArgs e)
         {
             e.Handled = !e.Text.All(IsGood);
@@ -115,30 +119,92 @@ namespace DiscreteMathCursovaya
             using (OverrideCursor cursor = new OverrideCursor(Cursors.Wait))
             {
                 decimal resalt = 0.0m;
-                if (Task1M1Y1.Text != "" && Task1M1Y1.Text.Replace(" ", "") != "" && Task1M1Y1_1.Text != "" && Task1M1Y1_1.Text.Replace(" ", "") != "" && Task1M1Y1_2.Text != "" && Task1M1Y1_2.Text.Replace(" ", "") != "")
+                if (Task1M1Y1.Text.Replace(" ", "") != ""&& Task1M1Y1_1.Text.Replace(" ", "") != "" && Task1M1Y1_2.Text.Replace(" ", "") != "")
                 { 
                   int[] ans = new int[3] { Convert.ToInt32(Task1M1Y1.Text.Replace(" ", "")), Convert.ToInt32(Task1M1Y1_1.Text.Replace(" ", "")), Convert.ToInt32(Task1M1Y1_2.Text.Replace(" ", "")) };
                   if (tasks[0].ValidateAnswer(ans))
                     resalt += 1.0m;
                 }
-                if (tasks[1].ValidateAnswer(Task3M1Y1))
+                if (tasks[1].ValidateAnswer(Task3M1Y1.Text))
                     resalt += 1.0m;
-                if (tasks[1].ValidateAnswer(Task4M1Y1))
+                if (new Task2().ValidateAnswer2(Task4M1Y1.Text))
                     resalt += 1.0m;
-                if (tasks[2].ValidateAnswer(Task5M1Y1))
+                if (tasks[2].ValidateAnswer(Task5M1Y1.Text))
                     resalt += 1.0m;
-                if (tasks[3].ValidateAnswer(Task6M1Y1))
+                if (tasks[3].ValidateAnswer(Task6M1Y1.Text))
                     resalt += 1.0m;
-                if (tasks[4].ValidateAnswer(Task7M1Y1))
+                if (tasks[4].ValidateAnswer(Task7M1Y1.Text))
                     resalt += 1.0m;
-                if (tasks[5].ValidateAnswer(Task8M1Y1))
+                if (tasks[5].ValidateAnswer(Task8M1Y1.Text))
                     resalt += 1.0m;
-                if (tasks[6].ValidateAnswer(Task9M1Y1))
+                if (tasks[6].ValidateAnswer(Task9M1Y1.Text))
                     resalt += 1.0m;
-                if (tasks[7].ValidateAnswer(Task10M1Y1))
+                if (tasks[7].ValidateAnswer(Task10M1Y1.Text))
                     resalt += 1.0m;
-                if(VerificationTaskImg(Task11M1Y1))
+                if(tasks[8].ValidateAnswer(Convert.ToInt32(Task11M1Y1.Text)))
                     resalt += 1.0m;
+                MessageBox.Show(resalt.ToString());
+                resalt = Math.Round((resalt / 10.0m), 2);
+
+
+                dbconnect = new ConnectingDB();
+                var write = dbconnect.FirstOrDefaultWrite(Login, 4, 1);
+                if (write == null)
+                {
+                    var user = dbconnect.FirstOrDefault(Login);
+                    var lesson = dbconnect.FirstOrDefaultCodLesson(4, 1);
+
+                    if (user != null)
+                    {
+                        var test = new StudentWrite()
+                        {
+                            CountAttempt = 0,
+                            Mark = resalt,
+                            StudentId = user.Id,
+                            LessonId = lesson.Code
+                        };
+                        dbconnect.AddWriteToDB(test);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Произошла ошибка при входе в приложение", "Ошибка");
+                    }
+                }
+                else
+                {
+                    dbconnect.UpdateWriteMarkAndCount(write, resalt);
+                }
+                MenuLessons window = new MenuLessons(Login);
+                window.Show();
+                App.Current.MainWindow.Close();
+            } using (OverrideCursor cursor = new OverrideCursor(Cursors.Wait))
+            {
+                decimal resalt = 0.0m;
+                if (Task1M1Y1.Text.Replace(" ", "") != ""&& Task1M1Y1_1.Text.Replace(" ", "") != "" && Task1M1Y1_2.Text.Replace(" ", "") != "")
+                { 
+                  int[] ans = new int[3] { Convert.ToInt32(Task1M1Y1.Text.Replace(" ", "")), Convert.ToInt32(Task1M1Y1_1.Text.Replace(" ", "")), Convert.ToInt32(Task1M1Y1_2.Text.Replace(" ", "")) };
+                  if (tasks[0].ValidateAnswer(ans))
+                    resalt += 1.0m;
+                }
+                if (tasks[1].ValidateAnswer(Task3M1Y1.Text))
+                    resalt += 1.0m;
+                if (new Task2().ValidateAnswer2(Task4M1Y1.Text))
+                    resalt += 1.0m;
+                if (tasks[2].ValidateAnswer(Task5M1Y1.Text))
+                    resalt += 1.0m;
+                if (tasks[3].ValidateAnswer(Task6M1Y1.Text))
+                    resalt += 1.0m;
+                if (tasks[4].ValidateAnswer(Task7M1Y1.Text))
+                    resalt += 1.0m;
+                if (tasks[5].ValidateAnswer(Task8M1Y1.Text))
+                    resalt += 1.0m;
+                if (tasks[6].ValidateAnswer(Task9M1Y1.Text))
+                    resalt += 1.0m;
+                if (tasks[7].ValidateAnswer(Task10M1Y1.Text))
+                    resalt += 1.0m;
+                if(tasks[8].ValidateAnswer(Convert.ToInt32(Task11M1Y1.Text)))
+                    resalt += 1.0m;
+                MessageBox.Show(resalt.ToString());
                 resalt = Math.Round((resalt / 10.0m), 2);
 
 
@@ -177,7 +243,7 @@ namespace DiscreteMathCursovaya
     }
     public abstract class CommonTask
     {
-        protected static Random rnd = new Random();
+        protected static Random rnd ;
         public string Question { get; protected set; }
         protected CommonTask(string Question)
         {
@@ -221,21 +287,31 @@ namespace DiscreteMathCursovaya
         public string Question2 = String.Format(("A если в классе {0} человек"), U + 1);
         public override bool ValidateAnswer(object Answer)
         {
+            if (Answer.ToString().Replace(" ", "") == "")
+                return false;
+            Answer = Convert.ToInt32(Answer.ToString().Replace(" ", ""));
             if (Answer is int intAnswer)
             {
-                if (U % 2 == 0)
-                    return intAnswer == (int)((U * U) / 4);
-                else
-                {
-                    U += 1;
-                    return intAnswer == (int)((U * U) / 4);
-                }
+                    return intAnswer == (int)((U * U) / 4);               
+            }
+            return false;
+        }
+        public bool ValidateAnswer2(object Answer)
+        {
+
+            if (Answer.ToString().Replace(" ", "") == "")
+                return false;
+            Answer = Convert.ToInt32(Answer.ToString().Replace(" ", ""));
+            if (Answer is int intAnswer)
+            {
+                U += 1;
+                return intAnswer == (int)((U * U) / 4);
             }
             return false;
         }
     }
     public class Task4 : CommonTask
-    {
+    {//
         private static int girls = rnd.Next(3, 15);
         private static int boys = rnd.Next(3, 15);
         private static int allgirls = rnd.Next(3, 15);
@@ -248,6 +324,9 @@ namespace DiscreteMathCursovaya
 
         public override bool ValidateAnswer(object Answer)
         {
+            if (Answer.ToString().Replace(" ", "") == "")
+                return false;
+            Answer = Convert.ToInt32(Answer.ToString().Replace(" ", ""));
             if (Answer is int intAnswer)
             {
                 return intAnswer == boys * allgirls / girls;
@@ -273,6 +352,9 @@ namespace DiscreteMathCursovaya
 
         public override bool ValidateAnswer(object Answer)
         {
+            if (Answer.ToString().Replace(" ", "") == "")
+                return false;
+            Answer = Convert.ToInt32(Answer.ToString().Replace(" ", ""));
             if (Answer is int intAnswer)
             {
                 return intAnswer == ((2 + (bullys - 1) / 2) * bullys) / snowballs;
@@ -309,7 +391,9 @@ namespace DiscreteMathCursovaya
             int x, y;
             x = schet(hokeyistG, gimnastkaH);
             y = schet(gimnastkaH, hokeyistG);
-
+            if (Answer.ToString().Replace(" ", "") == "")
+                return false;
+            Answer = Convert.ToInt32(Answer.ToString().Replace(" ", ""));
 
             if (Answer is int intAnswer)
             {
@@ -326,6 +410,9 @@ namespace DiscreteMathCursovaya
 
         public override bool ValidateAnswer(object Answer)
         {
+            if (Answer.ToString().Replace(" ", "") == "")
+                return false;
+            Answer = Answer.ToString();
             if (Answer is string stringAnswer)
             {
                 if (U % 2 != 0)
@@ -342,6 +429,9 @@ namespace DiscreteMathCursovaya
 
         public override bool ValidateAnswer(object Answer)
         {
+            if (Answer.ToString().Replace(" ", "") == "")
+                return false;
+            Answer = Answer.ToString();
             if (Answer is string stringAnswer)
             {
                 return stringAnswer.ToLower() == "нет";
@@ -358,6 +448,9 @@ namespace DiscreteMathCursovaya
 
         public override bool ValidateAnswer(object Answer)
         {
+            if (Answer.ToString().Replace(" ", "") == "")
+                return false;
+            Answer = Answer.ToString();
             if (Answer is string stringAnswer)
             {
                 return stringAnswer.ToLower() == "да";
@@ -365,13 +458,23 @@ namespace DiscreteMathCursovaya
             return false;
         }
     }
-    //public class TaskImg1 : CommonTask
-    //{
-    //    Chart2.Source = new BitmapImage(new Uri("/Resources/00223.jpg", UriKind.Relative)) { CreateOptions = BitmapCreateOptions.IgnoreImageCache
-    //};
-    //public override bool ValidateAnswer(object Answer)
-    //    {
-            
-    //    }
-    //}
+    public class Task10 : CommonTask
+    {
+        public Task10() : base(" ")
+        { }
+
+        public override bool ValidateAnswer(object Answer)
+        {
+            if (Answer.ToString().Replace(" ", "") == "")
+                return false;
+            Answer = Convert.ToInt32(Answer.ToString().Replace(" ", ""));
+            if (Answer is int intAnswer)
+            {
+                if (12 == intAnswer)
+                    return true;
+            }
+            return false;
+        }
+    }
+
 }
