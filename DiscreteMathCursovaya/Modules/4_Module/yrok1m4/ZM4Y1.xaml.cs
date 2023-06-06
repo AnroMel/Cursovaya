@@ -44,9 +44,9 @@ namespace DiscreteMathCursovaya
                 typeof(Task10)
             };
             tasks = arrayyy.Select(item => (CommonTask)Activator.CreateInstance(item)).ToArray();
-            string[] arr = { @"pack://application:,,,/Modules/4_Module/yrok1m4/Граф1.png", 
-                @"pack://application:,,,/Modules/4_Module/yrok1m4/Граф2.png", 
-                @"pack://application:,,,/Modules/4_Module/yrok1m4/Граф3.png", 
+            string[] arr = { @"pack://application:,,,/Modules/4_Module/yrok1m4/Граф1.png",
+                @"pack://application:,,,/Modules/4_Module/yrok1m4/Граф2.png",
+                @"pack://application:,,,/Modules/4_Module/yrok1m4/Граф3.png",
                 @"pack://application:,,,/Modules/4_Module/yrok1m4/Граф4.png",
                 @"pack://application:,,,/Modules/4_Module/yrok1m4/Граф5.png",
                 @"pack://application:,,,/Modules/4_Module/yrok1m4/Граф6.png",
@@ -67,7 +67,7 @@ namespace DiscreteMathCursovaya
             Chart1.Content = img2;
             Chart3.Content = img3;
 
-            
+
             /*foreach (var item in arrayyy)
             {
                 var a = (CommonTask)Activator.CreateInstance(item);

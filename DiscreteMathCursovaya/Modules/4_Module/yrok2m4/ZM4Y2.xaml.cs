@@ -31,15 +31,15 @@ namespace DiscreteMathCursovaya
             Login = login;
             var arrayyy = new Type[]
             {
-                typeof(Task42_1),
-                typeof(Task42_2),
-                typeof(Task42_3),
-                typeof(Task5),
-                typeof(Task6),
-                typeof(Task7),
-                typeof(Task8),
-                typeof(Task9),
-                typeof(Task10)
+                //typeof(Task42_1),
+                //typeof(Task42_2),
+                //typeof(Task42_3),
+                //typeof(Task5),
+                //typeof(Task6),
+                //typeof(Task7),
+                //typeof(Task8),
+                //typeof(Task9),
+                //typeof(Task10)
             };
             InitializeComponent();
 

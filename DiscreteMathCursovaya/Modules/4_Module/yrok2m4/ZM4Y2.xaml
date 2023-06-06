@@ -5,13 +5,13 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:DiscreteMathCursovaya"
       mc:Ignorable="d" 
-      d:DesignHeight="2250" d:DesignWidth="1000"
+      d:DesignHeight="3950" d:DesignWidth="1000"
       Title="ZM4Y2">
 
     <ScrollViewer>
         <Grid Background="#FFF0F0F0">
-            <TextBlock x:Name="TextTask1M1Y1" HorizontalAlignment="Center" Margin="0,58,0,0" TextWrapping="Wrap" Text="1. Сколько различных Эйлеровых циклов есть в следующем графе (все вершины графа различны):" VerticalAlignment="Top" Height="94" Width="522" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="16"/>
-            <TextBox x:Name="Task1M1Y1" PreviewTextInput="OnPreviewTextInput" DataObject.Pasting="OnPasting" MaxLength="10" HorizontalAlignment="Center" Margin="231,291,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="266" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39"  VerticalContentAlignment="Center" Padding="4,4,4,4" Cursor="IBeam">
+            <TextBlock x:Name="TextTask4M1Y1" HorizontalAlignment="Center" Margin="0,70,0,0" TextWrapping="Wrap" Text="1. Ниже представлена фигура - сабли Магомеда. Можно ли нарисовать ее не отрывая карандаш от бумаги и не проходя по отрезкам дважды (за исключением помеченных точек)" VerticalAlignment="Top" Height="94" Width="522" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="16"/>
+            <TextBox x:Name="Task4M1Y1" MaxLength="10" HorizontalAlignment="Center" Margin="231,370,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="266" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39"  VerticalContentAlignment="Center" Padding="4,4,4,4" Cursor="IBeam">
                 <TextBox.Template >
                     <ControlTemplate >
                         <Border Background="#FFF0F0F0" CornerRadius="6" Padding="2" BorderThickness="1" BorderBrush="#9f9f99">
@@ -22,7 +22,267 @@
                     </ControlTemplate>
                 </TextBox.Template>
             </TextBox>
-            <Button x:Name="Chart1" HorizontalAlignment="Center" Margin="-290,110,0,0" VerticalAlignment="Top" Height="220" Width="220">
+            <Button x:Name="Chart" HorizontalAlignment="Center" Margin="-0,150,0,0" VerticalAlignment="Top" Height="220" Width="340">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Modules/4_Module/yrok2m4/Chart1.png"/>
+                </Button.Background>
+                <Button.Style>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Border CornerRadius="12"
+                                Background="{TemplateBinding Background}">
+
+                                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="RenderTransformOrigin" Value="0.5, 0.5"/>
+                                <Setter Property="RenderTransform">
+                                    <Setter.Value>
+                                        <ScaleTransform ScaleX="1.1" ScaleY="1.1"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+            </Button>
+            <TextBlock x:Name="TextTask5M1Y1" HorizontalAlignment="Center" Margin="0,499,0,0" TextWrapping="Wrap" Text="2. Напишите последовательность посещенных вершин поиска в глубину графа ниже начиная с вершины А " VerticalAlignment="Top" Height="74" Width="522" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="16"/>
+            <TextBox x:Name="Task5M1Y1" MaxLength="10" HorizontalAlignment="Center" Margin="231,850,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="266" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39"  VerticalContentAlignment="Center" Padding="4,4,4,4" Cursor="">
+                <TextBox.Template >
+                    <ControlTemplate >
+                        <Border Background="#FFF0F0F0" CornerRadius="6" Padding="2" BorderThickness="1" BorderBrush="#9f9f99">
+                            <Viewbox Stretch="Uniform" HorizontalAlignment="Left">
+                                <ScrollViewer  Margin="0" x:Name="PART_ContentHost"/>
+                            </Viewbox>
+                        </Border>
+                    </ControlTemplate>
+                </TextBox.Template>
+            </TextBox>
+            <Button x:Name="Chart4" HorizontalAlignment="Center" Margin="-0,550,0,0" VerticalAlignment="Top" Height="300" Width="390">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Modules/4_Module/yrok2m4/Chart2.png"/>
+                </Button.Background>
+                <Button.Style>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Border CornerRadius="12"
+                                Background="{TemplateBinding Background}">
+
+                                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="RenderTransformOrigin" Value="0.5, 0.5"/>
+                                <Setter Property="RenderTransform">
+                                    <Setter.Value>
+                                        <ScaleTransform ScaleX="1.1" ScaleY="1.1"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+            </Button>
+            <TextBlock x:Name="TextTask6M1Y1" HorizontalAlignment="Center" Margin="0,1000,0,0" TextWrapping="Wrap" Text="3. Напишите последовательность посещенных вершин поиска в ширину графа ниже начиная с вершины А " VerticalAlignment="Top" Height="74" Width="522" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="16"/>
+            <TextBox x:Name="Task6M1Y1" MaxLength="10" HorizontalAlignment="Center" Margin="231,1355,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="266" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39"  VerticalContentAlignment="Center" Padding="4,4,4,4" Cursor="">
+                <TextBox.Template >
+                    <ControlTemplate >
+                        <Border Background="#FFF0F0F0" CornerRadius="6" Padding="2" BorderThickness="1" BorderBrush="#9f9f99">
+                            <Viewbox Stretch="Uniform" HorizontalAlignment="Left">
+                                <ScrollViewer  Margin="0" x:Name="PART_ContentHost"/>
+                            </Viewbox>
+                        </Border>
+                    </ControlTemplate>
+                </TextBox.Template>
+            </TextBox>
+            <Button x:Name="Chart5" HorizontalAlignment="Center" Margin="-0,1050,0,0" VerticalAlignment="Top" Height="300" Width="390">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Modules/4_Module/yrok2m4/Chart3.png"/>
+                </Button.Background>
+                <Button.Style>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Border CornerRadius="12"
+                                Background="{TemplateBinding Background}">
+
+                                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="RenderTransformOrigin" Value="0.5, 0.5"/>
+                                <Setter Property="RenderTransform">
+                                    <Setter.Value>
+                                        <ScaleTransform ScaleX="1.1" ScaleY="1.1"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+            </Button>
+            <TextBlock x:Name="TextTask7M1Y1" HorizontalAlignment="Center" Margin="0,1520,0,0" TextWrapping="Wrap" Text="4. На рисунке снизу дан план подземелья 7го корпуса и граф плана, в одной из комнат спрятан ключ. Чтобы найти ключ достаточно войти в одну из крайних комнат подземелья, пройти через все двери, причем в точности по одному разу через каждую. Ключ спрятан за той дверью, которая будет пройдена последней" VerticalAlignment="Top" Height="124" Width="522" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="16"/>
+            <TextBox x:Name="Task7M1Y1" PreviewTextInput="OnPreviewTextInput" DataObject.Pasting="OnPasting" MaxLength="10" HorizontalAlignment="Center" Margin="231,1945,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="266" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39"  VerticalContentAlignment="Center" Padding="4,4,4,4" Cursor="">
+                <TextBox.Template >
+                    <ControlTemplate >
+                        <Border Background="#FFF0F0F0" CornerRadius="6" Padding="2" BorderThickness="1" BorderBrush="#9f9f99">
+                            <Viewbox Stretch="Uniform" HorizontalAlignment="Left">
+                                <ScrollViewer  Margin="0" x:Name="PART_ContentHost"/>
+                            </Viewbox>
+                        </Border>
+                    </ControlTemplate>
+                </TextBox.Template>
+            </TextBox>
+            <TextBox x:Name="Task7M1Y1_1" MaxLength="10" PreviewTextInput="OnPreviewTextInput" DataObject.Pasting="OnPasting" HorizontalAlignment="Center" Margin="231,2065,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="266" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39"  VerticalContentAlignment="Center" Padding="4,4,4,4" Cursor="">
+                <TextBox.Template >
+                    <ControlTemplate >
+                        <Border Background="#FFF0F0F0" CornerRadius="6" Padding="2" BorderThickness="1" BorderBrush="#9f9f99">
+                            <Viewbox Stretch="Uniform" HorizontalAlignment="Left">
+                                <ScrollViewer  Margin="0" x:Name="PART_ContentHost"/>
+                            </Viewbox>
+                        </Border>
+                    </ControlTemplate>
+                </TextBox.Template>
+            </TextBox>
+            <Button x:Name="Chart6" HorizontalAlignment="Center" Margin="-290,1649,0,0" VerticalAlignment="Top" Height="260" Width="260">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Modules/4_Module/yrok2m4/Plan.png"/>
+                </Button.Background>
+                <Button.Style>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Border CornerRadius="12"
+                                Background="{TemplateBinding Background}">
+
+                                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="RenderTransformOrigin" Value="0.5, 0.5"/>
+                                <Setter Property="RenderTransform">
+                                    <Setter.Value>
+                                        <ScaleTransform ScaleX="1.1" ScaleY="1.1"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+            </Button>
+            <Button x:Name="Chart7" HorizontalAlignment="Center" Margin="290,1649,0,0" VerticalAlignment="Top" Height="260" Width="260">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Modules/4_Module/yrok2m4/PlanChart.png"/>
+                </Button.Background>
+                <Button.Style>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Border CornerRadius="12"
+                                Background="{TemplateBinding Background}">
+
+                                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="RenderTransformOrigin" Value="0.5, 0.5"/>
+                                <Setter Property="RenderTransform">
+                                    <Setter.Value>
+                                        <ScaleTransform ScaleX="1.1" ScaleY="1.1"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+            </Button>
+            <TextBlock x:Name="TextTask8M1Y1" HorizontalAlignment="Center" Margin="0,2193,0,0" TextWrapping="Wrap" Text="5. Напишите в порядке возрастания графы, которые можно нарисовать не отрывая карандаш от бумаги и не проходя ни по какому отрезку дважды" VerticalAlignment="Top" Height="94" Width="522" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="16"/>
+            <TextBox x:Name="Task8M1Y1" PreviewTextInput="OnPreviewTextInput" DataObject.Pasting="OnPasting" MaxLength="10" HorizontalAlignment="Center" Margin="231,2499,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="266" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39"  VerticalContentAlignment="Center" Padding="4,4,4,4" Cursor="IBeam">
+                <TextBox.Template >
+                    <ControlTemplate >
+                        <Border Background="#FFF0F0F0" CornerRadius="6" Padding="2" BorderThickness="1" BorderBrush="#9f9f99">
+                            <Viewbox Stretch="Uniform" HorizontalAlignment="Left">
+                                <ScrollViewer  Margin="0" x:Name="PART_ContentHost"/>
+                            </Viewbox>
+                        </Border>
+                    </ControlTemplate>
+                </TextBox.Template>
+            </TextBox>
+            <Button x:Name="ChartFigures" HorizontalAlignment="Center" Margin="0,2268,0,0" VerticalAlignment="Top" Height="217" Width="600">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Modules/4_Module/yrok2m4/ChartFigures.png"/>
+                </Button.Background>
+                <Button.Style>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Border CornerRadius="12"
+                                Background="{TemplateBinding Background}">
+
+                                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="RenderTransformOrigin" Value="0.5, 0.5"/>
+                                <Setter Property="RenderTransform">
+                                    <Setter.Value>
+                                        <ScaleTransform ScaleX="1.1" ScaleY="1.1"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+            </Button>
+
+
+
+            <TextBlock x:Name="TextTask1M1Y1" HorizontalAlignment="Center" Margin="0,2650,0,0" TextWrapping="Wrap" Text="6. Сколько различных Эйлеровых циклов есть в следующем графе (все вершины графа различны):" VerticalAlignment="Top" Height="94" Width="522" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="16"/>
+            <TextBox x:Name="Task1M1Y1" PreviewTextInput="OnPreviewTextInput" DataObject.Pasting="OnPasting" MaxLength="10" HorizontalAlignment="Center" Margin="231,2890,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="266" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39"  VerticalContentAlignment="Center" Padding="4,4,4,4" Cursor="IBeam">
+                <TextBox.Template >
+                    <ControlTemplate >
+                        <Border Background="#FFF0F0F0" CornerRadius="6" Padding="2" BorderThickness="1" BorderBrush="#9f9f99">
+                            <Viewbox Stretch="Uniform" HorizontalAlignment="Left">
+                                <ScrollViewer  Margin="0" x:Name="PART_ContentHost"/>
+                            </Viewbox>
+                        </Border>
+                    </ControlTemplate>
+                </TextBox.Template>
+            </TextBox>
+            <Button x:Name="Chart1" HorizontalAlignment="Center" Margin="-290,2720,0,0" VerticalAlignment="Top" Height="220" Width="220">
                 <Button.Background>
                     <ImageBrush ImageSource="/Modules/4_Module/yrok2m4/Граф14.png"/>
                 </Button.Background>
@@ -53,8 +313,8 @@
                     </Style>
                 </Button.Style>
             </Button>
-            <TextBlock x:Name="TextTask2M1Y1" HorizontalAlignment="Center" Margin="0,431,0,0" TextWrapping="Wrap" Text="2. Сколько различных Эйлеровых циклов в следующем графе" VerticalAlignment="Top" Height="56" Width="522" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="16"/>
-            <TextBox x:Name="Task2M1Y1" PreviewTextInput="OnPreviewTextInput" DataObject.Pasting="OnPasting" MaxLength="10" HorizontalAlignment="Center" Margin="231,657,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="265" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39"  VerticalContentAlignment="Center" Padding="4,4,4,4" Cursor="IBeam">
+            <TextBlock x:Name="TextTask2M1Y1" HorizontalAlignment="Center" Margin="0,3060,0,0" TextWrapping="Wrap" Text="7. Сколько различных Эйлеровых циклов в следующем графе" VerticalAlignment="Top" Height="56" Width="522" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="16"/>
+            <TextBox x:Name="Task2M1Y1" PreviewTextInput="OnPreviewTextInput" DataObject.Pasting="OnPasting" MaxLength="10" HorizontalAlignment="Center" Margin="231,3260,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="265" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39"  VerticalContentAlignment="Center" Padding="4,4,4,4" Cursor="IBeam">
                 <TextBox.Template >
                     <ControlTemplate >
                         <Border Background="#FFF0F0F0" CornerRadius="6" Padding="2" BorderThickness="1" BorderBrush="#9f9f99">
@@ -65,7 +325,7 @@
                     </ControlTemplate>
                 </TextBox.Template>
             </TextBox>
-            <Button x:Name="Chart2" HorizontalAlignment="Center" Margin="-290,480,0,0" VerticalAlignment="Top" Height="220" Width="220">
+            <Button x:Name="Chart2" HorizontalAlignment="Center" Margin="-290,3100,0,0" VerticalAlignment="Top" Height="220" Width="220">
                 <Button.Background>
                     <ImageBrush ImageSource="/Modules/4_Module/yrok2m4/Граф15.png"/>
                 </Button.Background>
@@ -96,8 +356,8 @@
                     </Style>
                 </Button.Style>
             </Button>
-            <TextBlock x:Name="TextTask3M1Y1" HorizontalAlignment="center" Margin="0,809,0,0" TextWrapping="Wrap" Text="3. Сколько различных Эйлеровых циклов в следующем графе:" VerticalAlignment="Top" Height="55" Width="522" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="16"/>
-            <TextBox x:Name="Task3M1Y1" PreviewTextInput="OnPreviewTextInput" DataObject.Pasting="OnPasting" MaxLength="10" HorizontalAlignment="Center" Margin="231,1045,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="264" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39"  VerticalContentAlignment="Center" Padding="4,4,4,4" Cursor="IBeam">
+            <TextBlock x:Name="TextTask3M1Y1" HorizontalAlignment="center" Margin="0,3425,0,0" TextWrapping="Wrap" Text="8. Сколько различных Эйлеровых циклов в следующем графе:" VerticalAlignment="Top" Height="55" Width="522" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="16"/>
+            <TextBox x:Name="Task3M1Y1" PreviewTextInput="OnPreviewTextInput" DataObject.Pasting="OnPasting" MaxLength="10" HorizontalAlignment="Center" Margin="231,3605,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="264" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39"  VerticalContentAlignment="Center" Padding="4,4,4,4" Cursor="IBeam">
                 <TextBox.Template >
                     <ControlTemplate >
                         <Border Background="#FFF0F0F0" CornerRadius="6" Padding="2" BorderThickness="1" BorderBrush="#9f9f99">
@@ -108,7 +368,7 @@
                     </ControlTemplate>
                 </TextBox.Template>
             </TextBox>
-            <Button x:Name="Chart3" HorizontalAlignment="Center" Margin="-290,870,0,0" VerticalAlignment="Top" Height="220" Width="220">
+            <Button x:Name="Chart3" HorizontalAlignment="Center" Margin="-290,3455,0,0" VerticalAlignment="Top" Height="220" Width="220">
                 <Button.Background>
                     <ImageBrush ImageSource="/Modules/4_Module/yrok2m4/Граф16.png"/>
                 </Button.Background>
@@ -139,7 +399,7 @@
                     </Style>
                 </Button.Style>
             </Button>
-            <Button x:Name="ButtonFinishTask1" Content="Завершить" HorizontalAlignment="Center" Margin="231,2056,0,0" VerticalAlignment="Top"  FontSize="20" FontFamily="pack://application:,,,/fonts/#Jost Medium" Width="264" Height="44" Cursor="Hand" Background="#ff6666" Foreground="White" BorderBrush="#ff6666" Click="ButtonFinishTask1_Click"  >
+            <Button x:Name="ButtonFinishTask1" Content="Завершить" HorizontalAlignment="Center" Margin="231,3796,0,0" VerticalAlignment="Top"  FontSize="20" FontFamily="pack://application:,,,/fonts/#Jost Medium" Width="264" Height="44" Cursor="Hand" Background="#ff6666" Foreground="White" BorderBrush="#ff6666" Click="ButtonFinishTask1_Click"  >
                 <Button.Effect>
                     <DropShadowEffect Color="#FFE0E0E0"/>
                 </Button.Effect>
@@ -170,7 +430,9 @@
                     </Style>
                 </Button.Style>
             </Button>
-            <Button Content="Button" HorizontalAlignment="Left" Margin="607,2184,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
+            <Button Content="Button" HorizontalAlignment="Left" Margin="607,3884,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
+            <Label Content="Напишите кол-во нечетных вершин" HorizontalAlignment="Center" Margin="253,1916,0,0" VerticalAlignment="Top" Width="295" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="16"/>
+            <TextBlock HorizontalAlignment="Center" Margin="226,2016,0,0" TextWrapping="Wrap" Text="Напишите номер комнаты, в которой спрятан ключ" VerticalAlignment="Top" Height="68" Width="254" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="16"/>
 
         </Grid>
     </ScrollViewer>
