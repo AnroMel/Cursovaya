@@ -43,11 +43,6 @@
     <None Remove="Modules\3_Module\imgModule3\Frame_19.jpg" />
     <None Remove="Modules\3_Module\yrok1m3\Frame_19.jpg" />
     <None Remove="Modules\3_Module\yrok1m3\Frame_20.jpg" />
-    <None Remove="Modules\3_Module\yrok1m3\Frame_22.jpg" />
-    <None Remove="Modules\3_Module\yrok1m3\Frame_23.jpg" />
-    <None Remove="Modules\3_Module\yrok1m3\Frame_24.jpg" />
-    <None Remove="Modules\3_Module\yrok1m3\Frame_25.jpg" />
-    <None Remove="Modules\3_Module\yrok1m3\Frame_27.jpg" />
     <None Remove="Modules\3_Module\yrok1m3\Frame_28.jpg" />
     <None Remove="Modules\3_Module\yrok1m3\Frame_29.jpg" />
     <None Remove="Modules\3_Module\yrok1m3\Frame_30.jpg" />
@@ -214,21 +209,6 @@
     <Resource Include="Modules\3_Module\yrok1m3\Frame_19.jpg" />
     <Resource Include="Modules\3_Module\yrok1m3\Frame_20.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="Modules\3_Module\yrok1m3\Frame_22.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="Modules\3_Module\yrok1m3\Frame_23.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="Modules\3_Module\yrok1m3\Frame_24.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="Modules\3_Module\yrok1m3\Frame_25.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="Modules\3_Module\yrok1m3\Frame_27.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Modules\3_Module\yrok1m3\Frame_28.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

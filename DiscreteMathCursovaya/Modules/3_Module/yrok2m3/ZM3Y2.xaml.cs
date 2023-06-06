@@ -48,7 +48,7 @@ namespace DiscreteMathCursovaya
             Image img6 = new Image();
 
             img.Source = new BitmapImage(new Uri(arr[0]));
-            img2.Source = new BitmapImage(new Uri(arr[random.Next(1, 3)]));
+            img2.Source = new BitmapImage(new Uri(arr[random.Next(1, 6)]));
 
 
             img3.Source = new BitmapImage(new Uri(arr[2]));
@@ -57,14 +57,14 @@ namespace DiscreteMathCursovaya
             img5.Source = new BitmapImage(new Uri(arr[3]));
             img6.Source = new BitmapImage(new Uri(arr[random.Next(4, 6)]));
 
-            Chart2.Content = img;
-            Chart1.Content = img2;
+            Chart2.Content = img2;
+            Chart1.Content = img;
 
             Chart52.Content = img3;
             Chart51.Content = img4;
 
-            Chart62.Content = img3;
-            Chart61.Content = img4;
+            Chart62.Content = img5;
+            Chart61.Content = img6;
 
             RandomTemp1 = random.Next(8, 15).ToString();
             RandomTemp2 = random.Next(5, 10).ToString();
@@ -122,7 +122,15 @@ namespace DiscreteMathCursovaya
         {
             if (Task5M3Y2.Text == "" || Task5M3Y2.Text.Replace(" ", "") == "")
                 return false;
-            if (1 == Convert.ToInt32(Task5M3Y2.Text.Replace(" ", "")))
+            if (2 == Convert.ToInt32(Task5M3Y2.Text.Replace(" ", "")))
+                return true;
+            return false;
+        }
+        public static bool VerificationTask6(TextBox Task6M3Y2)
+        {
+            if (Task6M3Y2.Text == "" || Task6M3Y2.Text.Replace(" ", "") == "")
+                return false;
+            if (2 == Convert.ToInt32(Task6M3Y2.Text.Replace(" ", "")))
                 return true;
             return false;
         }
