@@ -9,7 +9,6 @@ namespace DiscreteMathCursovaya
 {
     public class OverrideCursor : IDisposable
     {
-
         public OverrideCursor(Cursor changeToCursor)
         {
             Mouse.OverrideCursor = changeToCursor;

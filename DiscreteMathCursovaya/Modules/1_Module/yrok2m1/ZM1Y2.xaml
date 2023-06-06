@@ -33,7 +33,7 @@
                     </ControlTemplate>
                 </TextBox.Template>
             </TextBox>
-            <TextBlock x:Name="TextTask3M1Y1" HorizontalAlignment="Center" Margin="0,404,0,0" TextWrapping="Wrap" Text="Сколькими способами можно разместиться студентов КБ-3 из человек за столом в столовке 7го корпуса?" VerticalAlignment="Top" Height="73" Width="522" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="16"/>
+            <TextBlock x:Name="TextTask3M1Y1" HorizontalAlignment="Center" Margin="0,404,0,0" TextWrapping="Wrap" Text="Сколькими способами можно разместиться студентов КБ-3 из человек за столом в столовой 7го корпуса?" VerticalAlignment="Top" Height="73" Width="522" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="16"/>
             <TextBox x:Name="Task3M1Y1" PreviewTextInput="OnPreviewTextInput" DataObject.Pasting="OnPasting" MaxLength="10" HorizontalAlignment="Center" Margin="231,460,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="266" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39"  VerticalContentAlignment="Center" Padding="4,4,4,4" Cursor="IBeam" >
                 <TextBox.Template >
                     <ControlTemplate >

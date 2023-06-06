@@ -160,12 +160,12 @@ namespace LibraryConnectingDB
                 
                 if (write.CountAttempt == 0)
                 {
-                    StudWrite.Mark = decimal.Multiply(mark, 0.8m);
+                    StudWrite.Mark = decimal.Multiply(mark, 0.9m);
 
                 }
                 if (write.CountAttempt == 1)
                 {
-                    StudWrite.Mark = decimal.Multiply(mark, 0.6m);
+                    StudWrite.Mark = decimal.Multiply(mark, 0.8m);
                 }
                 StudWrite.CountAttempt = StudWrite.CountAttempt + 1;
                 db.Write.Update(StudWrite);
