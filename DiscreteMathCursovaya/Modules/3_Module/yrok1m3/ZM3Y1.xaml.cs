@@ -41,7 +41,21 @@ namespace DiscreteMathCursovaya
             TextTask2M3Y1.Text = "2. У царя было" + $"{RandomTemp2}" + " детей.Из всех его потомков " + $"{RandomTemp22}" + " имело 3 сыновей остальные умерли бездетными. Сколько потомков было у царя ?";
             TextTask3M3Y1.Text = "3.В некотором царстве в некотором государстве " + $"{RandomTemp3}" + " городов из каждого выходит по 4 дороги. Скольк всего дорог в государстве?";
             TextTask4M3Y1.Text = "4. Про ИБ-2 извесно, что каждый человек в ней знаком ровно с " + $"{RandomTemp4}" + " людьми и для любой группы из " + $"{RandomTemp4}" + " студентов найдется член ИБ-2 , знакомый с каждым из этой группы. Сколько человек в ИБ-2?";
-
+            
+            string[] arr = { @"pack://application:,,,/Modules/3_Module/yrok1m3/Frame_22.jpg",
+                @"pack://application:,,,/Modules/3_Module/yrok1m3/Frame_23.jpg",
+                @"pack://application:,,,/Modules/3_Module/yrok1m3/Frame_24.jpg",
+                @"pack://application:,,,/Modules/3_Module/yrok1m3/Frame_25.jpg",
+                @"pack://application:,,,/Modules/3_Module/yrok1m3/Frame_27.jpg"};
+            Image img = new Image();
+            Image img2 = new Image();
+            Image img3 = new Image();
+            img.Source = new BitmapImage(new Uri(arr[random.Next(0, 2)]));
+            img2.Source = new BitmapImage(new Uri(arr[random.Next(2, 4)]));
+            img3.Source = new BitmapImage(new Uri(arr[4]));
+            Chart2.Content = img3;
+            Chart1.Content = img2;
+            Chart3.Content = img;
         }
         public static bool VerificationTask1(TextBox Task1M3Y1)
         {
