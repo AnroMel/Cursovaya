@@ -43,6 +43,7 @@ namespace DiscreteMathCursovaya
                 typeof(Task9),
                 typeof(Task10)
             };
+            tasks = arrayyy.Select(item => (CommonTask)Activator.CreateInstance(item)).ToArray();
             string[] arr = { @"pack://application:,,,/Modules/4_Module/yrok1m4/Граф1.png", 
                 @"pack://application:,,,/Modules/4_Module/yrok1m4/Граф2.png", 
                 @"pack://application:,,,/Modules/4_Module/yrok1m4/Граф3.png", 
@@ -66,7 +67,7 @@ namespace DiscreteMathCursovaya
             Chart1.Content = img2;
             Chart3.Content = img3;
 
-            tasks = arrayyy.Select(item => (CommonTask)Activator.CreateInstance(item)).ToArray();
+            
             /*foreach (var item in arrayyy)
             {
                 var a = (CommonTask)Activator.CreateInstance(item);
@@ -242,7 +243,7 @@ namespace DiscreteMathCursovaya
     }
     public abstract class CommonTask
     {
-        protected static Random rnd = new Random();
+        protected static Random rnd ;
         public string Question { get; protected set; }
         protected CommonTask(string Question)
         {
