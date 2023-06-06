@@ -54,7 +54,7 @@
                 </Button.Style>
             </Button>
             <TextBlock x:Name="TextTask5M1Y1" HorizontalAlignment="Center" Margin="0,499,0,0" TextWrapping="Wrap" Text="2. Напишите последовательность посещенных вершин поиска в глубину графа ниже начиная с вершины А " VerticalAlignment="Top" Height="74" Width="522" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="16"/>
-            <TextBox x:Name="Task5M1Y1" MaxLength="10" HorizontalAlignment="Center" Margin="231,850,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="266" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39"  VerticalContentAlignment="Center" Padding="4,4,4,4" Cursor="">
+            <TextBox x:Name="Task5M1Y1" MaxLength="12" HorizontalAlignment="Center" Margin="231,850,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="266" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39"  VerticalContentAlignment="Center" Padding="4,4,4,4" Cursor="">
                 <TextBox.Template >
                     <ControlTemplate >
                         <Border Background="#FFF0F0F0" CornerRadius="6" Padding="2" BorderThickness="1" BorderBrush="#9f9f99">
@@ -97,7 +97,7 @@
                 </Button.Style>
             </Button>
             <TextBlock x:Name="TextTask6M1Y1" HorizontalAlignment="Center" Margin="0,1000,0,0" TextWrapping="Wrap" Text="3. Напишите последовательность посещенных вершин поиска в ширину графа ниже начиная с вершины А " VerticalAlignment="Top" Height="74" Width="522" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="16"/>
-            <TextBox x:Name="Task6M1Y1" MaxLength="10" HorizontalAlignment="Center" Margin="231,1355,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="266" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39"  VerticalContentAlignment="Center" Padding="4,4,4,4" Cursor="">
+            <TextBox x:Name="Task6M1Y1" MaxLength="12" HorizontalAlignment="Center" Margin="231,1355,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="266" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39"  VerticalContentAlignment="Center" Padding="4,4,4,4" Cursor="">
                 <TextBox.Template >
                     <ControlTemplate >
                         <Border Background="#FFF0F0F0" CornerRadius="6" Padding="2" BorderThickness="1" BorderBrush="#9f9f99">

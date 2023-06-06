@@ -68,11 +68,6 @@ namespace DiscreteMathCursovaya
             Chart3.Content = img3;
 
 
-            /*foreach (var item in arrayyy)
-            {
-                var a = (CommonTask)Activator.CreateInstance(item);
-                MessageBox.Show(a.Question);
-            }*/
 
             TextTaskM1Y1.Text = tasks[0].Question;
             TextTask3M1Y1.Text = tasks[1].Question;
@@ -87,14 +82,7 @@ namespace DiscreteMathCursovaya
 
 
         }
-        //public static bool VerificationTaskImg(TextBox Task11M1Y1)
-        //{
-        //    if (Task11M1Y1.Text == "" || Task11M1Y1.Text.Replace(" ", "") == "")
-        //        return false;
-        //    if (12 == Convert.ToInt32(Task11M1Y1.Text.Replace(" ", "")))
-        //        return true;
-        //    return false;
-        //}
+        
         void OnPreviewTextInput(object sender, TextCompositionEventArgs e)
         {
             e.Handled = !e.Text.All(IsGood);
@@ -238,12 +226,13 @@ namespace DiscreteMathCursovaya
                 MenuLessons window = new MenuLessons(Login);
                 window.Show();
                 App.Current.MainWindow.Close();
+                
             }
         }
     }
     public abstract class CommonTask
     {
-        protected static Random rnd ;
+        protected static Random rnd = new Random() ;
         public string Question { get; protected set; }
         protected CommonTask(string Question)
         {
