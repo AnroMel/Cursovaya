@@ -35,23 +35,11 @@ namespace DiscreteMathCursovaya
             InitializeComponent();
 
             string[] arr = { @"pack://application:,,,/Modules/3_Module/yrok2m3/Frame_28.jpg",
-                @"pack://application:,,,/Modules/3_Module/yrok2m3/Frame_29.jpg",
-                @"pack://application:,,,/Modules/3_Module/yrok2m3/Frame_30.jpg",
+                @"pack://application:,,,/Modules/3_Module/yrok2m3/Frame_29.jpg",//cлож
+                @"pack://application:,,,/Modules/3_Module/yrok2m3/Frame_30.jpg",// произв
                 @"pack://application:,,,/Modules/3_Module/yrok2m3/Frame_31.jpg",
                 @"pack://application:,,,/Modules/3_Module/yrok2m3/Frame_32.jpg",
-
              
-                @"pack://application:,,,/Modules/3_Module/yrok2m3/Frame_49.jpg",
-                @"pack://application:,,,/Modules/3_Module/yrok2m3/Frame_50.jpg",
-                @"pack://application:,,,/Modules/3_Module/yrok2m3/Frame_61.jpg",
-                @"pack://application:,,,/Modules/3_Module/yrok2m3/Frame_64.jpg",
-                @"pack://application:,,,/Modules/3_Module/yrok2m3/Frame_62.jpg",
-                @"pack://application:,,,/Modules/3_Module/yrok2m3/Frame_63.jpg",
-                @"pack://application:,,,/Modules/3_Module/yrok2m3/Frame_65.jpg",
-                @"pack://application:,,,/Modules/3_Module/yrok2m3/Frame_66.jpg",
-                @"pack://application:,,,/Modules/3_Module/yrok2m3/Frame_67.jpg",
-               
-
                 @"pack://application:,,,/Modules/3_Module/yrok2m3/Frame_33.jpg"};
 
             string[] arr2 = { @"pack://application:,,,/Modules/3_Module/yrok2m3/Frame_40.jpg",
@@ -82,7 +70,7 @@ namespace DiscreteMathCursovaya
             Image img92 = new Image();
             
             img.Source = new BitmapImage(new Uri(arr[0]));
-            img2.Source = new BitmapImage(new Uri(arr[random.Next(1, 16)]));
+            img2.Source = new BitmapImage(new Uri(arr[random.Next(1, 6)]));
 
 
             img3.Source = new BitmapImage(new Uri(arr[2]));
@@ -91,8 +79,8 @@ namespace DiscreteMathCursovaya
             img5.Source = new BitmapImage(new Uri(arr[3]));
             img6.Source = new BitmapImage(new Uri(arr[random.Next(4, 6)]));
            
-            img91.Source = new BitmapImage(new Uri(arr[3]));
-            img92.Source = new BitmapImage(new Uri(arr[random.Next(4, 6)]));
+            img91.Source = new BitmapImage(new Uri(arr[4]));//elfktybt ht,hf
+            img92.Source = new BitmapImage(new Uri(arr[random.Next(0, 4)]));
 
             Chart2.Content = img2;
             Chart1.Content = img;
@@ -103,8 +91,8 @@ namespace DiscreteMathCursovaya
             Chart62.Content = img5;
             Chart61.Content = img6;
             
-            Chart18.Content = img5;
-            Chart28.Content = img6;
+            Chart18.Content = img92;
+            Chart28.Content = img91;
 
             img81.Source = new BitmapImage(new Uri(arr2[0]));
             img82.Source = new BitmapImage(new Uri(arr2[random.Next(1, 3)]));
@@ -134,7 +122,7 @@ namespace DiscreteMathCursovaya
             TextTask5M3Y2.Text = "5. на какой картинке изображено произведение графов? (нумерация картинок 1 2)";
             TextTask6M3Y2.Text = "6. на какой картинке изображено удаление вершины графа? (нумерация картинок 1 2)";
             TextTask7M3Y2.Text = "7. Дан граф G. Какие из представленых ниже графов являются индуцироваными подграфами графа G ?";
-            TextTask8M3Y2.Text = "8. на какой картинке изображено соединение графов? (нумерация картинок 1 2) ";
+            TextTask8M3Y2.Text = "8. на какой картинке изображено удаление ребра графа? (нумерация картинок 1 2) ";
 
 
 
@@ -201,7 +189,14 @@ namespace DiscreteMathCursovaya
                 return true;
             return false;
         }
-
+        public static bool VerificationTask8(TextBox Task8M3Y2)
+        {
+            if (Task8M3Y2.Text == "" || Task8M3Y2.Text.Replace(" ", "") == "")
+                return false;
+            if (2 == Convert.ToInt32(Task8M3Y2.Text.Replace(" ", "")))
+                return true;
+            return false;
+        }
 
 
 
@@ -229,8 +224,28 @@ namespace DiscreteMathCursovaya
         {
             using (OverrideCursor cursor = new OverrideCursor(Cursors.Wait))
             {
+
                 decimal resalt = 0.0m;
+                if (VerificationTask1(Task1M3Y2))
+                    resalt += 1.0m;
                
+                if (VerificationTask2(Task2M3Y2))
+                    resalt += 1.0m;
+                if (VerificationTask3(Task3M3Y2))
+                    resalt += 1.0m;
+                if (VerificationTask4(Task4M3Y2))
+                    resalt += 1.0m;
+                if (VerificationTask5(Task5M3Y2))
+                    resalt += 1.0m;
+                if (VerificationTask6(Task6M3Y2))
+                    resalt += 1.0m;
+                if(VerificationTask8(Task8M3Y2))
+                    resalt += 1.0m;
+                if (VerificationTask7(Task7M3Y2))
+                    resalt += 1.0m;
+
+
+                resalt = Math.Round((resalt / 10.0m), 2);
 
                 dbconnect = new ConnectingDB();
                 var write = dbconnect.FirstOrDefaultWrite(Login, 3, 2);

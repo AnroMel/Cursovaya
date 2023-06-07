@@ -199,30 +199,24 @@ namespace DiscreteMathCursovaya
                
 
                 decimal resalt = 0.0m;
-                if (Task1M3Y1.Text != "" && Task1M3Y1.Text.Replace(" ", "") != "")
-                    if (Convert.ToInt32(Task1M3Y1.Text.Replace(" ", "")) == 96)
-                        resalt += 1.0m;
+                if (VerificationTask2(Task1M3Y1))
+                    resalt += 1.0m;
                 if (VerificationTask2(Task2M3Y1))
                     resalt += 1.0m;
                 if (VerificationTask3(Task3M3Y1))
                     resalt += 1.0m;
-                if (Task4M3Y1.Text != "" && Task4M3Y1.Text.Replace(" ", "") != "")
-                    if (Convert.ToInt32(Task4M3Y1.Text.Replace(" ", "")) == 24)
-                        resalt += 1.0m;
-                if (Task5M3Y1.Text != "" && Task5M3Y1.Text.Replace(" ", "") != "")
-                    if (Convert.ToInt32(Task5M3Y1.Text.Replace(" ", "")) == 140)
-                        resalt += 1.0m;
-                if (Task6M3Y1.Text != "" && Task6M3Y1.Text.Replace(" ", "") != "")
-                    if (Convert.ToInt32(Task6M3Y1.Text.Replace(" ", "")) == 1680)
-                        resalt += 1.0m;
-                if (Task7M3Y1.Text != "" && Task7M3Y1.Text.Replace(" ", "") != "")
-                    if (Convert.ToInt32(Task7M3Y1.Text.Replace(" ", "")) == 6720)
-                        resalt += 1.0m;
-                if (Task8M3Y1.Text != "" && Task8M3Y1.Text.Replace(" ", "") != "")
-                    if (Convert.ToInt32(Task8M3Y1.Text.Replace(" ", "")) == 453600)
-                        resalt += 1.0m;
-                
-                
+                if (VerificationTask2(Task4M3Y1))
+                    resalt += 1.0m;
+                if (VerificationTask2(Task5M3Y1))
+                    resalt += 1.0m;
+                if (VerificationTask2(Task6M3Y1))
+                    resalt += 1.0m;
+                if (VerificationTask2(Task7M3Y1))
+                    resalt += 1.0m;
+                if (VerificationTask2(Task8M3Y1))
+                    resalt += 1.0m;
+
+
 
                 resalt = Math.Round((resalt / 10.0m), 2);
 
