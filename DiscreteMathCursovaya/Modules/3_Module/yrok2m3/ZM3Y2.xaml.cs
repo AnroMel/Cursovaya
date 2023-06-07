@@ -34,21 +34,55 @@ namespace DiscreteMathCursovaya
             Login = login;
             InitializeComponent();
 
-            string[] arr = { @"pack://application:,,,/Modules/3_Module/yrok1m3/Frame_28.jpg",
-                @"pack://application:,,,/Modules/3_Module/yrok1m3/Frame_29.jpg",
-                @"pack://application:,,,/Modules/3_Module/yrok1m3/Frame_30.jpg",
-                @"pack://application:,,,/Modules/3_Module/yrok1m3/Frame_31.jpg",
-                @"pack://application:,,,/Modules/3_Module/yrok1m3/Frame_32.jpg",
-                @"pack://application:,,,/Modules/3_Module/yrok1m3/Frame_33.jpg"};
+            string[] arr = { @"pack://application:,,,/Modules/3_Module/yrok2m3/Frame_28.jpg",
+                @"pack://application:,,,/Modules/3_Module/yrok2m3/Frame_29.jpg",
+                @"pack://application:,,,/Modules/3_Module/yrok2m3/Frame_30.jpg",
+                @"pack://application:,,,/Modules/3_Module/yrok2m3/Frame_31.jpg",
+                @"pack://application:,,,/Modules/3_Module/yrok2m3/Frame_32.jpg",
+
+             
+                @"pack://application:,,,/Modules/3_Module/yrok2m3/Frame_49.jpg",
+                @"pack://application:,,,/Modules/3_Module/yrok2m3/Frame_50.jpg",
+                @"pack://application:,,,/Modules/3_Module/yrok2m3/Frame_61.jpg",
+                @"pack://application:,,,/Modules/3_Module/yrok2m3/Frame_64.jpg",
+                @"pack://application:,,,/Modules/3_Module/yrok2m3/Frame_62.jpg",
+                @"pack://application:,,,/Modules/3_Module/yrok2m3/Frame_63.jpg",
+                @"pack://application:,,,/Modules/3_Module/yrok2m3/Frame_65.jpg",
+                @"pack://application:,,,/Modules/3_Module/yrok2m3/Frame_66.jpg",
+                @"pack://application:,,,/Modules/3_Module/yrok2m3/Frame_67.jpg",
+               
+
+                @"pack://application:,,,/Modules/3_Module/yrok2m3/Frame_33.jpg"};
+
+            string[] arr2 = { @"pack://application:,,,/Modules/3_Module/yrok2m3/Frame_40.jpg",
+                @"pack://application:,,,/Modules/3_Module/yrok2m3/Frame_42.jpg",
+                @"pack://application:,,,/Modules/3_Module/yrok2m3/Frame_41.jpg",
+                @"pack://application:,,,/Modules/3_Module/yrok2m3/Frame_45.jpg",
+                @"pack://application:,,,/Modules/3_Module/yrok2m3/Frame_46.jpg",
+                @"pack://application:,,,/Modules/3_Module/yrok2m3/Frame_47.jpg",
+                @"pack://application:,,,/Modules/3_Module/yrok2m3/Frame_48.jpg",
+                 @"pack://application:,,,/Modules/3_Module/yrok2m3/Frame_56.jpg",
+                  @"pack://application:,,,/Modules/3_Module/yrok2m3/Frame_57.jpg",
+                   @"pack://application:,,,/Modules/3_Module/yrok2m3/Frame_59.jpg",
+                    @"pack://application:,,,/Modules/3_Module/yrok2m3/Frame_60.jpg",
+
+                @"pack://application:,,,/Modules/3_Module/yrok2m3/Frame_43.jpg"};
             Image img = new Image();
             Image img2 = new Image();
             Image img3 = new Image();
             Image img4 = new Image();
             Image img5 = new Image();
             Image img6 = new Image();
-
+            Image img81 = new Image();
+            Image img82 = new Image();
+            Image img83 = new Image();
+            Image img84 = new Image();
+            Image img85 = new Image();
+            Image img91 = new Image();
+            Image img92 = new Image();
+            
             img.Source = new BitmapImage(new Uri(arr[0]));
-            img2.Source = new BitmapImage(new Uri(arr[random.Next(1, 6)]));
+            img2.Source = new BitmapImage(new Uri(arr[random.Next(1, 16)]));
 
 
             img3.Source = new BitmapImage(new Uri(arr[2]));
@@ -56,6 +90,9 @@ namespace DiscreteMathCursovaya
 
             img5.Source = new BitmapImage(new Uri(arr[3]));
             img6.Source = new BitmapImage(new Uri(arr[random.Next(4, 6)]));
+           
+            img91.Source = new BitmapImage(new Uri(arr[3]));
+            img92.Source = new BitmapImage(new Uri(arr[random.Next(4, 6)]));
 
             Chart2.Content = img2;
             Chart1.Content = img;
@@ -65,6 +102,24 @@ namespace DiscreteMathCursovaya
 
             Chart62.Content = img5;
             Chart61.Content = img6;
+            
+            Chart18.Content = img5;
+            Chart28.Content = img6;
+
+            img81.Source = new BitmapImage(new Uri(arr2[0]));
+            img82.Source = new BitmapImage(new Uri(arr2[random.Next(1, 3)]));
+            img83.Source = new BitmapImage(new Uri(arr2[random.Next(3, 7)]));
+            img84.Source = new BitmapImage(new Uri(arr2[random.Next(7, 9)]));
+            img85.Source = new BitmapImage(new Uri(arr2[random.Next(9, 11)]));
+
+
+            
+
+            Chart22.Content = img81;
+            Chart12.Content = img82;
+            Chart32.Content = img84;
+            Chart42.Content = img85;
+            Chart121.Content = img81;
 
             RandomTemp1 = random.Next(8, 15).ToString();
             RandomTemp2 = random.Next(5, 10).ToString();
@@ -78,6 +133,10 @@ namespace DiscreteMathCursovaya
             TextTask4M3Y2.Text = "4. на какой картинке изображено объединение графов? (нумерация картинок 1 2)";
             TextTask5M3Y2.Text = "5. на какой картинке изображено произведение графов? (нумерация картинок 1 2)";
             TextTask6M3Y2.Text = "6. на какой картинке изображено удаление вершины графа? (нумерация картинок 1 2)";
+            TextTask7M3Y2.Text = "7. Дан граф G. Какие из представленых ниже графов являются индуцироваными подграфами графа G ?";
+            TextTask8M3Y2.Text = "8. на какой картинке изображено соединение графов? (нумерация картинок 1 2) ";
+
+
 
 
 
@@ -131,6 +190,14 @@ namespace DiscreteMathCursovaya
             if (Task6M3Y2.Text == "" || Task6M3Y2.Text.Replace(" ", "") == "")
                 return false;
             if (2 == Convert.ToInt32(Task6M3Y2.Text.Replace(" ", "")))
+                return true;
+            return false;
+        }
+        public static bool VerificationTask7(TextBox Task7M3Y2)
+        {
+            if (Task7M3Y2.Text == "" || Task7M3Y2.Text.Replace(" ", "") == "")
+                return false;
+            if (34 == Convert.ToInt32(Task7M3Y2.Text.Replace(" ", "")))
                 return true;
             return false;
         }

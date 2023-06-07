@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:DiscreteMathCursovaya"
       mc:Ignorable="d" 
-      d:DesignHeight="2250" d:DesignWidth="1000"
+      d:DesignHeight="3000" d:DesignWidth="1000"
       Title="ZM3Y2">
 
     <ScrollViewer>
@@ -49,7 +49,7 @@
             <TextBlock x:Name="TextTask4M3Y2" HorizontalAlignment="Center" Margin="0,570,0,0" TextWrapping="Wrap" Text="text4" VerticalAlignment="Top" Height="73" Width="522" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="16"/>
             <Button x:Name="Chart1" HorizontalAlignment="Center" Margin="0,620,0,0" VerticalAlignment="Top" Height="170" Width="170">
                 <Button.Background>
-                    <ImageBrush ImageSource="/Modules/3_Module/yrok2m3/Frame_30.jpg"/>
+                    <ImageBrush ImageSource="/Modules/3_Module/yrok2m3/Frame 64.jpg"/>
                 </Button.Background>
 
                 <Button.Style>
@@ -81,7 +81,7 @@
             </Button>
             <Button x:Name="Chart2" HorizontalAlignment="Center" Margin="-360,620,0,0" VerticalAlignment="Top" Height="170" Width="170">
                 <Button.Background>
-                    <ImageBrush ImageSource="/Modules/3_Module/yrok2m3/Frame_30.jpg"/>
+                    <ImageBrush ImageSource="/Modules/3_Module/yrok2m3/Frame 64.jpg"/>
                 </Button.Background>
 
                 <Button.Style>
@@ -202,7 +202,7 @@
                     </ControlTemplate>
                 </TextBox.Template>
             </TextBox>
-            <TextBlock x:Name="TextTask6M3Y2" HorizontalAlignment="Center" Margin="0,1316,0,0" TextWrapping="Wrap" Text="text6" VerticalAlignment="Top" Height="73" Width="522" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="16"/>
+            <TextBlock x:Name="TextTask6M3Y2" HorizontalAlignment="Center" Margin="0,1340,0,0" TextWrapping="Wrap" Text="text6" VerticalAlignment="Top" Height="73" Width="522" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="16"/>
 
             <Button x:Name="Chart61" HorizontalAlignment="Center" Margin="0,1414,0,0" VerticalAlignment="Top" Height="170" Width="170">
                 <Button.Background>
@@ -269,7 +269,183 @@
                 </Button.Style>
             </Button>
 
-            <TextBox x:Name="Task6M3Y2" PreviewTextInput="OnPreviewTextInput" DataObject.Pasting="OnPasting" MaxLength="10" HorizontalAlignment="Center" Margin="231,1620,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="265" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39"  VerticalContentAlignment="Center" Padding="4,4,4,4" Cursor="IBeam" >
+            <TextBox x:Name="Task6M3Y2" PreviewTextInput="OnPreviewTextInput" DataObject.Pasting="OnPasting" MaxLength="10" HorizontalAlignment="Center" Margin="231,1600,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="265" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39"  VerticalContentAlignment="Center" Padding="4,4,4,4" Cursor="IBeam" >
+                <TextBox.Template >
+                    <ControlTemplate >
+                        <Border Background="#FFF0F0F0" CornerRadius="6" Padding="2" BorderThickness="1" BorderBrush="#9f9f99">
+                            <Viewbox Stretch="Uniform" HorizontalAlignment="Left">
+                                <ScrollViewer  Margin="0" x:Name="PART_ContentHost"/>
+                            </Viewbox>
+                        </Border>
+                    </ControlTemplate>
+                </TextBox.Template>
+            </TextBox>
+
+            <TextBlock x:Name="TextTask7M3Y2" HorizontalAlignment="Center" Margin="0,1720,0,0" TextWrapping="Wrap" Text="text4" VerticalAlignment="Top" Height="73" Width="522" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="16" Cursor=""/>
+
+            <Button x:Name="Chart12" HorizontalAlignment="Center" Margin="-200,2000,0,0" VerticalAlignment="Top" Height="170" Width="170">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Modules/3_Module/yrok1m3/Frame_37.jpg"/>
+                </Button.Background>
+
+                <Button.Style>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Border CornerRadius="12"
+                                Background="{TemplateBinding Background}">
+
+                                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="RenderTransformOrigin" Value="0.5, 0.5"/>
+                                <Setter Property="RenderTransform">
+                                    <Setter.Value>
+                                        <ScaleTransform ScaleX="1.1" ScaleY="1.1"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+            </Button>
+            <Button x:Name="Chart22" HorizontalAlignment="Center" Margin="-560,2000,0,0" VerticalAlignment="Top" Height="170" Width="170">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Modules/3_Module/yrok2m3/Frame_43.jpg"/>
+                </Button.Background>
+
+                <Button.Style>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Border CornerRadius="12"
+                                Background="{TemplateBinding Background}">
+
+                                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="RenderTransformOrigin" Value="0.5, 0.5"/>
+                                <Setter Property="RenderTransform">
+                                    <Setter.Value>
+                                        <ScaleTransform ScaleX="1.1" ScaleY="1.1"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+            </Button>
+            <Button x:Name="Chart32" HorizontalAlignment="Center" Margin="160,2000,0,0" VerticalAlignment="Top" Height="170" Width="170">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Modules/3_Module/yrok2m3/Frame_57.jpg"/>
+                </Button.Background>
+
+                <Button.Style>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Border CornerRadius="12"
+                                Background="{TemplateBinding Background}">
+
+                                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="RenderTransformOrigin" Value="0.5, 0.5"/>
+                                <Setter Property="RenderTransform">
+                                    <Setter.Value>
+                                        <ScaleTransform ScaleX="1.1" ScaleY="1.1"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+            </Button>
+
+            <Button x:Name="Chart42" HorizontalAlignment="Center" Margin="530,2000,0,0" VerticalAlignment="Top" Height="170" Width="170">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Modules/3_Module/yrok2m3/Frame_57.jpg"/>
+                </Button.Background>
+
+                <Button.Style>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Border CornerRadius="12"
+                                Background="{TemplateBinding Background}">
+
+                                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="RenderTransformOrigin" Value="0.5, 0.5"/>
+                                <Setter Property="RenderTransform">
+                                    <Setter.Value>
+                                        <ScaleTransform ScaleX="1.1" ScaleY="1.1"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+            </Button>
+
+            <Button x:Name="Chart121" HorizontalAlignment="Center" Margin="0,1800,0,0" VerticalAlignment="Top" Height="170" Width="170">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Modules/3_Module/yrok2m3/Frame_40.jpg"/>
+                </Button.Background>
+
+                <Button.Style>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Border CornerRadius="12"
+                                Background="{TemplateBinding Background}">
+
+                                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="RenderTransformOrigin" Value="0.5, 0.5"/>
+                                <Setter Property="RenderTransform">
+                                    <Setter.Value>
+                                        <ScaleTransform ScaleX="1.1" ScaleY="1.1"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+            </Button>
+            <TextBox x:Name="Task8M3Y1" PreviewTextInput="OnPreviewTextInput" DataObject.Pasting="OnPasting" MaxLength="10" HorizontalAlignment="Center" Margin="231,2200,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="266" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39"  VerticalContentAlignment="Center" Padding="4,4,4,4" Cursor="IBeam">
                 <TextBox.Template >
                     <ControlTemplate >
                         <Border Background="#FFF0F0F0" CornerRadius="6" Padding="2" BorderThickness="1" BorderBrush="#9f9f99">
@@ -282,7 +458,73 @@
             </TextBox>
 
 
-            <Button x:Name="ButtonFinishTask1" Content="Завершить" HorizontalAlignment="Center" Margin="231,2142,0,0" VerticalAlignment="Top"  FontSize="20" FontFamily="pack://application:,,,/fonts/#Jost Medium" Width="264" Height="44" Cursor="Hand" Background="#ff6666" Foreground="White" BorderBrush="#ff6666" Click="ButtonFinishTask1_Click"  >
+            <TextBlock x:Name="TextTask8M3Y2" HorizontalAlignment="Center" Margin="0,2350,0,0" TextWrapping="Wrap" Text="text4" VerticalAlignment="Top" Height="204" Width="658" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="16" Cursor=""/>
+            <Button x:Name="Chart18" HorizontalAlignment="Center" Margin="0,2450,0,0" VerticalAlignment="Top" Height="170" Width="170">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Modules/3_Module/yrok2m3/Frame 64.jpg"/>
+                </Button.Background>
+
+                <Button.Style>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Border CornerRadius="12"
+                                Background="{TemplateBinding Background}">
+
+                                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="RenderTransformOrigin" Value="0.5, 0.5"/>
+                                <Setter Property="RenderTransform">
+                                    <Setter.Value>
+                                        <ScaleTransform ScaleX="1.1" ScaleY="1.1"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+            </Button>
+            <Button x:Name="Chart28" HorizontalAlignment="Center" Margin="-360,2450,0,0" VerticalAlignment="Top" Height="170" Width="170">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Modules/3_Module/yrok2m3/Frame 49.jpg"/>
+                </Button.Background>
+
+                <Button.Style>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Border CornerRadius="12"
+                                Background="{TemplateBinding Background}">
+
+                                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="RenderTransformOrigin" Value="0.5, 0.5"/>
+                                <Setter Property="RenderTransform">
+                                    <Setter.Value>
+                                        <ScaleTransform ScaleX="1.1" ScaleY="1.1"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+            </Button>
+
+            <Button x:Name="ButtonFinishTask1" Content="Завершить" HorizontalAlignment="Center" Margin="231,2800,0,0" VerticalAlignment="Top"  FontSize="20" FontFamily="pack://application:,,,/fonts/#Jost Medium" Width="264" Height="44" Cursor="Hand" Background="#ff6666" Foreground="White" BorderBrush="#ff6666" Click="ButtonFinishTask1_Click"  >
                 <Button.Effect>
                     <DropShadowEffect Color="#FFE0E0E0"/>
                 </Button.Effect>
@@ -320,6 +562,8 @@
             <Rectangle HorizontalAlignment="Center" Height="153" Margin="0,360,0,0" Stroke="#ff6666" VerticalAlignment="Top" Width="800" RadiusX="15" RadiusY="15" />
             <Rectangle HorizontalAlignment="Center" Height="352" Margin="0,530,0,0" Stroke="#ff6666" VerticalAlignment="Top" Width="800" RadiusX="15" RadiusY="15" />
             <Rectangle HorizontalAlignment="Center" Height="353" Margin="0,924,0,0" Stroke="#ff6666" VerticalAlignment="Top" Width="800" RadiusX="15" RadiusY="15" />
+            <Rectangle HorizontalAlignment="Center" Height="353" Margin="0,1310,0,0" Stroke="#ff6666" VerticalAlignment="Top" Width="800" RadiusX="15" RadiusY="15" />
+            <Rectangle HorizontalAlignment="Center" Height="563" Margin="0,1700,0,0" Stroke="#ff6666" VerticalAlignment="Top" Width="800" RadiusX="15" RadiusY="15" />
 
             <Button Content="Button" HorizontalAlignment="Left" Margin="546,2220,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
 
