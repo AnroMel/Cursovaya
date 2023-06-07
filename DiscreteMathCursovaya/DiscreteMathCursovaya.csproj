@@ -41,14 +41,62 @@
     <None Remove="Modules\1_Module\yrok3m1\examples1_3.jpg" />
     <None Remove="Modules\1_Module\yrok3m1\Theory1_3.jpg" />
     <None Remove="Modules\3_Module\imgModule3\Frame_19.jpg" />
+    <None Remove="Modules\3_Module\imgModule3\Frame_22.jpg" />
+    <None Remove="Modules\3_Module\imgModule3\Frame_23.jpg" />
+    <None Remove="Modules\3_Module\imgModule3\Frame_24.jpg" />
+    <None Remove="Modules\3_Module\imgModule3\Frame_25.jpg" />
+    <None Remove="Modules\3_Module\imgModule3\Frame_27.jpg" />
+    <None Remove="Modules\3_Module\imgModule3\Frame_34.jpg" />
+    <None Remove="Modules\3_Module\imgModule3\Frame_35.jpg" />
+    <None Remove="Modules\3_Module\imgModule3\Frame_36.jpg" />
+    <None Remove="Modules\3_Module\imgModule3\Frame_37.jpg" />
+    <None Remove="Modules\3_Module\imgModule3\Frame_38.jpg" />
+    <None Remove="Modules\3_Module\imgModule3\Frame_39.jpg" />
+    <None Remove="Modules\3_Module\imgModule3\Frame_40.jpg" />
+    <None Remove="Modules\3_Module\imgModule3\Frame_41.jpg" />
+    <None Remove="Modules\3_Module\imgModule3\Frame_42.jpg" />
+    <None Remove="Modules\3_Module\imgModule3\Frame_43.jpg" />
+    <None Remove="Modules\3_Module\imgModule3\Frame_45.jpg" />
+    <None Remove="Modules\3_Module\imgModule3\Frame_46.jpg" />
+    <None Remove="Modules\3_Module\imgModule3\Frame_47.jpg" />
+    <None Remove="Modules\3_Module\imgModule3\Frame_48.jpg" />
+    <None Remove="Modules\3_Module\imgModule3\Frame_51.jpg" />
+    <None Remove="Modules\3_Module\imgModule3\Frame_52.jpg" />
+    <None Remove="Modules\3_Module\imgModule3\Frame_53.jpg" />
+    <None Remove="Modules\3_Module\imgModule3\Frame_54.jpg" />
+    <None Remove="Modules\3_Module\imgModule3\Frame_55.jpg" />
     <None Remove="Modules\3_Module\yrok1m3\Frame_19.jpg" />
     <None Remove="Modules\3_Module\yrok1m3\Frame_20.jpg" />
+    <None Remove="Modules\3_Module\yrok1m3\Frame_22.jpg" />
+    <None Remove="Modules\3_Module\yrok1m3\Frame_23.jpg" />
+    <None Remove="Modules\3_Module\yrok1m3\Frame_24.jpg" />
+    <None Remove="Modules\3_Module\yrok1m3\Frame_25.jpg" />
+    <None Remove="Modules\3_Module\yrok1m3\Frame_27.jpg" />
     <None Remove="Modules\3_Module\yrok1m3\Frame_28.jpg" />
     <None Remove="Modules\3_Module\yrok1m3\Frame_29.jpg" />
     <None Remove="Modules\3_Module\yrok1m3\Frame_30.jpg" />
     <None Remove="Modules\3_Module\yrok1m3\Frame_31.jpg" />
     <None Remove="Modules\3_Module\yrok1m3\Frame_32.jpg" />
     <None Remove="Modules\3_Module\yrok1m3\Frame_33.jpg" />
+    <None Remove="Modules\3_Module\yrok1m3\Frame_34.jpg" />
+    <None Remove="Modules\3_Module\yrok1m3\Frame_35.jpg" />
+    <None Remove="Modules\3_Module\yrok1m3\Frame_36.jpg" />
+    <None Remove="Modules\3_Module\yrok1m3\Frame_37.jpg" />
+    <None Remove="Modules\3_Module\yrok1m3\Frame_38.jpg" />
+    <None Remove="Modules\3_Module\yrok1m3\Frame_39.jpg" />
+    <None Remove="Modules\3_Module\yrok1m3\Frame_40.jpg" />
+    <None Remove="Modules\3_Module\yrok1m3\Frame_41.jpg" />
+    <None Remove="Modules\3_Module\yrok1m3\Frame_42.jpg" />
+    <None Remove="Modules\3_Module\yrok1m3\Frame_43.jpg" />
+    <None Remove="Modules\3_Module\yrok1m3\Frame_45.jpg" />
+    <None Remove="Modules\3_Module\yrok1m3\Frame_46.jpg" />
+    <None Remove="Modules\3_Module\yrok1m3\Frame_47.jpg" />
+    <None Remove="Modules\3_Module\yrok1m3\Frame_48.jpg" />
+    <None Remove="Modules\3_Module\yrok1m3\Frame_51.jpg" />
+    <None Remove="Modules\3_Module\yrok1m3\Frame_52.jpg" />
+    <None Remove="Modules\3_Module\yrok1m3\Frame_53.jpg" />
+    <None Remove="Modules\3_Module\yrok1m3\Frame_54.jpg" />
+    <None Remove="Modules\3_Module\yrok1m3\Frame_55.jpg" />
     <None Remove="Modules\3_Module\yrok2m3\Frame_28.jpg" />
     <None Remove="Modules\3_Module\yrok2m3\Frame_29.jpg" />
     <None Remove="Modules\3_Module\yrok2m3\Frame_30.jpg" />
@@ -206,10 +254,87 @@
     <Resource Include="Modules\3_Module\imgModule3\Frame_19.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Modules\3_Module\imgModule3\Frame_22.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Modules\3_Module\imgModule3\Frame_23.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Modules\3_Module\imgModule3\Frame_24.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Modules\3_Module\imgModule3\Frame_25.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Modules\3_Module\imgModule3\Frame_27.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Modules\3_Module\imgModule3\Frame_34.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Modules\3_Module\imgModule3\Frame_35.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Modules\3_Module\imgModule3\Frame_36.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Modules\3_Module\imgModule3\Frame_37.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Modules\3_Module\imgModule3\Frame_38.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Modules\3_Module\imgModule3\Frame_39.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Modules\3_Module\imgModule3\Frame_40.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Modules\3_Module\imgModule3\Frame_41.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Modules\3_Module\imgModule3\Frame_42.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Modules\3_Module\imgModule3\Frame_43.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Modules\3_Module\imgModule3\Frame_45.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Modules\3_Module\imgModule3\Frame_46.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Modules\3_Module\imgModule3\Frame_47.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Modules\3_Module\imgModule3\Frame_48.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Modules\3_Module\imgModule3\Frame_51.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Modules\3_Module\imgModule3\Frame_52.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Modules\3_Module\imgModule3\Frame_53.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Modules\3_Module\imgModule3\Frame_54.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Modules\3_Module\imgModule3\Frame_55.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Modules\3_Module\yrok1m3\Frame_19.jpg" />
     <Resource Include="Modules\3_Module\yrok1m3\Frame_20.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Modules\3_Module\yrok1m3\Frame_22.jpg" />
+    <Resource Include="Modules\3_Module\yrok1m3\Frame_23.jpg" />
+    <Resource Include="Modules\3_Module\yrok1m3\Frame_24.jpg" />
+    <Resource Include="Modules\3_Module\yrok1m3\Frame_25.jpg" />
+    <Resource Include="Modules\3_Module\yrok1m3\Frame_27.jpg" />
     <Resource Include="Modules\3_Module\yrok1m3\Frame_28.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
@@ -228,6 +353,25 @@
     <Resource Include="Modules\3_Module\yrok1m3\Frame_33.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Modules\3_Module\yrok1m3\Frame_34.jpg" />
+    <Resource Include="Modules\3_Module\yrok1m3\Frame_35.jpg" />
+    <Resource Include="Modules\3_Module\yrok1m3\Frame_36.jpg" />
+    <Resource Include="Modules\3_Module\yrok1m3\Frame_37.jpg" />
+    <Resource Include="Modules\3_Module\yrok1m3\Frame_38.jpg" />
+    <Resource Include="Modules\3_Module\yrok1m3\Frame_39.jpg" />
+    <Resource Include="Modules\3_Module\yrok1m3\Frame_40.jpg" />
+    <Resource Include="Modules\3_Module\yrok1m3\Frame_41.jpg" />
+    <Resource Include="Modules\3_Module\yrok1m3\Frame_42.jpg" />
+    <Resource Include="Modules\3_Module\yrok1m3\Frame_43.jpg" />
+    <Resource Include="Modules\3_Module\yrok1m3\Frame_45.jpg" />
+    <Resource Include="Modules\3_Module\yrok1m3\Frame_46.jpg" />
+    <Resource Include="Modules\3_Module\yrok1m3\Frame_47.jpg" />
+    <Resource Include="Modules\3_Module\yrok1m3\Frame_48.jpg" />
+    <Resource Include="Modules\3_Module\yrok1m3\Frame_51.jpg" />
+    <Resource Include="Modules\3_Module\yrok1m3\Frame_52.jpg" />
+    <Resource Include="Modules\3_Module\yrok1m3\Frame_53.jpg" />
+    <Resource Include="Modules\3_Module\yrok1m3\Frame_54.jpg" />
+    <Resource Include="Modules\3_Module\yrok1m3\Frame_55.jpg" />
     <Resource Include="Modules\3_Module\yrok2m3\Frame_28.jpg" />
     <Resource Include="Modules\3_Module\yrok2m3\Frame_29.jpg" />
     <Resource Include="Modules\3_Module\yrok2m3\Frame_30.jpg" />
