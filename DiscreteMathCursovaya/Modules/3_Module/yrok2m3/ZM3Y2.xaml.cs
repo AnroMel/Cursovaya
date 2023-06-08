@@ -36,15 +36,15 @@ namespace DiscreteMathCursovaya
             InitializeComponent();
 
             string[] arr = { @"pack://application:,,,/Modules/3_Module/yrok2m3/Frame_28.jpg",
-                @"pack://application:,,,/Modules/3_Module/yrok2m3/Frame_29.jpg",//cлож
-                @"pack://application:,,,/Modules/3_Module/yrok2m3/Frame_30.jpg",// произв
+                @"pack://application:,,,/Modules/3_Module/yrok2m3/Frame_29.jpg",
+                @"pack://application:,,,/Modules/3_Module/yrok2m3/Frame_30.jpg",
                 @"pack://application:,,,/Modules/3_Module/yrok2m3/Frame_63.jpg",
                 @"pack://application:,,,/Modules/3_Module/yrok2m3/Frame 31.jpg",
-                @"pack://application:,,,/Modules/3_Module/yrok2m3/Frame 62.jpg",// удаление вершины
-                @"pack://application:,,,/Modules/3_Module/yrok2m3/Frame 65.jpg",// удаление вершины
-                @"pack://application:,,,/Modules/3_Module/yrok2m3/Frame_32.jpg",//ребро
-                 @"pack://application:,,,/Modules/3_Module/yrok2m3/Frame 67.jpg",//ребро
-                 @"pack://application:,,,/Modules/3_Module/yrok2m3/Frame 66.jpg",//ребро
+                @"pack://application:,,,/Modules/3_Module/yrok2m3/Frame 62.jpg",
+                @"pack://application:,,,/Modules/3_Module/yrok2m3/Frame 65.jpg",
+                @"pack://application:,,,/Modules/3_Module/yrok2m3/Frame_32.jpg",
+                 @"pack://application:,,,/Modules/3_Module/yrok2m3/Frame 67.jpg",
+                 @"pack://application:,,,/Modules/3_Module/yrok2m3/Frame 66.jpg",
                 @"pack://application:,,,/Modules/3_Module/yrok2m3/Frame_33.jpg"};
 
             string[] arr2 = { @"pack://application:,,,/Modules/3_Module/yrok2m3/Frame_40.jpg",
