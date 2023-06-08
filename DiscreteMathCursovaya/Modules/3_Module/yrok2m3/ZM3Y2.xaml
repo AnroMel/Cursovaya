@@ -493,7 +493,7 @@
             </Button>
             <Button x:Name="Chart28" HorizontalAlignment="Center" Margin="-360,2450,0,0" VerticalAlignment="Top" Height="170" Width="170">
                 <Button.Background>
-                    <ImageBrush ImageSource="/Modules/3_Module/yrok2m3/Frame_30.jpg"/>
+                    <ImageBrush ImageSource="/Modules/3_Module/yrok2m3/Frame 67.jpg"/>
                 </Button.Background>
 
 

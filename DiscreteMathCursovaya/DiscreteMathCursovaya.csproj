@@ -288,6 +288,21 @@
     <Resource Include="Modules\1_Module\yrok2m1\Theory1_2.jpg" />
     <Resource Include="Modules\1_Module\yrok3m1\examples1_3.jpg" />
     <Resource Include="Modules\1_Module\yrok3m1\Theory1_3.jpg" />
+    <Resource Include="Modules\3_Module\imgModule3\Frame 62.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Modules\3_Module\imgModule3\Frame 63.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Modules\3_Module\imgModule3\Frame 65.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Modules\3_Module\imgModule3\Frame 66.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Modules\3_Module\imgModule3\Frame 67.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Modules\3_Module\imgModule3\Frame_19.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
@@ -421,6 +436,11 @@
     <Resource Include="Modules\3_Module\yrok1m3\Frame_53.jpg" />
     <Resource Include="Modules\3_Module\yrok1m3\Frame_54.jpg" />
     <Resource Include="Modules\3_Module\yrok1m3\Frame_55.jpg" />
+    <Resource Include="Modules\3_Module\yrok2m3\Frame 62.jpg" />
+    <Resource Include="Modules\3_Module\yrok2m3\Frame 63.jpg" />
+    <Resource Include="Modules\3_Module\yrok2m3\Frame 65.jpg" />
+    <Resource Include="Modules\3_Module\yrok2m3\Frame 66.jpg" />
+    <Resource Include="Modules\3_Module\yrok2m3\Frame 67.jpg" />
     <Resource Include="Modules\3_Module\yrok2m3\Frame_28.jpg" />
     <Resource Include="Modules\3_Module\yrok2m3\Frame_29.jpg" />
     <Resource Include="Modules\3_Module\yrok2m3\Frame_30.jpg" />

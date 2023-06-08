@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -37,9 +38,13 @@ namespace DiscreteMathCursovaya
             string[] arr = { @"pack://application:,,,/Modules/3_Module/yrok2m3/Frame_28.jpg",
                 @"pack://application:,,,/Modules/3_Module/yrok2m3/Frame_29.jpg",//cлож
                 @"pack://application:,,,/Modules/3_Module/yrok2m3/Frame_30.jpg",// произв
-                @"pack://application:,,,/Modules/3_Module/yrok2m3/Frame_31.jpg",
-                @"pack://application:,,,/Modules/3_Module/yrok2m3/Frame_32.jpg",
-             
+                @"pack://application:,,,/Modules/3_Module/yrok2m3/Frame_63.jpg",
+                @"pack://application:,,,/Modules/3_Module/yrok2m3/Frame 31.jpg",
+                @"pack://application:,,,/Modules/3_Module/yrok2m3/Frame 62.jpg",// удаление вершины
+                @"pack://application:,,,/Modules/3_Module/yrok2m3/Frame 65.jpg",// удаление вершины
+                @"pack://application:,,,/Modules/3_Module/yrok2m3/Frame_32.jpg",//ребро
+                 @"pack://application:,,,/Modules/3_Module/yrok2m3/Frame 67.jpg",//ребро
+                 @"pack://application:,,,/Modules/3_Module/yrok2m3/Frame 66.jpg",//ребро
                 @"pack://application:,,,/Modules/3_Module/yrok2m3/Frame_33.jpg"};
 
             string[] arr2 = { @"pack://application:,,,/Modules/3_Module/yrok2m3/Frame_40.jpg",
@@ -70,26 +75,26 @@ namespace DiscreteMathCursovaya
             Image img92 = new Image();
             
             img.Source = new BitmapImage(new Uri(arr[0]));
-            img2.Source = new BitmapImage(new Uri(arr[random.Next(1, 6)]));
+            img2.Source = new BitmapImage(new Uri(arr[random.Next(1, 10)]));
 
 
             img3.Source = new BitmapImage(new Uri(arr[2]));
             img4.Source = new BitmapImage(new Uri(arr[random.Next(0, 2)]));
 
-            img5.Source = new BitmapImage(new Uri(arr[3]));
-            img6.Source = new BitmapImage(new Uri(arr[random.Next(4, 6)]));
+            img5.Source = new BitmapImage(new Uri(arr[random.Next(5, 7)]));
+            img6.Source = new BitmapImage(new Uri(arr[random.Next(7, 10)]));
            
-            img91.Source = new BitmapImage(new Uri(arr[4]));//elfktybt ht,hf
-            img92.Source = new BitmapImage(new Uri(arr[random.Next(0, 4)]));
+            img91.Source = new BitmapImage(new Uri(arr[random.Next(0, 7)]));//elfktybt ht,hf
+            img92.Source = new BitmapImage(new Uri(arr[random.Next(7, 10)]));
 
             Chart2.Content = img2;
             Chart1.Content = img;
 
-            Chart52.Content = img3;
-            Chart51.Content = img4;
+            Chart52.Content = img4;
+            Chart51.Content = img3;
 
-            Chart62.Content = img5;
-            Chart61.Content = img6;
+            Chart62.Content = img6;
+            Chart61.Content = img5;
             
             Chart18.Content = img92;
             Chart28.Content = img91;

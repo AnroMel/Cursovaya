@@ -199,7 +199,7 @@ namespace DiscreteMathCursovaya
                
 
                 decimal resalt = 0.0m;
-                if (VerificationTask2(Task1M3Y1))
+                if (VerificationTask1(Task1M3Y1))
                     resalt += 1.0m;
                 if (VerificationTask2(Task2M3Y1))
                     resalt += 1.0m;
