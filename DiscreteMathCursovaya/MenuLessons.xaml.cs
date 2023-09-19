@@ -104,19 +104,17 @@ namespace DiscreteMathCursovaya
 
         private void Yrok2_1_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Модуль находится в разработке");
-            //yrokM2_1 window = new yrokM2_1();
-            //window.Show();
-            //Close();
+            yrokM2_1 window = new yrokM2_1(Login);
+            window.Show();
+            Close();
 
         }
 
         private void Yrok2_2_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Модуль находится в разработке");
-            //yrokM2_2 window = new yrokM2_2();
-            //window.Show();
-            //Close();
+            yrokM2_2 window = new yrokM2_2(Login);
+            window.Show();
+            Close();
         }
 
         private void Yrok3_1_Click(object sender, RoutedEventArgs e)

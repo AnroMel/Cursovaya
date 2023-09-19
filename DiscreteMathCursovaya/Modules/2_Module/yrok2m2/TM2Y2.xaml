@@ -8,7 +8,7 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="TM2Y2">
 
-    <Grid>
-        <TextBlock>модуль 2 теория урок 2</TextBlock>
-    </Grid>
+    <ScrollViewer>
+        <Image Source="/Modules/2_Module/imgModule2/Theory2_2.jpg" Width="1000"/>
+    </ScrollViewer>
 </Page>

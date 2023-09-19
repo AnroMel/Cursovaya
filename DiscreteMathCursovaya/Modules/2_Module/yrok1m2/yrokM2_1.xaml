@@ -45,7 +45,7 @@
                     </Style>
                 </Button.Style>
             </Button>
-            <Button x:Name="p21" Content="Примеры" Margin="30, 5, 5, 5" FontSize="21" FontFamily="pack://application:,,,/fonts/#Jost Medium" Width="178" Height="44" Cursor="Hand" Background="#ff6666" Foreground="White" BorderBrush="#ff6666" Click="PM2Y1_Click">
+            <Button x:Name="z21" Content="Задачи" Margin="30, 5, 5, 5" FontSize="21" FontFamily="pack://application:,,,/fonts/#Jost Medium" Width="178" Height="44" Cursor="Hand" Background="#ff6666" Foreground="White" BorderBrush="#ff6666" Click="ZM2Y1_Click">
                 <Button.Effect>
                     <DropShadowEffect Color="#FFE0E0E0"/>
                 </Button.Effect>
@@ -76,7 +76,8 @@
                     </Style>
                 </Button.Style>
             </Button>
-            <Button x:Name="z21" Content="Задачи" Margin="30, 5, 5, 5" FontSize="21" FontFamily="pack://application:,,,/fonts/#Jost Medium" Width="178" Height="44" Cursor="Hand" Background="#ff6666" Foreground="White" BorderBrush="#ff6666" Click="ZM2Y1_Click">
+
+            <Button x:Name="Back"  Margin="910, 5, 5, 5" VerticalAlignment="Center" Content="Вернуться" FontSize="21" FontFamily="pack://application:,,,/fonts/#Jost Medium" Width="178" Height="44" Cursor="Hand" Background="#ff6666" Foreground="White" BorderBrush="#ff6666" Click="Back_Click" >
                 <Button.Effect>
                     <DropShadowEffect Color="#FFE0E0E0"/>
                 </Button.Effect>
