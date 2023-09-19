@@ -196,6 +196,7 @@
     </PackageReference>
     <PackageReference Include="Newtonsoft.Json.Bson" Version="1.0.2" />
     <PackageReference Include="ScottPlot.WPF" Version="4.1.63" />
+    <PackageReference Include="WpfMath" Version="2.1.0" />
   </ItemGroup>
 
   <ItemGroup>
