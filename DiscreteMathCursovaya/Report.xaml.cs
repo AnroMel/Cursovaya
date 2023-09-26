@@ -47,14 +47,14 @@ namespace DiscreteMathCursovaya
                         marks.Add(GetMark(i,j,dbconnect));                       
                     }
                 }
-                for (int i = 0; i < 11; i++)
+                for (int i = 0; i < 9; i++)
                 {
                     marks[i] *= 100;
                 }
                 double[] values = new double[marks.Count];
                 values = marks.ToArray();
-                double[] positions = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-                string[] labels = { "Модуль 1 Урок 1", "Модуль 1 Урок 2", "Модуль 1 Урок 3", "Модуль 2 Урок 1", "Модуль 2 Урок 2", "Модуль 3 Урок 1", "Модуль 3 Урок 2", "Модуль 3 Урок 3", "Модуль 4 Урок 1", "Модуль 4 Урок 2", "Модуль 4 Урок 3" };
+                double[] positions = { 0, 1, 2, 3, 4, 5, 6, 7, 8 };
+                string[] labels = { "Модуль 1 Урок 1", "Модуль 1 Урок 2", "Модуль 1 Урок 3", "Модуль 2 Урок 1", "Модуль 2 Урок 2", "Модуль 3 Урок 1", "Модуль 3 Урок 2", "Модуль 4 Урок 1", "Модуль 4 Урок 2" };
                 Chart.Plot.AddBar(values, positions);
                 var bar = Chart.Plot.AddBar(values);
                 bar.ShowValuesAboveBars = true;

@@ -168,6 +168,7 @@ namespace LibraryConnectingDB
                     StudWrite.Mark = decimal.Multiply(mark, 0.8m);
                 }
                 StudWrite.CountAttempt = StudWrite.CountAttempt + 1;
+                StudWrite.Mark = mark;
                 db.Write.Update(StudWrite);
                 try
                 {

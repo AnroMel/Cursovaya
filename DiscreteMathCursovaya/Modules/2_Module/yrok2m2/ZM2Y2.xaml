@@ -4,11 +4,73 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:DiscreteMathCursovaya"
+      xmlns:cl="clr-namespace:WpfMath.Controls;assembly=WpfMath"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignWidth="1200"
       Title="ZM2Y2">
 
-    <Grid>
-        <TextBlock>модуль 2 задачи урок 2</TextBlock>
-    </Grid>
+    <ScrollViewer>
+        <StackPanel>
+            <ItemsControl x:Name="tasks">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <StackPanel Background="#FFF0F0F0"/>
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Border BorderThickness="2" BorderBrush="#ff6666" CornerRadius="15" Margin="0 40" Width="800">
+                            <StackPanel>
+                                <TextBlock HorizontalAlignment="Center"  Margin="0 20 0 0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="16">
+                                    <cl:FormulaControl Formula="{Binding TaskText}"/>
+                                </TextBlock>
+                                <TextBox Text="{Binding Answer}" MaxLength="10" HorizontalAlignment="Right" Margin="0 30 70 20" TextWrapping="Wrap" VerticalAlignment="Top" Width="265" FontFamily="pack://application:,,,/fonts/#Jost Regular" FontSize="18" Height="39"  VerticalContentAlignment="Center" Padding="4,4,4,4" Cursor="IBeam">
+                                    <TextBox.Template>
+                                        <ControlTemplate>
+                                            <Border Background="#FFF0F0F0" CornerRadius="6" Padding="2" BorderThickness="1" BorderBrush="#9f9f99">
+                                                <Viewbox Stretch="Uniform" HorizontalAlignment="Left">
+                                                    <ScrollViewer  Margin="0" x:Name="PART_ContentHost"/>
+                                                </Viewbox>
+                                            </Border>
+                                        </ControlTemplate>
+                                    </TextBox.Template>
+                                </TextBox>
+                            </StackPanel>
+                        </Border>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+            <Button x:Name="finishButton" Content="Завершить" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0 50" FontSize="20" FontFamily="pack://application:,,,/fonts/#Jost Medium" Width="264" Height="44" Cursor="Hand" Background="#ff6666" Foreground="White" BorderBrush="#ff6666" Click="finishButton_Click">
+                <Button.Effect>
+                    <DropShadowEffect Color="#FFE0E0E0"/>
+                </Button.Effect>
+                <Button.Style>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Border CornerRadius="6" Background="{TemplateBinding Background}">
+                                        <ContentPresenter 
+                                            HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                            VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                        />
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="RenderTransformOrigin" Value="0.5, 0.5"/>
+                                <Setter Property="RenderTransform">
+                                    <Setter.Value>
+                                        <ScaleTransform ScaleX="1.1" ScaleY="1.1"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+            </Button>
+        </StackPanel>
+    </ScrollViewer>
 </Page>
